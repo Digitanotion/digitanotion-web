@@ -347,7 +347,7 @@ export default function DigitanotionHeroFB() {
                 ))}
               </motion.div>
 
-              {/* CTA Buttons with Schema Markup */}
+              {/* CTA Buttons with Schema Markup.  */}
               <motion.div
                 variants={itemVariant}
                 className="mt-10 flex flex-col sm:flex-row gap-4"
