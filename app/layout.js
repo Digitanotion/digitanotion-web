@@ -153,7 +153,7 @@ export const metadata = {
     "tech outsourcing Southeast Nigeria",
     "IT project management Awka",
 
-    // SPECIFIC TO YOUR SERVICES
+    // SPECIFIC TO YOUR SERVICES.
     "CySAP Africa services Awka",
     "CySAP cybersecurity training Anambra",
     "Tech6Project development Nigeria",
