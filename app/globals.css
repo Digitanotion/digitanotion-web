@@ -8,8 +8,8 @@
 .glass {
   backdrop-filter: blur(4px) saturate(180%);
   -webkit-backdrop-filter: blur(4px) saturate(180%);
-  background-color: #fb8506;
-  border: 1px solid rgba(255, 255, 255, 0.125);
+  background-color: #e11802;
+  border: 1px solid rgba(255, 77, 13, 0.125);
 }
 
 :root {
@@ -21,7 +21,7 @@
   --popover-foreground: oklch(0.145 0 0);
 
   /* Updated primary color to match glass UI orange rgba(251,133,7,0.77) */
-  --primary: #fb8506;
+  --primary: #e11802;
   --primary-foreground: #ffffff;
 
   --secondary: oklch(0.97 0 0);
@@ -169,4 +169,32 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Add to your global.css */
+@keyframes pulse-slow {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 4s ease-in-out infinite;
+}
+
+/* Ensure video background covers properly */
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+video::-webkit-media-controls-enclosure {
+  display: none !important;
+}
+
+video::-webkit-media-controls-panel {
+  display: none !important;
 }

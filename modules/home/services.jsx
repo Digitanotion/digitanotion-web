@@ -20,24 +20,24 @@ export default function ServicesSection() {
         "From penetration testing to threat monitoring and incident response, we help you stay a step ahead of cyberattacks. Our solutions keep your systems safe, compliant, and resilient 24/7.",
       color: "from-blue-600 to-blue-400",
       hoverColor: "from-blue-500 to-blue-300",
-      link: "/services/cyber-security",
+      link: "/services/cybouncer",
     },
     {
       icon: <FiCode className="text-4xl" />,
-      title: "Custom Software Development",
+      title: "App/Website Development",
       subtitle: "Build the exact solution your business needs",
       description:
         "We create secure, high-performance web and mobile applications tailored to your goals. Every product is designed to be scalable, reliable, and easy for your team to use.",
       color: "from-purple-600 to-purple-400",
       hoverColor: "from-purple-500 to-purple-300",
-      link: "/services/software-development",
+      link: "/services/app-development",
     },
     {
       icon: <FaGraduationCap className="text-4xl" />,
       title: "Tech Training Academy",
-      subtitle: "Building Nigeria's next generation of tech professionals",
+      subtitle: "Building Africa's next generation of tech professionals",
       description:
-        "Join our flagship training programs to learn cybersecurity, software development, and digital skills. We offer hands-on training, internships, and certification for aspiring developers and security experts.",
+        "Join our flagship training programs to learn cybersecurity, app/website development, cloud technologies, and more. We offer hands-on training, internships, and certification for aspiring developers and security experts.",
       color: "from-green-600 to-green-400",
       hoverColor: "from-green-500 to-green-300",
       link: "/academy",
@@ -165,8 +165,7 @@ export default function ServicesSection() {
           </motion.p>
 
           <h2 className="text-4xl md:text-5xl font-bold leading-tight text-balance mb-6 text-foreground">
-            Secure. Scalable. Simple. Your partner for reliable, future-proof
-            technology.
+            Innovate, Secure, and Empower seamlessly with Digitanotion
           </h2>
 
           <p className="text-lg text-muted-foreground leading-relaxed mb-8 text-pretty">
@@ -177,7 +176,7 @@ export default function ServicesSection() {
 
           <Link href="/services/software-development/request-quote">
             <GradientButton aria-label="Get started with Digitanotion's cybersecurity, software development, and tech training services">
-              Get Started
+              Tell us about it
             </GradientButton>
           </Link>
         </motion.div>

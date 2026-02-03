@@ -38,7 +38,8 @@ function Navbar() {
 
   return (
     <header className="w-full">
-      <nav className="flex items-center justify-between lg:justify-start fixed w-full top-0 z-50 h-18 glass rounded-none px-4 lg:px-12">
+     
+      <nav className="flex items-center justify-between lg:justify-start fixed w-full top-0 z-50 h-18 glass rounded-none px-8 lg:px-12">
         <div className="flex items-center">
           <Link
             href="/"
@@ -46,7 +47,7 @@ function Navbar() {
             aria-label="Digitanotion home"
           >
             <Image
-              src="https://res.cloudinary.com/dnitzkowt/image/upload/v1760014135/digitalogo_bgvbai.png"
+              src="/images/digitanotion_logo_1.png"
               alt="Digitanation Logo"
               className="scale-125"
               width={100}
@@ -55,7 +56,7 @@ function Navbar() {
           </Link>
         </div>
 
-        {/* Vertical slash separator */}
+        {/* Vertical slash separator. .*/}
         <div className="h-8 w-1 ml-6 bg-white hidden md:flex " />
 
         <div className="hidden md:flex flex-1 ">

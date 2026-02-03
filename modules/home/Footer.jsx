@@ -1,56 +1,64 @@
 import { FiMapPin } from "react-icons/fi";
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 
 const academyItems = [
   { href: "/academy/computing-essentials", label: "Computing Essentials" },
-  { href: "/academy/web-development", label: "Web Development" },
-  { href: "/academy/cyber-security", label: "Cyber Security" },
+  { href: "/academy/dils", label: "Innovation Lab for Schools" },
+  { href: "/academy/academy", label: "Digitanotion Tech Academy" },
 ];
 
 const exploreCategories = [
-  { href: "/services/software-development", label: "Software Development" },
-  { href: "/services/product-designing", label: "Digital Product Design" },
-  {
-    href: "/services/software-development",
-    label: "Mobile App Development",
-  },
-  { href: "/services/cyber-security", label: "Cybouncer" },
+  { href: "/services/software-development", label: "App Development" },
+  { href: "/services/cysapafrica", label: "CySAP Africa" },
+  { href: "/services/tech6project", label: "Tech6Project" },
+  { href: "/services/cybouncer", label: "Cybouncer" },
 ];
 
 export default function Footer() {
   return (
-    <footer className="w-full glass rounded-none text-white py-10 px-6 sm:px-10">
-      <div className="max-w-6xl mx-auto">
+    <footer className="w-full bg-gradient-to-br from-orange-50 via-white to-red-50 text-gray-800 py-12 px-4 sm:px-6 lg:px-8 border-t border-orange-200">
+      <div className="max-w-7xl mx-auto">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
+          
           {/* Address Section */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
-              <FiMapPin className="inline-block text-xl" /> Address
-            </h3>
-            <p className="text-sm leading-relaxed">
-              Suite 6, Mgbajiaka Area, Digitanotion Limited,
+          <div className="space-y-4">
+            <div className="flex items-center gap-2 mb-4">
+              <div className="p-2 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg shadow-md">
+                <FiMapPin className="text-white text-lg" />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900">Our Location</h3>
+            </div>
+            <p className="text-sm leading-relaxed text-gray-700">
+              Suite 6, Mgbajiaka Area, Digitanotion Limited
               <br />
-              Along Onisha - Enugu Expy,
+              Along Onisha - Enugu Expressway
               <br />
-              Opposite East-End Hotel, Awka.
-              <span className="block mt-2 font-medium">
-                Open from 9am to 4pm (WAT)
-              </span>
+              Opposite East-End Hotel, Awka
             </p>
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-gradient-to-r from-orange-100 to-red-100 rounded-full border border-orange-200 shadow-sm">
+              <div className="w-2 h-2 bg-gradient-to-r from-orange-500 to-red-500 rounded-full animate-pulse"></div>
+              <span className="text-xs font-semibold text-gray-800">
+                Open 9am - 4pm (WAT)
+              </span>
+            </div>
           </div>
 
-          {/* Quick Links (Academy) */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
+          {/* Academy Links */}
+          <div className="space-y-4">
+            <h3 className="text-lg font-bold text-gray-900 mb-4 relative inline-block">
+              Academy
+              <span className="absolute -bottom-1 left-0 w-8 h-0.5 bg-gradient-to-r from-orange-500 to-red-500 rounded-full"></span>
+            </h3>
+            <ul className="space-y-3">
               {academyItems.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-sm hover:text-emerald-300 transition-colors"
+                    className="group flex items-center gap-2 text-sm text-gray-700 hover:text-orange-600 transition-all duration-300"
                   >
+                    <span className="w-1 h-1 bg-gradient-to-r from-orange-500 to-red-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
                     {item.label}
                   </Link>
                 </li>
@@ -59,15 +67,19 @@ export default function Footer() {
           </div>
 
           {/* Services */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Services</h3>
-            <ul className="space-y-2">
-              {exploreCategories.map((item, index) => (
-                <li key={index}>
+          <div className="space-y-4">
+            <h3 className="text-lg font-bold text-gray-900 mb-4 relative inline-block">
+              Services
+              <span className="absolute -bottom-1 left-0 w-8 h-0.5 bg-gradient-to-r from-orange-500 to-red-500 rounded-full"></span>
+            </h3>
+            <ul className="space-y-3">
+              {exploreCategories.map((item) => (
+                <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-sm hover:text-emerald-300 transition-colors"
+                    className="group flex items-center gap-2 text-sm text-gray-700 hover:text-orange-600 transition-all duration-300"
                   >
+                    <span className="w-1 h-1 bg-gradient-to-r from-orange-500 to-red-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
                     {item.label}
                   </Link>
                 </li>
@@ -75,74 +87,102 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Support Section */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Support</h3>
-            <p className="text-sm leading-relaxed mb-4">
-              +234 80 7373 5836
-              <br />
-              <a
-                href="mailto:hello@digitanotion.com.ng"
-                className="hover:underline text-white"
-              >
-                hello@digitanotion.com.ng
-              </a>
-            </p>
-            <div className="flex gap-4">
-              <a
-                href="https://facebook.com/digitanotion"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Facebook"
-                className="text-white hover:text-emerald-300 text-xl transition-colors"
-              >
-                <FaFacebookF />
-              </a>
-              <a
-                href="https://www.instagram.com/digitanotionsystems/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                className="text-white hover:text-emerald-300 text-xl transition-colors"
-              >
-                <FaInstagram />
-              </a>
-              <a
-                href="https://twitter.com/digitanotion"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Twitter"
-                className="text-white hover:text-emerald-300 text-xl transition-colors"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  width="20"
-                  height="20"
+          {/* Contact & Social */}
+          <div className="space-y-6">
+            <div className="space-y-4">
+              <h3 className="text-lg font-bold text-gray-900 mb-4 relative inline-block">
+                Contact Us
+                <span className="absolute -bottom-1 left-0 w-8 h-0.5 bg-gradient-to-r from-orange-500 to-red-500 rounded-full"></span>
+              </h3>
+              <div className="space-y-2">
+                <a 
+                  href="tel:+2348073735836" 
+                  className="block text-sm text-gray-700 hover:text-orange-600 transition-all duration-300 hover:translate-x-1"
                 >
-                  <path d="M22.46 6c-.77.35-1.6.58-2.47.69a4.3 4.3 0 0 0 1.88-2.37c-.83.5-1.75.87-2.72 1.07A4.28 4.28 0 0 0 16.11 4c-2.37 0-4.29 1.92-4.29 4.29 0 .34.04.67.11.99C7.69 9.13 4.07 7.2 1.64 4.16c-.37.64-.58 1.38-.58 2.17 0 1.5.76 2.83 1.92 3.61-.71-.02-1.38-.22-1.97-.54v.05c0 2.09 1.49 3.83 3.47 4.23-.36.1-.74.16-1.13.16-.28 0-.54-.03-.8-.08.54 1.68 2.11 2.9 3.97 2.93A8.6 8.6 0 0 1 2 19.54c-.29 0-.57-.02-.85-.05A12.13 12.13 0 0 0 8.29 21c7.55 0 11.68-6.26 11.68-11.68 0-.18-.01-.36-.02-.54A8.18 8.18 0 0 0 24 4.59c-.77.34-1.6.57-2.47.68z" />
-                </svg>
-              </a>
-              <a
-                href="https://linkedin.com/company/digitanotion"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-                className="text-white hover:text-emerald-300 text-xl transition-colors"
-              >
-                <FaLinkedinIn />
-              </a>
+                  +234 80 7373 5836
+                </a>
+                <a
+                  href="mailto:hello@digitanotion.com.ng"
+                  className="block text-sm text-gray-700 hover:text-orange-600 transition-all duration-300 hover:translate-x-1"
+                >
+                  hello@digitanotion.com.ng
+                </a>
+              </div>
+            </div>
+
+            {/* Social Links */}
+            <div className="space-y-3">
+              <h4 className="text-sm font-semibold text-gray-900">Follow Us</h4>
+              <div className="flex gap-3">
+                {[
+                  { 
+                    href: "https://facebook.com/digitanotion", 
+                    icon: <FaFacebookF />, 
+                    label: "Facebook",
+                    color: "hover:bg-blue-600"
+                  },
+                  { 
+                    href: "https://www.instagram.com/digitanotionsystems/", 
+                    icon: <FaInstagram />, 
+                    label: "Instagram",
+                    color: "hover:bg-gradient-to-br from-orange-400 to-pink-600"
+                  },
+                  { 
+                    href: "https://twitter.com/digitanotion", 
+                    icon: <FaXTwitter />, 
+                    label: "Twitter",
+                    color: "hover:bg-black"
+                  },
+                  { 
+                    href: "https://linkedin.com/company/digitanotion", 
+                    icon: <FaLinkedinIn />, 
+                    label: "LinkedIn",
+                    color: "hover:bg-blue-700"
+                  },
+                ].map((social) => (
+                  <a
+                    key={social.label}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={social.label}
+                    className={`flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-r from-orange-50 to-red-50 text-gray-700 border border-orange-200 hover:text-white transition-all duration-300 ${social.color} hover:scale-105 hover:shadow-lg hover:shadow-orange-500/20`}
+                  >
+                    <span className="text-lg">{social.icon}</span>
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Divider */}
-        <div className="border-t border-white/40 my-6" />
+        {/* Divider with gradient */}
+        <div className="relative my-8">
+          <div className="absolute inset-0 flex items-center">
+            <div className="w-full border-t border-orange-200"></div>
+          </div>
+          <div className="relative flex justify-center">
+            <div className="px-4 bg-white">
+              <div className="w-16 h-0.5 bg-gradient-to-r from-orange-500 to-red-500 rounded-full"></div>
+            </div>
+          </div>
+        </div>
 
         {/* Copyright */}
-        <div className="text-center text-sm font-light">
-          Copyright © 2025 Digitanotion. All rights reserved.
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+          <div className="text-sm text-gray-600 font-medium">
+            Copyright © {new Date().getFullYear()} Digitanotion. All rights reserved.
+          </div>
+          
+          {/* Tagline with orange-red accent */}
+          <div className="flex items-center gap-2 text-sm">
+            <span className="text-gray-700 font-medium">Building Digital and People Infrastructure.</span>
+            <div className="flex gap-1">
+              <div className="w-1 h-1 bg-orange-500 rounded-full animate-bounce" style={{ animationDelay: "0ms" }}></div>
+              <div className="w-1 h-1 bg-orange-600 rounded-full animate-bounce" style={{ animationDelay: "150ms" }}></div>
+              <div className="w-1 h-1 bg-red-500 rounded-full animate-bounce" style={{ animationDelay: "300ms" }}></div>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

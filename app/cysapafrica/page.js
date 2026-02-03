@@ -1,5 +1,5 @@
-import CysapAfrica from "@/modules/cysapafrica";
+import CySAPAfrica from "@/modules/cysapafrica/index";
 
 export default function CysapAfricaPage() {
-  return <CysapAfrica />;
+  return <CySAPAfrica />;
 }

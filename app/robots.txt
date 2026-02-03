@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://digitanotion.com.ng/sitemap.xml
+
+# Googlebot
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+
+# Bingbot
+User-agent: bingbot
+Allow: /
+Crawl-delay: 2

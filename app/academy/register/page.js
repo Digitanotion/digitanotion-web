@@ -1,11 +1,14 @@
 "use client";
+import { Suspense } from "react";
 import { CourseRegistrationForm } from "@/modules/academy/form";
 import { useSearchParams } from "next/navigation";
 import { Toaster } from "sonner";
 
-export default function RegisterPage() {
+function RegisterContent() {
   const params = useSearchParams();
-  const courseData = JSON.parse(params.get("course"));
+  const courseData = params.get("course")
+    ? JSON.parse(params.get("course"))
+    : null;
 
   console.log(courseData);
 
@@ -22,9 +25,36 @@ export default function RegisterPage() {
               Join us and start your learning journey with Digitanotion
             </p>
           </div>
-          <CourseRegistrationForm courseData={courseData} />
+          {courseData ? (
+            <CourseRegistrationForm courseData={courseData} />
+          ) : (
+            <div className="text-center p-8">
+              <p className="text-lg text-muted-foreground">
+                No course data found. Please select a course first.
+              </p>
+            </div>
+          )}
         </div>
       </section>
     </main>
+  );
+}
+
+export default function RegisterPage() {
+  return (
+    <Suspense
+      fallback={
+        <div className="min-h-screen flex items-center justify-center">
+          <div className="text-center">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto"></div>
+            <p className="mt-4 text-muted-foreground">
+              Loading registration form...
+            </p>
+          </div>
+        </div>
+      }
+    >
+      <RegisterContent />
+    </Suspense>
   );
 }

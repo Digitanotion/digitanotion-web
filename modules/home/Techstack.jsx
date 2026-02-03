@@ -22,14 +22,14 @@ export default function TechStackCarousel({
       className={`flex flex-col justify-center h-[30vh] relative rounded-2xl px-4 lg:px-16`}
       aria-label="Technology stack carousel"
     >
-      <div className="flex items-center justify-between gap-4 mb-6">
+      {/* <div className="flex items-center justify-between gap-4 mb-6">
         <h2 className="text-xl md:text-2xl font-semibold tracking-tight">
           {title}
-        </h2>
+        </h2> 
         <span className="text-xs md:text-sm text-foreground/60">
           Frontend • Backend • DevOps • Cybersecurity
         </span>
-      </div>
+      </div> */}
 
       {/* Single-row carousel for desktop/tablet, two for mobile */}
       <div className="block sm:hidden space-y-4">
