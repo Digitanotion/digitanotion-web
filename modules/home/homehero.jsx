@@ -356,7 +356,7 @@ export default function DigitanotionHeroFB() {
                 itemType="https://schema.org/Action"
               >
                 <Link 
-                  href="/services/software-development/request-quote" 
+                  href="/services" 
                   className="group"
                   itemProp="url"
                   aria-label="Start Your Secure Software Development Project - Get a Quote"
