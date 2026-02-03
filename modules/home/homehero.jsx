@@ -364,7 +364,7 @@ export default function DigitanotionHeroFB() {
                   <div className="relative overflow-hidden rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 p-px shadow-lg hover:shadow-xl transition-shadow">
                     <div className="relative flex items-center justify-center gap-3 px-8 py-4 bg-slate-950/95 backdrop-blur-sm rounded-[11px] hover:bg-transparent transition-all duration-300 group-hover:bg-slate-950/80">
                       <span className="text-white font-bold text-lg">
-                        Start Your Project
+                        Our Services/Programs
                       </span>
                       <ArrowRight className="w-5 h-5 text-white group-hover:translate-x-1 transition-transform" />
                     </div>
