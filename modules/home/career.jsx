@@ -319,7 +319,7 @@ export default function ProblemSection() {
         </motion.div>
 
         {/* CTA */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
@@ -346,7 +346,7 @@ export default function ProblemSection() {
               Learn About Solutions
             </button>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
 
       {/* SEO: Hidden Content for Search Engines */}

@@ -174,7 +174,7 @@ export default function ServicesSection() {
             world-class digital skills.
           </p>
 
-          <Link href="/services/software-development/request-quote">
+          <Link href="https://wa.me/2348073735836?text=Hi!%20I%20am%20interested%20in%20your%20services">
             <GradientButton aria-label="Get started with Digitanotion's cybersecurity, software development, and tech training services">
               Tell us about it
             </GradientButton>

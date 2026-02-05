@@ -74,7 +74,7 @@ const initiatives = [
     ],
     description: "Democratizing cybersecurity education across Africa with free, accessible mentorship for aspiring professionals.",
     image: "/images/cyber-mentorship.jpg",
-    link: "/cybersecurity-mentorship"
+    link: "#"
   }
 ];
 
