@@ -357,7 +357,7 @@ export default function CommunityInitiatives() {
         </motion.div>
 
         {/* Final CTA */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
@@ -382,7 +382,7 @@ export default function CommunityInitiatives() {
               Get Involved
             </Link>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
 
       {/* SEO: Hidden Content for Search Engines */}

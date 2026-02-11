@@ -91,7 +91,7 @@ const allServices = [
       "DevOps Services",
     ],
     cta: "Secure Your Business",
-    cta_link: "/cybouncer",
+    cta_link: "services/cybouncer",
     isFeatured: true,
   },
   {
@@ -264,8 +264,6 @@ const fadeInUp = {
     },
   },
 };
-
-
 
 export default function ServicesPrograms() {
   const [selectedCategory, setSelectedCategory] = useState("all");

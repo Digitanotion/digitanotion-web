@@ -476,7 +476,7 @@ export default function CareersPage() {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="https://forms.gle/your-application-link"
+                  href="https://ng.indeed.com/viewjob?jk=8d5285b0469a82ea&from=shareddesktop_copy"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-8 py-4 rounded-xl bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold hover:shadow-xl hover:shadow-orange-200 transition-all hover:-translate-y-1 flex items-center justify-center gap-2"

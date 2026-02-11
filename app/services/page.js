@@ -1,7 +1,7 @@
 import ServicesPrograms from "../../modules/services/index";
 export const metadata = {
   title:
-    "Cybersecurity Services Awka | Enterprise Security Solutions | Digitanotion",
+    "Cybersecurity Services Awka, Anambra | Website Design and Development | App Development  | Digitanotion",
   description:
     "Professional cybersecurity services in Awka, Anambra. Network security, penetration testing, data protection for businesses across Southeast Nigeria.",
   keywords: [
