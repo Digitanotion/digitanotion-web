@@ -113,22 +113,15 @@ export const academyMetadata = {
     title:
       "Digitanotion Academy - Build Africa's Tech Future from Awka, Anambra",
     description:
-      "🚀 Transform your career with industry-recognized tech certifications. 1000+ trained, 95% job placement. Courses from ₦65,000. Cybersecurity, Web & App Development, Digital Skills.",
+      " Transform your career with industry-recognized tech certifications. 1000+ trained, 95% job placement. Courses from ₦65,000. Cybersecurity, Web & App Development, Digital Skills.",
     url: "https://digitanotion.com.ng/academy",
     siteName: "Digitanotion Academy",
     images: [
       {
-        url: "https://www.digitanotion.com.ng/icon.png",
-        width: 512,
-        height: 512,
-        alt: "Digitanotion Academy - #1 Tech Training in Awka, Anambra, Nigeria",
-        type: "image/png",
-      },
-      {
-        url: "https://www.digitanotion.com.ng/icon.png",
-        width: 192,
-        height: 192,
-        alt: "Digitanotion Academy Logo",
+        url: "https://digitanotion.com.ng/academy/opengraph-image", // Next.js generated image
+        width: 1200,
+        height: 630,
+        alt: "Digitanotion Academy - #1 Tech Training Center in Awka, Anambra, Nigeria",
         type: "image/png",
       },
     ],
@@ -151,7 +144,7 @@ export const academyMetadata = {
     title: "Digitanotion Academy | #1 Tech Training in Awka, Anambra",
     description:
       "Premium tech education in Southeast Nigeria. Cybersecurity, Web Dev, App Dev & more. Affordable courses from ₦65k. 95% job placement. Learn in Awka or online!",
-    images: ["https://www.digitanotion.com.ng/icon.png"],
+    images: ["https://digitanotion.com.ng/academy/twitter-image"],
     creator: "@digitanotion",
     site: "@digitanotion",
   },
