@@ -3,7 +3,7 @@
 import { useState } from "react";
 import FAQ from "./faq";
 import Image from "next/image";
-import Button from "../button";
+// import Button from "../button";
 import { motion } from "framer-motion";
 
 import {
@@ -115,6 +115,14 @@ export default function ProductDesign() {
     language: "English",
     labEnvironment:
       "Cloud-based Figma environment with design kits, UI libraries, prototyping tools, and collaborative workspace",
+  };
+
+  const handleWhatsAppRegistration = () => {
+    const phoneNumber = "+2348073735836";
+    const message = encodeURIComponent(
+      `Hello Digitanotion Academy! I am interested in your Product Design UI/UX Specialization Course (₦120,000) starting March 2026. How do I enroll?`,
+    );
+    window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
   };
 
   return (
@@ -266,7 +274,23 @@ export default function ProductDesign() {
                   Includes Figma workspace access, UI kits, design resources,
                   portfolio review, and career mentorship support
                 </p>
-                <Button data={courseData} />
+                <button
+                  onClick={handleWhatsAppRegistration}
+                  className="w-full px-8 py-4 rounded-xl bg-gradient-to-r from-pink-600 to-purple-600 text-white font-bold hover:shadow-xl hover:shadow-pink-200 transition-all hover:-translate-y-1 flex items-center justify-center gap-3 group"
+                >
+                  <span>Enroll Now - {courseData.price}</span>
+                  <svg
+                    className="w-5 h-5 group-hover:translate-x-1 transition-transform"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </button>
               </div>
             </motion.div>
 
