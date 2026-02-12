@@ -65,7 +65,7 @@ import {
   GiSmartphone,
 } from "react-icons/gi";
 import { FaFigma, FaUserCircle } from "react-icons/fa";
-import { SiAdobexd, SiFramer, SiProtoio, SiInvision } from "react-icons/si";
+import { SiAdobexd, SiFramer, SiProtodotio, SiInvision } from "react-icons/si";
 
 export default function ProductDesign() {
   const courseData = {
@@ -110,7 +110,7 @@ export default function ProductDesign() {
       "Present and justify design decisions to stakeholders",
     ],
     schedule: "Tuesdays, Thursdays, Saturdays | 6PM - 9PM",
-    startDates: ["Mar 4, 2026", "Apr 1, 2026", "May 6, 2026"],
+    startDates: ["Mar 4, 2026"],
     prerequisitesText: "Computing Essentials or equivalent computer skills",
     language: "English",
     labEnvironment:
@@ -129,26 +129,23 @@ export default function ProductDesign() {
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Hero Section */}
       <section className="relative overflow-hidden">
-        {/* Light Gradient Background for Design Theme - Pink/Purple/Blue tones */}
-        <div className="absolute inset-0 bg-gradient-to-br from-pink-50 via-white to-purple-50" />
-        <div className="absolute top-0 right-0 w-96 h-96 bg-pink-100 rounded-full blur-3xl opacity-30" />
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-100 rounded-full blur-3xl opacity-30" />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-100 rounded-full blur-3xl opacity-20" />
+        {/* Light Gradient Background for Design Theme - Orange/Red brand colors */}
+        <div className="absolute inset-0 bg-gradient-to-br from-orange-50 via-white to-red-50" />
+        <div className="absolute top-0 right-0 w-96 h-96 bg-orange-100 rounded-full blur-3xl opacity-30" />
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-red-100 rounded-full blur-3xl opacity-30" />
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-amber-100 rounded-full blur-3xl opacity-20" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 py-16">
           {/* Breadcrumb */}
           <nav className="flex items-center gap-2 mb-8 text-sm md:text-base">
             <a
               href="/academy"
-              className="text-purple-600 hover:text-purple-800 font-medium"
+              className="text-orange-600 hover:text-orange-800 font-medium"
             >
               Academy
             </a>
             <span className="text-gray-400">/</span>
-            <a
-              href="#"
-              className="text-pink-600 hover:text-pink-800 font-medium"
-            >
+            <a href="#" className="text-red-600 hover:text-red-800 font-medium">
               Design
             </a>
             <span className="text-gray-400">/</span>
@@ -170,20 +167,20 @@ export default function ProductDesign() {
                   <RiCheckboxCircleLine /> {courseData.status}
                 </span>
                 {courseData.isNew && (
-                  <span className="px-3 py-1 bg-gradient-to-r from-pink-500 to-purple-500 text-white text-sm font-bold rounded-full">
+                  <span className="px-3 py-1 bg-gradient-to-r from-orange-500 to-red-500 text-white text-sm font-bold rounded-full">
                     SPECIALIZATION
                   </span>
                 )}
-                <span className="px-3 py-1 bg-purple-100 text-purple-800 text-sm font-medium rounded-full">
+                <span className="px-3 py-1 bg-orange-100 text-orange-800 text-sm font-medium rounded-full">
                   {courseData.level}
                 </span>
                 {courseData.hasCertification && (
-                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full flex items-center gap-1">
+                  <span className="px-3 py-1 bg-amber-100 text-amber-800 text-sm font-medium rounded-full flex items-center gap-1">
                     <TbCertificate /> Industry-Recognized Certification
                   </span>
                 )}
                 {courseData.hasLabs && (
-                  <span className="px-3 py-1 bg-pink-100 text-pink-800 text-sm font-medium rounded-full flex items-center gap-1">
+                  <span className="px-3 py-1 bg-orange-100 text-orange-800 text-sm font-medium rounded-full flex items-center gap-1">
                     <MdScience /> {courseData.labCount} Hands-on Projects
                   </span>
                 )}
@@ -192,7 +189,7 @@ export default function ProductDesign() {
               {/* Course Title */}
               <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-4 leading-tight">
                 Product Design
-                <span className="block text-4xl lg:text-5xl bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
+                <span className="block text-4xl lg:text-5xl bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
                   UI/UX Specialization
                 </span>
               </h1>
@@ -207,8 +204,8 @@ export default function ProductDesign() {
               {/* Key Features */}
               <div className="grid grid-cols-2 gap-4 mb-8">
                 <div className="flex items-center gap-3">
-                  <div className="p-2 bg-pink-100 rounded-lg">
-                    <FiClock className="text-pink-600" size={20} />
+                  <div className="p-2 bg-orange-100 rounded-lg">
+                    <FiClock className="text-orange-600" size={20} />
                   </div>
                   <div>
                     <div className="font-semibold text-gray-900">
@@ -232,8 +229,8 @@ export default function ProductDesign() {
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="p-2 bg-purple-100 rounded-lg">
-                    <FiTarget className="text-purple-600" size={20} />
+                  <div className="p-2 bg-amber-100 rounded-lg">
+                    <FiTarget className="text-amber-600" size={20} />
                   </div>
                   <div>
                     <div className="font-semibold text-gray-900">
@@ -243,8 +240,8 @@ export default function ProductDesign() {
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="p-2 bg-amber-100 rounded-lg">
-                    <HiOutlineBeaker className="text-amber-600" size={20} />
+                  <div className="p-2 bg-red-100 rounded-lg">
+                    <HiOutlineBeaker className="text-red-600" size={20} />
                   </div>
                   <div>
                     <div className="font-semibold text-gray-900">
@@ -256,7 +253,7 @@ export default function ProductDesign() {
               </div>
 
               {/* Price Section */}
-              <div className="bg-gradient-to-r from-pink-50 to-purple-50 rounded-2xl p-6 mb-8 border border-pink-200">
+              <div className="bg-gradient-to-r from-orange-50 to-red-50 rounded-2xl p-6 mb-8 border border-orange-200">
                 <div className="flex items-center justify-between mb-4">
                   <div>
                     <div className="text-3xl font-bold text-gray-900">
@@ -266,7 +263,7 @@ export default function ProductDesign() {
                       {courseData.originalPrice}
                     </div>
                   </div>
-                  <div className="px-4 py-2 bg-gradient-to-r from-pink-600 to-purple-600 text-white font-bold rounded-full">
+                  <div className="px-4 py-2 bg-gradient-to-r from-orange-600 to-red-600 text-white font-bold rounded-full">
                     20% OFF
                   </div>
                 </div>
@@ -276,7 +273,7 @@ export default function ProductDesign() {
                 </p>
                 <button
                   onClick={handleWhatsAppRegistration}
-                  className="w-full px-8 py-4 rounded-xl bg-gradient-to-r from-pink-600 to-purple-600 text-white font-bold hover:shadow-xl hover:shadow-pink-200 transition-all hover:-translate-y-1 flex items-center justify-center gap-3 group"
+                  className="w-full px-8 py-4 rounded-xl bg-gradient-to-r from-orange-600 to-red-600 text-white font-bold hover:shadow-xl hover:shadow-orange-200 transition-all hover:-translate-y-1 flex items-center justify-center gap-3 group"
                 >
                   <span>Enroll Now - {courseData.price}</span>
                   <svg
@@ -304,7 +301,8 @@ export default function ProductDesign() {
               <div className="bg-white rounded-2xl border border-gray-200 p-8 shadow-xl">
                 <div className="mb-8">
                   <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
-                    <GiTargeted className="text-pink-600" /> What you'll achieve
+                    <GiTargeted className="text-orange-600" /> What you'll
+                    achieve
                   </h3>
                   <ul className="space-y-3">
                     {courseData.learningOutcomes.map((outcome, index) => (
@@ -359,7 +357,7 @@ export default function ProductDesign() {
 
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-3 flex items-center gap-2">
-                      <TbBrandFigma className="text-pink-600" size={20} />{" "}
+                      <TbBrandFigma className="text-orange-600" size={20} />{" "}
                       Primary Tool
                     </h4>
                     <p className="text-gray-600 text-sm">
@@ -395,25 +393,25 @@ export default function ProductDesign() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-gradient-to-b from-white to-gray-50 rounded-xl border border-gray-200 p-6 text-center hover:shadow-lg transition-shadow hover:border-pink-300 group"
+                className="bg-gradient-to-b from-white to-gray-50 rounded-xl border border-gray-200 p-6 text-center hover:shadow-lg transition-shadow hover:border-orange-300 group"
               >
-                <div className="w-16 h-16 mx-auto mb-4 rounded-xl bg-gradient-to-br from-pink-100 to-purple-100 flex items-center justify-center group-hover:scale-110 transition-transform">
+                <div className="w-16 h-16 mx-auto mb-4 rounded-xl bg-gradient-to-br from-orange-100 to-red-100 flex items-center justify-center group-hover:scale-110 transition-transform">
                   {index === 0 ? (
-                    <MdOutlineDesignServices className="text-pink-600 text-2xl" />
+                    <MdOutlineDesignServices className="text-orange-600 text-2xl" />
                   ) : index === 1 ? (
-                    <TbBrandFigma className="text-purple-600 text-2xl" />
+                    <TbBrandFigma className="text-red-600 text-2xl" />
                   ) : index === 2 ? (
-                    <RiLayoutLine className="text-blue-600 text-2xl" />
+                    <RiLayoutLine className="text-amber-600 text-2xl" />
                   ) : index === 3 ? (
                     <HiOutlineUsers className="text-green-600 text-2xl" />
                   ) : index === 4 ? (
                     <HiOutlineColorSwatch className="text-orange-600 text-2xl" />
                   ) : index === 5 ? (
-                    <FiSmartphone className="text-indigo-600 text-2xl" />
+                    <FiSmartphone className="text-red-600 text-2xl" />
                   ) : index === 6 ? (
                     <FiBook className="text-amber-600 text-2xl" />
                   ) : (
-                    <GiPencilRuler className="text-rose-600 text-2xl" />
+                    <GiPencilRuler className="text-orange-600 text-2xl" />
                   )}
                 </div>
                 <h3 className="font-semibold text-gray-900">{highlight}</h3>
@@ -438,7 +436,7 @@ function Learn() {
       points:
         "Empathy mapping, user personas, problem framing, ideation techniques, and design thinking methodology.",
       icon: HiOutlineLightBulb,
-      color: "from-pink-100 to-rose-100",
+      color: "from-orange-100 to-red-100",
       duration: "1 week",
     },
     {
@@ -447,7 +445,7 @@ function Learn() {
       points:
         "Figma interface mastery, frames, auto layout, components, variants, interactive components, and design systems.",
       icon: TbBrandFigma,
-      color: "from-purple-100 to-indigo-100",
+      color: "from-amber-100 to-orange-100",
       duration: "2 weeks",
     },
     {
@@ -456,7 +454,7 @@ function Learn() {
       points:
         "Color theory, typography, spacing, grids, visual hierarchy, branding systems, and design consistency.",
       icon: MdOutlinePalette,
-      color: "from-blue-100 to-cyan-100",
+      color: "from-orange-100 to-amber-100",
       duration: "1.5 weeks",
     },
     {
@@ -465,7 +463,7 @@ function Learn() {
       points:
         "Low to high-fidelity wireframes, interactive prototypes, micro-interactions, animations, and user flows.",
       icon: FiLayers,
-      color: "from-green-100 to-emerald-100",
+      color: "from-red-100 to-orange-100",
       duration: "1.5 weeks",
     },
     {
@@ -492,7 +490,7 @@ function Learn() {
       points:
         "Creating scalable design systems, component documentation, design tokens, and developer handoff.",
       icon: FiGrid,
-      color: "from-teal-100 to-cyan-100",
+      color: "from-orange-100 to-amber-100",
       duration: "1 week",
     },
     {
@@ -501,7 +499,7 @@ function Learn() {
       points:
         "Case study creation, portfolio website, design presentations, client communication, and job interview preparation.",
       icon: FiAward,
-      color: "from-pink-100 to-purple-100",
+      color: "from-red-100 to-orange-100",
       duration: "1 week",
     },
   ];
@@ -549,7 +547,7 @@ function Learn() {
                     Module {index + 1}
                   </span>
                   {index === 0 && (
-                    <span className="text-xs bg-pink-100 text-pink-800 px-2 py-1 rounded-full">
+                    <span className="text-xs bg-orange-100 text-orange-800 px-2 py-1 rounded-full">
                       Foundation
                     </span>
                   )}
@@ -649,7 +647,7 @@ function Skills() {
         {/* Skills Grid */}
         <div className="mb-16">
           <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-            <MdOutlineDraw className="text-pink-600" /> Core Product Design
+            <MdOutlineDraw className="text-orange-600" /> Core Product Design
             Skills
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
@@ -660,11 +658,11 @@ function Skills() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05 }}
-                className="group relative bg-white rounded-xl p-4 border border-gray-200 hover:border-pink-300 transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-1"
+                className="group relative bg-white rounded-xl p-4 border border-gray-200 hover:border-orange-300 transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-1"
               >
                 <div className="flex items-center gap-3">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-pink-50 flex items-center justify-center group-hover:bg-pink-100 transition-colors">
-                    <HiBadgeCheck className="text-lg text-pink-600" />
+                  <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-orange-50 flex items-center justify-center group-hover:bg-orange-100 transition-colors">
+                    <HiBadgeCheck className="text-lg text-orange-600" />
                   </div>
                   <div className="flex-1">
                     <h3 className="font-semibold text-gray-900 text-sm">
@@ -680,7 +678,7 @@ function Skills() {
         {/* Tools Section */}
         <div className="mb-16">
           <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-            <TbBrandFigma className="text-pink-600" /> Industry Tools You'll
+            <TbBrandFigma className="text-orange-600" /> Industry Tools You'll
             Master
           </h3>
           <div className="flex flex-wrap gap-4">
@@ -688,66 +686,71 @@ function Skills() {
               {
                 name: "Figma",
                 icon: TbBrandFigma,
-                color: "text-pink-600",
-                bg: "bg-pink-100",
+                color: "text-orange-600",
+                bg: "bg-orange-100",
               },
               {
                 name: "Adobe XD",
                 icon: SiAdobexd,
-                color: "text-purple-600",
-                bg: "bg-purple-100",
-              },
-              {
-                name: "Framer",
-                icon: SiFramer,
-                color: "text-blue-600",
-                bg: "bg-blue-100",
-              },
-              {
-                name: "Sketch",
-                icon: TbBrandSketch,
-                color: "text-yellow-600",
-                bg: "bg-yellow-100",
-              },
-              {
-                name: "Proto.io",
-                icon: SiProtoio,
-                color: "text-green-600",
-                bg: "bg-green-100",
-              },
-              {
-                name: "InVision",
-                icon: SiInvision,
                 color: "text-red-600",
                 bg: "bg-red-100",
               },
               {
-                name: "Miro",
-                icon: RiLayoutLine,
+                name: "Framer",
+                icon: SiFramer,
                 color: "text-amber-600",
                 bg: "bg-amber-100",
               },
               {
+                name: "Sketch",
+                icon: TbBrandSketch,
+                color: "text-orange-600",
+                bg: "bg-orange-100",
+              },
+              {
+                name: "Proto.io",
+                icon: SiProtodotio,
+                color: "text-red-600",
+                bg: "bg-red-100",
+              },
+              {
+                name: "InVision",
+                icon: SiInvision,
+                color: "text-amber-600",
+                bg: "bg-amber-100",
+              },
+              {
+                name: "Miro",
+                icon: FiGrid,
+                color: "text-orange-600",
+                bg: "bg-orange-100",
+              },
+              {
                 name: "Webflow",
                 icon: FiGlobe,
-                color: "text-cyan-600",
-                bg: "bg-cyan-100",
+                color: "text-red-600",
+                bg: "bg-red-100",
               },
-            ].map((tool, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.05 }}
-                className="group flex items-center gap-3 px-4 py-3 rounded-xl bg-white border border-gray-200 hover:border-pink-300 shadow-sm hover:shadow-md transition-all"
-              >
-                <div className={`p-2 rounded-lg ${tool.bg}`}>
-                  <tool.icon className={`${tool.color} text-lg`} />
-                </div>
-                <span className="font-semibold text-gray-900">{tool.name}</span>
-              </motion.div>
-            ))}
+            ].map((tool, index) => {
+              const IconComponent = tool.icon;
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.05 }}
+                  className="group flex items-center gap-3 px-4 py-3 rounded-xl bg-white border border-gray-200 hover:border-orange-300 shadow-sm hover:shadow-md transition-all"
+                >
+                  <div className={`p-2 rounded-lg ${tool.bg}`}>
+                    <IconComponent className={`${tool.color} text-lg`} />
+                  </div>
+                  <span className="font-semibold text-gray-900">
+                    {tool.name}
+                  </span>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
 
@@ -757,7 +760,7 @@ function Skills() {
             <h3 className="text-2xl font-bold text-gray-900">
               Portfolio Projects
             </h3>
-            <span className="px-3 py-1 bg-gradient-to-r from-pink-100 to-purple-100 text-pink-800 text-sm font-medium rounded-full flex items-center gap-1">
+            <span className="px-3 py-1 bg-gradient-to-r from-orange-100 to-red-100 text-orange-800 text-sm font-medium rounded-full flex items-center gap-1">
               <MdScience /> 15+ Hands-on Projects
             </span>
           </div>
@@ -770,12 +773,12 @@ function Skills() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-gradient-to-br from-white to-gray-50 rounded-xl border border-gray-200 p-6 hover:shadow-lg transition-all group hover:border-pink-200"
+                className="bg-gradient-to-br from-white to-gray-50 rounded-xl border border-gray-200 p-6 hover:shadow-lg transition-all group hover:border-orange-200"
               >
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0">
-                    <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-pink-100 to-purple-100 flex items-center justify-center">
-                      <span className="font-bold text-pink-800">
+                    <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-orange-100 to-red-100 flex items-center justify-center">
+                      <span className="font-bold text-orange-800">
                         P{index < 9 ? "0" + (index + 1) : index + 1}
                       </span>
                     </div>
@@ -803,7 +806,7 @@ function Skills() {
                       <span className="text-xs text-gray-500 flex items-center gap-1">
                         <FiClock size={12} /> {project.duration}
                       </span>
-                      <span className="text-xs bg-pink-100 text-pink-800 px-2 py-1 rounded-full">
+                      <span className="text-xs bg-orange-100 text-orange-800 px-2 py-1 rounded-full">
                         Portfolio Project
                       </span>
                     </div>
