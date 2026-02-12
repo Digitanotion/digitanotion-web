@@ -118,7 +118,7 @@ const learningPaths = [
         color: "from-orange-500 to-red-500",
       },
       {
-        id: "web-development",
+        id: "web-frontend-development",
         name: "Web Front-End Engineer (Specialization)",
         description:
           "Build scalable web applications with modern frameworks like React and Node.js",
@@ -289,13 +289,13 @@ const learningPaths = [
         name: "Product Design (UI/UX)",
         description:
           "Design beautiful and functional user interfaces with modern design principles",
-        duration: "10 weeks",
+        duration: "9 weeks",
         level: "Intermediate",
         format: "Onsite/Online",
         price: "₦120,000",
-        originalPrice: "₦140,000",
+        originalPrice: "₦150,000",
         status: "Available",
-        isNew: false,
+        isNew: true,
         link: "/academy/product-design",
         icon: FaPalette,
         highlights: [
