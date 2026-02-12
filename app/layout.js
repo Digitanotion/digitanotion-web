@@ -363,9 +363,6 @@ const organizationSchema = {
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.8",
-    reviewCount: "50",
-    bestRating: "5",
-    worstRating: "1",
   },
   sameAs: [
     "https://facebook.com/digitanotion",
