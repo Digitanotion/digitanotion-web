@@ -294,9 +294,9 @@ const learningPaths = [
         format: "Onsite/Online",
         price: "₦110,000",
         originalPrice: "₦140,000",
-        status: "Not Available",
+        status: "Available",
         isNew: false,
-        link: "#",
+        link: "/academy/product-design",
         icon: FaPalette,
         highlights: [
           "Figma/Sketch",
