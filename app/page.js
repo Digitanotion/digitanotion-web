@@ -36,7 +36,7 @@ export const metadata = {
     url: "https://digitanotion.com.ng",
     images: [
       {
-        url: "https://digitanotion.com.ng/og-home.jpg",
+        url: "https://www.digitanotion.com.ng/icon.png",
         width: 1200,
         height: 630,
         alt: "Digitanotion Home - Cyber Security & Software Development",

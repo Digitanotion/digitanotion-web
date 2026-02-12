@@ -227,7 +227,7 @@ export const metadata = {
       "Top-tier cyber security solutions and cutting-edge software development services in Awka, Anambra State.",
     images: [
       {
-        url: "https://digitanotion.com.ng/og-image.png",
+        url: "https://www.digitanotion.com.ng/icon.png",
         width: 1200,
         height: 630,
         alt: "Digitanotion - Cyber Security & Software Development",
@@ -239,7 +239,7 @@ export const metadata = {
     title: "Digitanotion | #1 Tech Company in Anambra State",
     description:
       "Cyber security, software development, and digital training services in Southeast Nigeria",
-    images: ["https://digitanotion.com.ng/twitter-card.png"],
+    images: ["https://www.digitanotion.com.ng/icon.png"],
     creator: "@digitanotion",
   },
   verification: {
@@ -264,7 +264,7 @@ const organizationSchema = {
   description:
     "Leading cyber security and tech innovation company in Awka, Anambra State, Nigeria",
   url: "https://digitanotion.com.ng",
-  logo: "https://digitanotion.com.ng/images/digitanotion-logo.png",
+  logo: "https://www.digitanotion.com.ng/icon.png",
 
   // Enhanced Address Information
   address: {
