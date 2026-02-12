@@ -27,8 +27,8 @@ const ProductDesignContent = dynamic(
           </div>
         </div>
       </div>
-    ),
-  },
+    ), // <-- Make sure this closing parenthesis is here!
+  }, // <-- Make sure this closing brace is here!
 );
 
 export default function ProductDesignPage() {
