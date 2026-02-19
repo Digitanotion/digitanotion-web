@@ -227,7 +227,7 @@ export const metadata = {
       "Top-tier cyber security solutions and cutting-edge software development services in Awka, Anambra State.",
     images: [
       {
-        url: "https://www.digitanotion.com.ng/icon.png",
+        url: "https://digitanotion.com.ng/opengraph-image",
         width: 1200,
         height: 630,
         alt: "Digitanotion - Cyber Security & Software Development",

@@ -22,7 +22,7 @@ export default function Icon() {
       }}
     >
       {/* You can also use an img tag if you want to show your logo */}
-      <img src="/favicon.png" />
+      DN
     </div>,
     {
       ...size,

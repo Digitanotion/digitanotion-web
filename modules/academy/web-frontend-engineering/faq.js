@@ -28,8 +28,7 @@ const faqs = [
         >
           Computing Essentials
         </a>{" "}
-        course or equivalent computer skills, plus HTML, CSS & JavaScript
-        fundamentals.
+        course or equivalent computer skills.
       </>
     ),
   },
