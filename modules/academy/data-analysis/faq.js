@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiChevronDown } from "react-icons/fi";
-import { TbBrandPowerbi } from "react-icons/tb";
+import { TbChartInfographic } from "react-icons/tb";
 
 const faqs = [
   {
@@ -61,7 +61,7 @@ export default function FAQ() {
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-orange-100 to-red-100 mb-6">
-            <TbBrandPowerbi className="text-orange-600" size={20} />
+            <TbChartInfographic className="text-orange-600" size={20} />
             <span className="text-sm font-semibold text-orange-700">
               Got Questions? We've Got Answers
             </span>

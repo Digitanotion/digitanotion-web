@@ -121,7 +121,7 @@ const learningPaths = [
         id: "web-frontend-development",
         name: "Web Front-End Engineer (Specialization)",
         description:
-          "Build scalable web applications with modern frameworks like React and Node.js",
+          "Build scalable web applications with modern frameworks like React",
         duration: "14 weeks",
         level: "Intermediate",
         format: "Onsite/Online",
@@ -166,12 +166,12 @@ const learningPaths = [
         format: "Onsite",
         price: "₦270,000",
         originalPrice: "₦350,000",
-        status: "Not Avaliable",
+        status: "Avaliable",
         isNew: false,
-        link: "#",
+        link: "/academy/backend-engineer",
         icon: FaServer,
         highlights: [
-          "PHP (Laravel)/Node.js",
+          "PHP (Laravel)",
           "Building APIS",
           "Database Design",
           "Microservices",
@@ -387,7 +387,7 @@ const learningPaths = [
     courses: [
       {
         id: "data-analytics",
-        name: "Data Analytics",
+        name: "Data Analysis",
         description:
           "Transform data into insights with statistical analysis and visualization",
         duration: "12 weeks",
@@ -395,9 +395,9 @@ const learningPaths = [
         format: "Onsite/Online",
         price: "₦130,000",
         originalPrice: "₦170,000",
-        status: "Not Available",
+        status: "Available",
         isNew: true,
-        link: "#",
+        link: "/academy/data-analysis",
         icon: FaChartBar,
         highlights: [
           "SQL/Python",
@@ -890,7 +890,10 @@ export default function AcademyPage() {
               {learningPaths.map(
                 (path) =>
                   path.id === selectedPath && (
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div
+                      key={path.id} // Add this key prop
+                      className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+                    >
                       {path.courses.map((course, idx) => (
                         <motion.div
                           key={course.id}

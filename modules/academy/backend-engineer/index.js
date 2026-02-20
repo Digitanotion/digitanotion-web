@@ -59,21 +59,16 @@ import {
   TbApi,
   TbCloudComputing,
 } from "react-icons/tb";
-import {
-  GiTargeted,
-  GiNetworkCables,
-  GiProcessor,
-  GiDatabase,
-} from "react-icons/gi";
+import { GiTargeted, GiNetworkCables, GiProcessor } from "react-icons/gi";
 import {
   SiPhp,
   SiLaravel,
   SiMysql,
   SiPostgresql,
   SiDocker,
-  SiAmazonaws,
   SiFirebase,
 } from "react-icons/si";
+// AWS icon might need a different approach
 
 export default function BackendEngineer() {
   const courseData = {
@@ -493,7 +488,7 @@ function Learn() {
       title: "Cloud Deployment (AWS)",
       points:
         "AWS EC2, RDS, S3, Elastic Beanstalk, environment configuration, CI/CD pipelines, and server management.",
-      icon: SiAmazonaws,
+      icon: FiCloud, // Replaced SiAmazonaws with FiCloud
       color: "from-amber-100 to-yellow-100",
       duration: "1 week",
     },
@@ -706,7 +701,7 @@ function Skills() {
               },
               {
                 name: "AWS",
-                icon: SiAmazonaws,
+                icon: FiCloud, // Replaced SiAmazonaws with FiCloud
                 color: "text-amber-600",
                 bg: "bg-amber-100",
               },

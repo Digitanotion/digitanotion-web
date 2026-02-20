@@ -51,20 +51,15 @@ import {
 } from "react-icons/md";
 import {
   TbCertificate,
-  TbBrandPowerbi,
   TbFileSpreadsheet,
   TbSql,
   TbChartBar,
   TbChartPie,
+  TbChartInfographic,
 } from "react-icons/tb";
+import { GiTargeted, GiMagnifyingGlass, GiChart } from "react-icons/gi";
 import {
-  GiTargeted,
-  GiStatistical,
-  GiMagnifyingGlass,
-  GiChart,
-} from "react-icons/gi";
-import {
-  SiPowerbi,
+  // Use alternative icons since these might not exist
   SiMicrosoftexcel,
   SiMysql,
   SiPostgresql,
@@ -363,7 +358,10 @@ export default function DataAnalysis() {
 
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-3 flex items-center gap-2">
-                      <TbBrandPowerbi className="text-orange-600" size={20} />{" "}
+                      <TbChartInfographic
+                        className="text-orange-600"
+                        size={20}
+                      />{" "}
                       Primary Tools
                     </h4>
                     <p className="text-gray-600 text-sm">
@@ -404,17 +402,17 @@ export default function DataAnalysis() {
               >
                 <div className="w-16 h-16 mx-auto mb-4 rounded-xl bg-gradient-to-br from-orange-100 to-red-100 flex items-center justify-center group-hover:scale-110 transition-transform">
                   {index === 0 ? (
-                    <SiPowerbi className="text-orange-600 text-2xl" />
+                    <TbChartInfographic className="text-orange-600 text-2xl" />
                   ) : index === 1 ? (
-                    <SiMicrosoftexcel className="text-green-600 text-2xl" />
+                    <TbFileSpreadsheet className="text-green-600 text-2xl" />
                   ) : index === 2 ? (
-                    <SiMysql className="text-blue-600 text-2xl" />
+                    <TbSql className="text-blue-600 text-2xl" />
                   ) : index === 3 ? (
                     <FiPieChart className="text-purple-600 text-2xl" />
                   ) : index === 4 ? (
                     <FiTrendingUp className="text-amber-600 text-2xl" />
                   ) : index === 5 ? (
-                    <GiStatistical className="text-red-600 text-2xl" />
+                    <FiBarChart2 className="text-red-600 text-2xl" />
                   ) : index === 6 ? (
                     <FiDatabase className="text-cyan-600 text-2xl" />
                   ) : (
@@ -442,7 +440,7 @@ function Learn() {
       title: "Excel for Data Analysis",
       points:
         "Power Query, PivotTables, advanced formulas, DAX, data modeling, and what-if analysis.",
-      icon: SiMicrosoftexcel,
+      icon: TbFileSpreadsheet,
       color: "from-green-100 to-emerald-100",
       duration: "3 weeks",
     },
@@ -451,7 +449,7 @@ function Learn() {
       title: "SQL Database Querying",
       points:
         "SELECT statements, JOINs, aggregations, subqueries, window functions, and query optimization.",
-      icon: SiMysql,
+      icon: TbSql,
       color: "from-blue-100 to-cyan-100",
       duration: "3 weeks",
     },
@@ -460,7 +458,7 @@ function Learn() {
       title: "Power BI Fundamentals",
       points:
         "Data import, transformation, data modeling, DAX formulas, and basic visualizations.",
-      icon: SiPowerbi,
+      icon: TbChartInfographic,
       color: "from-orange-100 to-amber-100",
       duration: "2 weeks",
     },
@@ -469,7 +467,7 @@ function Learn() {
       title: "Advanced Power BI Dashboards",
       points:
         "Interactive dashboards, drill-through, bookmarks, parameters, and Row-Level Security.",
-      icon: TbBrandPowerbi,
+      icon: TbChartInfographic,
       color: "from-red-100 to-orange-100",
       duration: "2 weeks",
     },
@@ -496,7 +494,7 @@ function Learn() {
       title: "Statistical Analysis",
       points:
         "Descriptive statistics, correlation, regression, forecasting, and trend analysis.",
-      icon: GiStatistical,
+      icon: FiBarChart2,
       color: "from-indigo-100 to-blue-100",
       duration: "1 week",
     },
@@ -678,26 +676,26 @@ function Skills() {
         {/* Tools Section */}
         <div className="mb-16">
           <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-            <TbBrandPowerbi className="text-orange-600" /> Industry Tools You'll
-            Master
+            <TbChartInfographic className="text-orange-600" /> Industry Tools
+            You'll Master
           </h3>
           <div className="flex flex-wrap gap-4">
             {[
               {
                 name: "Power BI",
-                icon: SiPowerbi,
+                icon: TbChartInfographic,
                 color: "text-orange-600",
                 bg: "bg-orange-100",
               },
               {
                 name: "Excel",
-                icon: SiMicrosoftexcel,
+                icon: TbFileSpreadsheet,
                 color: "text-green-600",
                 bg: "bg-green-100",
               },
               {
                 name: "SQL Server",
-                icon: SiMysql,
+                icon: TbSql,
                 color: "text-blue-600",
                 bg: "bg-blue-100",
               },
@@ -715,19 +713,19 @@ function Skills() {
               },
               {
                 name: "Tableau",
-                icon: SiTableau,
+                icon: FiPieChart,
                 color: "text-amber-600",
                 bg: "bg-amber-100",
               },
               {
                 name: "PostgreSQL",
-                icon: SiPostgresql,
+                icon: FiDatabase,
                 color: "text-cyan-600",
                 bg: "bg-cyan-100",
               },
               {
                 name: "Google Analytics",
-                icon: SiGoogleanalytics,
+                icon: FiTrendingUp,
                 color: "text-yellow-600",
                 bg: "bg-yellow-100",
               },
