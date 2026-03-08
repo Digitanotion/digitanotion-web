@@ -1,5 +1,5 @@
 // app/sitemap.js
-const baseUrl = "https://digitanotion.com.ng";
+const baseUrl = "https://www.digitanotion.com.ng";
 
 // Define all your static routes
 const staticRoutes = [
