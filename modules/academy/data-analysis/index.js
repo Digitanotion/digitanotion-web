@@ -4,6 +4,7 @@ import { useState } from "react";
 import FAQ from "./faq";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 import {
   RiCheckboxCircleLine,
@@ -125,6 +126,8 @@ export default function DataAnalysis() {
     );
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
   };
+
+  const router = useRouter();
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
@@ -273,7 +276,7 @@ export default function DataAnalysis() {
                   practice files, and career mentorship support
                 </p>
                 <button
-                  onClick={handleWhatsAppRegistration}
+                  onClick={router.push("/academy/register")}
                   className="w-full px-8 py-4 rounded-xl bg-gradient-to-r from-orange-600 to-red-600 text-white font-bold hover:shadow-xl hover:shadow-orange-200 transition-all hover:-translate-y-1 flex items-center justify-center gap-3 group"
                 >
                   <span>Enroll Now - {courseData.price}</span>
