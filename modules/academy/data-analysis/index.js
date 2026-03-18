@@ -276,7 +276,7 @@ export default function DataAnalysis() {
                   practice files, and career mentorship support
                 </p>
                 <button
-                  onClick={router.push("/academy/register")}
+                  onClick={() => router.push("/academy/register")}
                   className="w-full px-8 py-4 rounded-xl bg-gradient-to-r from-orange-600 to-red-600 text-white font-bold hover:shadow-xl hover:shadow-orange-200 transition-all hover:-translate-y-1 flex items-center justify-center gap-3 group"
                 >
                   <span>Enroll Now - {courseData.price}</span>
