@@ -259,12 +259,33 @@ export const metadata = {
 
 const organizationSchema = {
   "@context": "https://schema.org",
-  "@type": ["ProfessionalService", "EducationalOrganization", "LocalBusiness"],
-  name: "Digitanotion Systems",
+  "@type": [
+    "ProfessionalService",
+    "EducationalOrganization",
+    "LocalBusiness",
+    "Organization",
+  ],
+  name: "Digitanotion Limited",
+  alternateName: "Digitanotion",
+  foundingDate: "2019",
   description:
-    "Leading cyber security and tech innovation company in Awka, Anambra State, Nigeria",
+    "A Leading Cybersecurity & Tech Innovation Center since 2019. Building digital resilience through Security, Innovation, and Skills Development. Digitanotion combines cutting-edge cybersecurity, custom app development, and tech talent training to build resilient, future-proof businesses. We build Digital and People infrastructure. We build, secure and empower.",
   url: "https://digitanotion.com.ng",
   logo: "https://www.digitanotion.com.ng/icon.png",
+
+  // Slogan/Tagline
+  slogan:
+    "Building Digital Resilience Through Security, Innovation & Skills Development",
+
+  // What We Do - Concise
+  knowsAbout: [
+    "Cybersecurity",
+    "Innovation",
+    "Skills Development",
+    "Digital Resilience",
+    "People Infrastructure",
+    "Digital Infrastructure",
+  ],
 
   // Enhanced Address Information
   address: {
@@ -283,7 +304,27 @@ const organizationSchema = {
     longitude: 7.071666,
   },
 
-  // Service Areas - CRITICAL FOR LOCAL SEO
+  // Contact Information
+  telephone: "+234-807-373-5836", // Add your phone number
+  email: "info@digitanotion.com.ng",
+
+  // Opening Hours
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "09:00",
+      closes: "18:00",
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: "Saturday",
+      opens: "10:00",
+      closes: "16:00",
+    },
+  ],
+
+  // Service Areas
   areaServed: [
     {
       "@type": "City",
@@ -307,15 +348,18 @@ const organizationSchema = {
     },
   ],
 
-  // Services Offered - Helps with service-specific searches
+  // Core Pillars - Organized by your main focus areas
   makesOffer: [
+    // ===== SECURITY PILLAR =====
     {
       "@type": "Offer",
       itemOffered: {
-        "@type": "Service",
-        name: "Cybersecurity Services",
-        description: "Professional cyber security solutions for businesses",
+        "@type": ["Service", "Course"],
+        name: "Cybersecurity & Ethical Hacking",
+        description:
+          "Professional cybersecurity services and ethical hacking training to protect and secure digital assets",
         serviceType: "Cybersecurity",
+        category: ["Security", "Training"],
         areaServed: [
           "Awka",
           "Anambra",
@@ -323,15 +367,113 @@ const organizationSchema = {
           "Nigeria",
           "Africa",
         ],
+        offers: {
+          "@type": "AggregateOffer",
+          offerCount: "2",
+          offers: [
+            {
+              "@type": "Offer",
+              name: "Security Operations Services",
+              description:
+                "Penetration testing, vulnerability assessment, security audits, and SOC services",
+            },
+            {
+              "@type": "Offer",
+              name: "Ethical Hacking Training",
+              description:
+                "Certified ethical hacking courses and security training programs",
+            },
+          ],
+        },
       },
     },
+
+    // ===== INNOVATION PILLAR =====
+    // 1. Web Development
     {
       "@type": "Offer",
       itemOffered: {
-        "@type": "Service",
-        name: "Software Development",
-        description: "Custom software and app development",
+        "@type": ["Service", "Course"],
+        name: "Web Development & Innovation",
+        description:
+          "Cutting-edge web development services and training programs building modern digital solutions",
+        serviceType: "Web Development",
+        category: ["Development", "Training", "Innovation"],
+        areaServed: [
+          "Awka",
+          "Anambra",
+          "Southeast Nigeria",
+          "Nigeria",
+          "Africa",
+        ],
+        offers: {
+          "@type": "AggregateOffer",
+          offerCount: "2",
+          offers: [
+            {
+              "@type": "Offer",
+              name: "Web Development Services",
+              description:
+                "Custom website development, e-commerce solutions, and web applications",
+            },
+            {
+              "@type": "Offer",
+              name: "Web Development Training",
+              description:
+                "Comprehensive web development bootcamps and courses",
+            },
+          ],
+        },
+      },
+    },
+
+    // 2. Mobile App Development
+    {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": ["Service", "Course"],
+        name: "Mobile App Development & Innovation",
+        description:
+          "Innovative mobile app development services and training for iOS and Android platforms",
+        serviceType: "Mobile Development",
+        category: ["Development", "Training", "Innovation"],
+        areaServed: [
+          "Awka",
+          "Anambra",
+          "Southeast Nigeria",
+          "Nigeria",
+          "Africa",
+        ],
+        offers: {
+          "@type": "AggregateOffer",
+          offerCount: "2",
+          offers: [
+            {
+              "@type": "Offer",
+              name: "Mobile App Development Services",
+              description: "Native and cross-platform mobile app development",
+            },
+            {
+              "@type": "Offer",
+              name: "Mobile App Development Training",
+              description:
+                "iOS, Android, and cross-platform development courses",
+            },
+          ],
+        },
+      },
+    },
+
+    // 3. Software Development
+    {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": ["Service", "Course"],
+        name: "Custom Software Development",
+        description:
+          "Innovative custom software solutions and programming training",
         serviceType: "Software Development",
+        category: ["Development", "Training", "Innovation"],
         areaServed: [
           "Awka",
           "Anambra",
@@ -339,31 +481,415 @@ const organizationSchema = {
           "Nigeria",
           "Africa",
         ],
+        offers: {
+          "@type": "AggregateOffer",
+          name: "Software Solutions",
+          description: "Custom software development and programming training",
+        },
       },
     },
+
+    // 4. UI/UX & Product Design
+    {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": ["Service", "Course"],
+        name: "UI/UX Design & Product Innovation",
+        description:
+          "Professional UI/UX design services and comprehensive product design and management training",
+        serviceType: "Design Services",
+        category: ["Design", "Training", "Innovation", "Management"],
+        areaServed: [
+          "Awka",
+          "Anambra",
+          "Southeast Nigeria",
+          "Nigeria",
+          "Africa",
+        ],
+        offers: {
+          "@type": "AggregateOffer",
+          offerCount: "3",
+          offers: [
+            {
+              "@type": "Offer",
+              name: "UI/UX Design Services",
+              description:
+                "Professional UI/UX design for web and mobile applications",
+            },
+            {
+              "@type": "Offer",
+              name: "UI/UX Design Training",
+              description: "Comprehensive UI/UX design courses and workshops",
+            },
+            {
+              "@type": "Offer",
+              name: "Product Management Training",
+              description:
+                "Product management and product design training programs",
+            },
+          ],
+        },
+      },
+    },
+
+    // ===== SKILLS DEVELOPMENT PILLAR =====
+    // 1. Data Analysis Training
+    {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Course",
+        name: "Data Analysis Training",
+        description:
+          "Comprehensive data analysis training including Excel, Power BI, Python, and SQL for building data skills",
+        serviceType: "Data Science Training",
+        category: "Training",
+        areaServed: [
+          "Awka",
+          "Anambra",
+          "Southeast Nigeria",
+          "Nigeria",
+          "Africa",
+        ],
+        offers: {
+          "@type": "AggregateOffer",
+          name: "Data Analysis Programs",
+          description:
+            "Multiple data analysis training programs for different skill levels",
+        },
+      },
+    },
+
+    // 2. Digital Marketing
+    {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": ["Service", "Course"],
+        name: "Digital Marketing Services & Training",
+        description:
+          "Comprehensive digital marketing services and training including SEO, social media, content marketing, and PPC",
+        serviceType: "Digital Marketing",
+        category: ["Marketing", "Training"],
+        areaServed: [
+          "Awka",
+          "Anambra",
+          "Southeast Nigeria",
+          "Nigeria",
+          "Africa",
+        ],
+        offers: {
+          "@type": "AggregateOffer",
+          offerCount: "2",
+          offers: [
+            {
+              "@type": "Offer",
+              name: "Digital Marketing Services",
+              description:
+                "SEO, social media management, content marketing, and PPC advertising",
+            },
+            {
+              "@type": "Offer",
+              name: "Digital Marketing Training",
+              description:
+                "Comprehensive digital marketing courses and certifications",
+            },
+          ],
+        },
+      },
+    },
+
+    // 3. Python Programming Training
+    {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Course",
+        name: "Python Programming Training",
+        description:
+          "Comprehensive Python programming courses from beginner to advanced levels",
+        serviceType: "Programming Training",
+        category: "Training",
+        areaServed: [
+          "Awka",
+          "Anambra",
+          "Southeast Nigeria",
+          "Nigeria",
+          "Africa",
+        ],
+        offers: {
+          "@type": "AggregateOffer",
+          name: "Python Programs",
+          description:
+            "Multiple Python training programs for different skill levels and specializations",
+        },
+      },
+    },
+
+    // 4. Coding & Programming Training
+    {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Course",
+        name: "Coding & Programming Training",
+        description:
+          "Comprehensive coding and programming courses in various languages and technologies",
+        serviceType: "Programming Training",
+        category: "Training",
+        areaServed: [
+          "Awka",
+          "Anambra",
+          "Southeast Nigeria",
+          "Nigeria",
+          "Africa",
+        ],
+        offers: {
+          "@type": "AggregateOffer",
+          name: "Coding Programs",
+          description:
+            "Multiple programming courses including JavaScript, Java, C#, and more",
+        },
+      },
+    },
+
+    // 5. Institutional Training
+    {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Course",
+        name: "Institutional Training Programs",
+        description:
+          "Specialized tech training programs for secondary schools and tertiary institutions",
+        serviceType: "Educational Services",
+        category: ["Education", "Training"],
+        areaServed: ["Awka", "Anambra", "Southeast Nigeria", "Nigeria"],
+        offers: {
+          "@type": "AggregateOffer",
+          offerCount: "2",
+          offers: [
+            {
+              "@type": "Offer",
+              name: "Secondary School Programs",
+              description:
+                "Coding and digital skills programs for secondary school students",
+            },
+            {
+              "@type": "Offer",
+              name: "Tertiary Institution Programs",
+              description:
+                "Advanced tech training and certification programs for university students",
+            },
+          ],
+        },
+      },
+    },
+
+    // 6. Staff Training
+    {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Course",
+        name: "Corporate Staff Training",
+        description:
+          "Professional development and tech training programs for corporate staff and organizations",
+        serviceType: "Corporate Training",
+        category: ["Training", "Corporate Services"],
+        areaServed: ["Awka", "Anambra", "Southeast Nigeria", "Nigeria"],
+        offers: {
+          "@type": "AggregateOffer",
+          name: "Corporate Training Programs",
+          description:
+            "Customized tech training solutions for businesses and organizations",
+        },
+      },
+    },
+
+    // ===== PEOPLE INFRASTRUCTURE =====
+    // Workspace / Co-working Space
     {
       "@type": "Offer",
       itemOffered: {
         "@type": "Service",
-        name: "Tech Training",
-        description: "Digital skills training and certification",
-        serviceType: "Education",
-        areaServed: [
-          "Awka",
-          "Anambra",
-          "Southeast Nigeria",
-          "Nigeria",
-          "Africa",
-        ],
+        name: "Co-working & Innovation Space",
+        description:
+          "Modern co-working space and innovation hub in Awka for tech professionals, startups, and digital creators - Building people infrastructure",
+        serviceType: "Workspace Rental",
+        category: ["Workspace", "Infrastructure", "Innovation"],
+        areaServed: "Awka",
+        offers: {
+          "@type": "AggregateOffer",
+          name: "Workspace Options",
+          description:
+            "Flexible workspace solutions including hot desks, dedicated desks, and private offices",
+        },
       },
     },
+  ],
+
+  // Awards and Recognition (if any)
+  award: [
+    "Leading Cybersecurity & Tech Innovation Center in Anambra State",
+    // Add any awards you've won
   ],
 
   // Reviews/Testimonials Schema
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.8",
+    ratingCount: "50", // Required field - update with actual number
+    bestRating: "5",
+    worstRating: "1",
   },
+
+  // Payment Methods
+  paymentAccepted: ["Cash", "Credit Card", "Bank Transfer", "POS"],
+
+  // Price Range (₦ = inexpensive, ₦₦₦₦ = premium)
+  priceRange: "₦₦",
+
+  // Has Offer Catalog (Organized by your three pillars)
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Digitanotion Limited Services",
+    description:
+      "Building digital resilience through Security, Innovation, and Skills Development",
+    itemListElement: [
+      {
+        "@type": "OfferCatalog",
+        name: "🔒 Security Pillar",
+        description: "Professional cybersecurity services and training",
+        itemListElement: [
+          {
+            "@type": "Offer",
+            itemOffered: { "@type": "Service", name: "Cybersecurity Services" },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: { "@type": "Service", name: "Ethical Hacking" },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: { "@type": "Service", name: "Security Operations" },
+          },
+        ],
+      },
+      {
+        "@type": "OfferCatalog",
+        name: "💡 Innovation Pillar",
+        description: "Cutting-edge development and design services",
+        itemListElement: [
+          {
+            "@type": "Offer",
+            itemOffered: { "@type": "Service", name: "Web Development" },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: { "@type": "Service", name: "Mobile App Development" },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Custom Software Development",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: { "@type": "Service", name: "UI/UX Design" },
+          },
+        ],
+      },
+      {
+        "@type": "OfferCatalog",
+        name: "📚 Skills Development Pillar",
+        description: "Comprehensive tech training programs",
+        itemListElement: [
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Course",
+              name: "Web Development Training",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Course",
+              name: "Mobile App Development Training",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: { "@type": "Course", name: "Data Analysis Training" },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: { "@type": "Course", name: "Python Programming" },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: { "@type": "Course", name: "Digital Marketing" },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: { "@type": "Course", name: "UI/UX Design Training" },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: { "@type": "Course", name: "Institutional Training" },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Course",
+              name: "Corporate Staff Training",
+            },
+          },
+        ],
+      },
+      {
+        "@type": "OfferCatalog",
+        name: "🏢 People Infrastructure",
+        description: "Workspace and community building",
+        itemListElement: [
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Co-working & Innovation Space",
+            },
+          },
+        ],
+      },
+    ],
+  },
+
+  // Keywords
+  keywords: [
+    "Cybersecurity",
+    "Innovation",
+    "Skills Development",
+    "Digital Resilience",
+    "People Infrastructure",
+    "Digital Infrastructure",
+    "Web Development",
+    "Ethical Hacking",
+    "Security Operations",
+    "Mobile App Development",
+    "Data Analysis",
+    "Digital Marketing",
+    "Co-working Space",
+    "Python Programming",
+    "Coding Training",
+    "UI/UX Design",
+    "Product Management",
+    "Institutional Training",
+    "Staff Training",
+    "Tech Training",
+    "Security Services",
+    "Innovation Center",
+    "Coding and programming",
+    "Internship",
+  ],
+
+  // Social Media Profiles
   sameAs: [
     "https://facebook.com/digitanotion",
     "https://twitter.com/digitanotion",
