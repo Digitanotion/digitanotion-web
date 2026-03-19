@@ -21,8 +21,8 @@
 //     </motion.button>
 //   );
 // }
-import { useRouter } from "next/navigation";
 ("use client");
+import { useRouter } from "next/navigation";
 
 export default function Button({ data }) {
   // const handleRegistration = () => {
