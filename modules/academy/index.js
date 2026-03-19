@@ -59,7 +59,7 @@ const learningPaths = [
         originalPrice: "₦100,000",
         status: "Available",
         isNew: true,
-        link: "/academy/cec",
+        link: "/academy/computing-essentials",
         icon: FaDesktop,
         highlights: [
           "Basic IT Skills",
