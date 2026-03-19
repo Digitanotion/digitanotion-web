@@ -34,7 +34,7 @@ export default function ComputingEssentials() {
     level: "Beginner",
     duration: "5 weeks",
     format: "Onsite/Online",
-    price: "₦60,000",
+    price: "₦65,000",
     originalPrice: "₦100,000",
     status: "Available",
     isNew: true,

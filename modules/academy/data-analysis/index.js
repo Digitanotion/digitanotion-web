@@ -78,7 +78,7 @@ export default function DataAnalysis() {
     level: "Intermediate",
     duration: "14 weeks",
     format: "Onsite/Online",
-    price: "₦140,000",
+    price: "₦100,000",
     originalPrice: "₦180,000",
     status: "Available",
     isNew: true,
@@ -119,13 +119,13 @@ export default function DataAnalysis() {
       "Cloud-based lab environment with Power BI Desktop, SQL Server Express, and Excel with Power Query",
   };
 
-  const handleWhatsAppRegistration = () => {
-    const phoneNumber = "+2348073735836";
-    const message = encodeURIComponent(
-      `Hello Digitanotion Academy! I am interested in your Data Analysis Course (₦140,000) starting March 2026. How do I enroll?`,
-    );
-    window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
-  };
+  // const handleWhatsAppRegistration = () => {
+  //   const phoneNumber = "+2348073735836";
+  //   const message = encodeURIComponent(
+  //     `Hello Digitanotion Academy! I am interested in your Data Analysis Course (₦140,000) starting March 2026. How do I enroll?`,
+  //   );
+  //   window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
+  // };
 
   const router = useRouter();
 

@@ -21,28 +21,28 @@
 //     </motion.button>
 //   );
 // }
-
-"use client";
+import { useRouter } from "next/navigation";
+("use client");
 
 export default function Button({ data }) {
-  const handleRegistration = () => {
-    // Get course title from data or use current route
-    const courseTitle = data?.title || "Ethical Hacking Specialization";
-    // Company WhatsApp number (replace with actual number)
-    const phoneNumber = "+2348073735836"; // Example Nigerian number
-    const message = encodeURIComponent(
-      `Hello Digitanotion Academy! I am interested in your ${courseTitle} Course (₦${data?.price || "370,000"}), how do I get started?`,
-    );
+  // const handleRegistration = () => {
+  //   // Get course title from data or use current route
+  //   const courseTitle = data?.title || "Ethical Hacking Specialization";
+  //   // Company WhatsApp number (replace with actual number)
+  //   const phoneNumber = "+2348073735836"; // Example Nigerian number
+  //   const message = encodeURIComponent(
+  //     `Hello Digitanotion Academy! I am interested in your ${courseTitle} Course (₦${data?.price || "370,000"}), how do I get started?`,
+  //   );
 
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+  //   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
-    // Open WhatsApp in new tab
-    window.open(whatsappUrl, "_blank");
-  };
-
+  //   // Open WhatsApp in new tab
+  //   window.open(whatsappUrl, "_blank");
+  // };
+  const router = useRouter();
   return (
     <button
-      onClick={handleRegistration}
+      onClick={() => router.push("/academy/register")}
       className="w-full px-8 py-4 rounded-xl bg-gradient-to-r from-red-600 to-orange-600 text-white font-bold hover:shadow-xl hover:shadow-red-200 transition-all hover:-translate-y-1 flex items-center justify-center gap-3 group"
     >
       <span>Register Now - {data?.price || "₦370,000"}</span>
