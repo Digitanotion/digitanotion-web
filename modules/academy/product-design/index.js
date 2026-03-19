@@ -5,6 +5,7 @@ import FAQ from "./faq";
 import Image from "next/image";
 // import Button from "../button";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 import {
   RiCheckboxCircleLine,
@@ -76,7 +77,7 @@ export default function ProductDesign() {
     level: "Intermediate",
     duration: "9 weeks",
     format: "Onsite/Online",
-    price: "₦120,000",
+    price: "₦80,000",
     originalPrice: "₦150,000",
     status: "Available",
     isNew: true,
@@ -125,6 +126,7 @@ export default function ProductDesign() {
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
   };
 
+  const router = useRouter();
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Hero Section */}
@@ -272,7 +274,7 @@ export default function ProductDesign() {
                   portfolio review, and career mentorship support
                 </p>
                 <button
-                  onClick={handleWhatsAppRegistration}
+                  onClick={() => router.push("/academy/register")}
                   className="w-full px-8 py-4 rounded-xl bg-gradient-to-r from-orange-600 to-red-600 text-white font-bold hover:shadow-xl hover:shadow-orange-200 transition-all hover:-translate-y-1 flex items-center justify-center gap-3 group"
                 >
                   <span>Enroll Now - {courseData.price}</span>
