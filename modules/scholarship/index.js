@@ -5,15 +5,17 @@ import {
   HiOutlineUserGroup,
   HiOutlineCalendar,
   HiOutlineLocationMarker,
+  HiOutlineHeart,
+  HiOutlineOfficeBuilding,
 } from "react-icons/hi";
 import { FiShield, FiTrendingUp, FiLock, FiCalendar } from "react-icons/fi";
 import { MdOutlineDataUsage } from "react-icons/md";
+import { FaWhatsapp } from "react-icons/fa";
 import { useEffect, useState } from "react";
 
 export default function ScholarshipPage() {
   const [iframeHeight, setIframeHeight] = useState(750);
   const [mounted, setMounted] = useState(false);
-  // ✅ Simple JavaScript - no TypeScript needed!
   const [selectedTrack, setSelectedTrack] = useState("cybersecurity");
 
   useEffect(() => {
@@ -35,6 +37,12 @@ export default function ScholarshipPage() {
   }, []);
 
   const scholarshipFormUrl = "https://forms.gle/B22uz4s9ZYdzmUSq5";
+
+  // WhatsApp message for sponsors
+  const whatsappNumber = "08073735836";
+  const whatsappMessage =
+    "Hello! I'm interested in sponsoring students at Digitanotion Academy. I'd love to become a partner and help build the tech talent pipeline in Anambra.";
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
   if (!mounted) {
     return (
@@ -235,7 +243,11 @@ export default function ScholarshipPage() {
                     detection, ethical hacking, and security best practices.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    {[].map((skill) => (
+                    {[
+                      "Threat Analysis",
+                      "Network Security",
+                      "Risk Management",
+                    ].map((skill) => (
                       <span
                         key={skill}
                         className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full"
@@ -277,7 +289,7 @@ export default function ScholarshipPage() {
                     visualization, statistical analysis, and reporting tools.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    {[].map((skill) => (
+                    {["SQL", "Python", "Data Visualization"].map((skill) => (
                       <span
                         key={skill}
                         className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full"
@@ -289,6 +301,95 @@ export default function ScholarshipPage() {
                 </div>
               </motion.div>
             </div>
+          </div>
+        </section>
+
+        {/* 🌟 NEW: Partner Callout Section - Sponsor a Student */}
+        <section className="px-4 sm:px-6 py-12 sm:py-16">
+          <div className="max-w-4xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="relative overflow-hidden rounded-2xl sm:rounded-3xl bg-gradient-to-br from-orange-600 via-red-600 to-amber-700 shadow-2xl"
+            >
+              {/* Decorative elements */}
+              <div className="absolute inset-0 opacity-10">
+                <div className="absolute -top-20 -right-20 w-64 h-64 rounded-full bg-white blur-3xl" />
+                <div className="absolute -bottom-20 -left-20 w-64 h-64 rounded-full bg-white blur-3xl" />
+              </div>
+
+              <div className="relative p-6 sm:p-8 md:p-12 text-center">
+                {/* Icon */}
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-2xl mb-6 backdrop-blur-sm">
+                  <HiOutlineHeart className="text-white text-3xl" />
+                </div>
+
+                {/* Title */}
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">
+                  Become a Partner & Sponsor a Student
+                </h2>
+
+                {/* Description */}
+                <p className="text-white/90 text-base sm:text-lg max-w-2xl mx-auto mb-6">
+                  Join us in building Anambra's tech ecosystem. Support aspiring
+                  talents, create opportunities, and be part of developing the
+                  next generation of tech leaders in our community.
+                </p>
+
+                {/* Benefits */}
+                <div className="flex flex-wrap justify-center gap-4 mb-8">
+                  <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2">
+                    <HiOutlineOfficeBuilding className="text-white/80 text-sm" />
+                    <span className="text-white/90 text-sm">
+                      Corporate Partnership
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2">
+                    <HiOutlineUserGroup className="text-white/80 text-sm" />
+                    <span className="text-white/90 text-sm">Direct Impact</span>
+                  </div>
+                  <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2">
+                    <HiOutlineHeart className="text-white/80 text-sm" />
+                    <span className="text-white/90 text-sm">
+                      Talent Pipeline
+                    </span>
+                  </div>
+                </div>
+
+                {/* WhatsApp CTA Button */}
+                <motion.a
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="inline-flex items-center justify-center gap-3 bg-white text-gray-900 px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold shadow-lg hover:shadow-2xl transition-all duration-300"
+                >
+                  <FaWhatsapp className="text-green-600 text-xl" />
+                  <span>Partner With Us on WhatsApp</span>
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
+                  </svg>
+                </motion.a>
+
+                {/* Small note */}
+                <p className="text-white/70 text-xs mt-6">
+                  💡 One conversation can change a life. Let's talk about how
+                  you can help.
+                </p>
+              </div>
+            </motion.div>
           </div>
         </section>
 
