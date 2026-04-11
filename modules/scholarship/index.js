@@ -13,14 +13,12 @@ import { useEffect, useState } from "react";
 export default function ScholarshipPage() {
   const [iframeHeight, setIframeHeight] = useState(750);
   const [mounted, setMounted] = useState(false);
-  // ✅ CORRECT SYNTAX - Fixed!
-  const [selectedTrack, setSelectedTrack] =
-    (useState < "cybersecurity") | ("data" > "cybersecurity");
+  // ✅ Simple JavaScript - no TypeScript needed!
+  const [selectedTrack, setSelectedTrack] = useState("cybersecurity");
 
   useEffect(() => {
     setMounted(true);
 
-    // Only run resize logic on client side
     const handleResize = () => {
       if (window.innerWidth < 640) {
         setIframeHeight(800);
@@ -36,10 +34,8 @@ export default function ScholarshipPage() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Scholarship-specific Google Form URL (replace with actual form)
   const scholarshipFormUrl = "https://forms.gle/B22uz4s9ZYdzmUSq5";
 
-  // Don't render interactive elements until mounted on client
   if (!mounted) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-red-50 flex items-center justify-center">
