@@ -243,11 +243,7 @@ export default function ScholarshipPage() {
                     detection, ethical hacking, and security best practices.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    {[
-                      "Threat Analysis",
-                      "Network Security",
-                      "Risk Management",
-                    ].map((skill) => (
+                    {[].map((skill) => (
                       <span
                         key={skill}
                         className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full"
@@ -289,7 +285,7 @@ export default function ScholarshipPage() {
                     visualization, statistical analysis, and reporting tools.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    {["SQL", "Python", "Data Visualization"].map((skill) => (
+                    {[].map((skill) => (
                       <span
                         key={skill}
                         className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full"
