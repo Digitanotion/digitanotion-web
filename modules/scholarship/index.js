@@ -13,6 +13,9 @@ import { useEffect, useState } from "react";
 export default function ScholarshipPage() {
   const [iframeHeight, setIframeHeight] = useState(750);
   const [mounted, setMounted] = useState(false);
+  // ✅ ADD THIS MISSING STATE DECLARATION
+  const [selectedTrack, setSelectedTrack] =
+    (useState < "cybersecurity") | ("data" > "cybersecurity");
 
   useEffect(() => {
     setMounted(true);
@@ -34,8 +37,7 @@ export default function ScholarshipPage() {
   }, []);
 
   // Scholarship-specific Google Form URL (replace with actual form)
-  const scholarshipFormUrl =
-    "https://docs.google.com/forms/d/e/1FAIpQLScNlJ6BI_jJKzMJCx5o7cT2EBfZZXWykT0A-G8NjBboskCKjQ/viewform?embedded=true";
+  const scholarshipFormUrl = "https://forms.gle/B22uz4s9ZYdzmUSq5";
 
   // Don't render interactive elements until mounted on client
   if (!mounted) {
