@@ -13,7 +13,7 @@ import { useEffect, useState } from "react";
 export default function ScholarshipPage() {
   const [iframeHeight, setIframeHeight] = useState(750);
   const [mounted, setMounted] = useState(false);
-  // ✅ ADD THIS MISSING STATE DECLARATION
+  // ✅ CORRECT SYNTAX - Fixed!
   const [selectedTrack, setSelectedTrack] =
     (useState < "cybersecurity") | ("data" > "cybersecurity");
 

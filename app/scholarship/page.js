@@ -14,7 +14,7 @@ export const metadata = {
     locale: "en_NG",
     images: [
       {
-        url: "/og-scholarship.jpg",
+        url: "/icon.png",
         width: 1200,
         height: 630,
         alt: "Digitanotion Academy Scholarship",
@@ -26,7 +26,7 @@ export const metadata = {
     title: "Scholarship Opportunity | Digitanotion Academy",
     description:
       "Free tech scholarship for aspiring talents in Anambra. Apply now!",
-    images: ["/og-scholarship.jpg"],
+    images: ["/icon.png"],
   },
   robots: {
     index: true,
