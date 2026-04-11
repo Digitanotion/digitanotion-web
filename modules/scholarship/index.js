@@ -39,7 +39,7 @@ export default function ScholarshipPage() {
   const scholarshipFormUrl = "https://forms.gle/B22uz4s9ZYdzmUSq5";
 
   // WhatsApp message for sponsors
-  const whatsappNumber = "08073735836";
+  const whatsappNumber = "2348073735836";
   const whatsappMessage =
     "Hello! I'm interested in sponsoring students at Digitanotion Academy. I'd love to become a partner and help build the tech talent pipeline in Anambra.";
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
