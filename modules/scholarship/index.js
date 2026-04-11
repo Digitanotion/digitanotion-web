@@ -37,8 +37,7 @@ export default function ScholarshipPage() {
   if (!mounted) return null;
 
   // Scholarship-specific Google Form URL (replace with actual form)
-  const scholarshipFormUrl =
-    "https://docs.google.com/forms/d/e/1FAIpQLScNlJ6BI_jJKzMJCx5o7cT2EBfZZXWykT0A-G8NjBboskCKjQ/viewform?embedded=true";
+  const scholarshipFormUrl = "https://forms.gle/LvJDWGEJprzTSsr57";
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-red-50">
