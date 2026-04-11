@@ -13,19 +13,18 @@ import { useEffect, useState } from "react";
 export default function ScholarshipPage() {
   const [iframeHeight, setIframeHeight] = useState(750);
   const [mounted, setMounted] = useState(false);
-  const [selectedTrack, setSelectedTrack] =
-    (useState < "cybersecurity") | ("data" > "cybersecurity");
 
   useEffect(() => {
     setMounted(true);
 
+    // Only run resize logic on client side
     const handleResize = () => {
       if (window.innerWidth < 640) {
-        setIframeHeight(800); // Mobile
+        setIframeHeight(800);
       } else if (window.innerWidth < 1024) {
-        setIframeHeight(750); // Tablet
+        setIframeHeight(750);
       } else {
-        setIframeHeight(720); // Desktop
+        setIframeHeight(720);
       }
     };
 
@@ -34,10 +33,21 @@ export default function ScholarshipPage() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  if (!mounted) return null;
-
   // Scholarship-specific Google Form URL (replace with actual form)
-  const scholarshipFormUrl = "https://forms.gle/LvJDWGEJprzTSsr57";
+  const scholarshipFormUrl =
+    "https://docs.google.com/forms/d/e/1FAIpQLScNlJ6BI_jJKzMJCx5o7cT2EBfZZXWykT0A-G8NjBboskCKjQ/viewform?embedded=true";
+
+  // Don't render interactive elements until mounted on client
+  if (!mounted) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-red-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="w-12 h-12 border-4 border-orange-500 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+          <p className="text-gray-600">Loading scholarship application...</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-red-50">
