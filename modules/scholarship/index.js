@@ -109,7 +109,7 @@ export default function ScholarshipPage() {
                 </p>
                 <div className="mt-6 pt-4 border-t border-gray-200">
                   <p className="text-orange-600 font-semibold text-sm">
-                    🚀 Stay tuned for future opportunities!
+                    Stay tuned for future opportunities!
                   </p>
                 </div>
               </motion.div>
@@ -212,20 +212,6 @@ export default function ScholarshipPage() {
                   Master the art of protecting digital assets. Learn threat
                   detection, ethical hacking, and security best practices.
                 </p>
-                <div className="flex flex-wrap gap-2">
-                  {[
-                    "Threat Analysis",
-                    "Network Security",
-                    "Risk Management",
-                  ].map((skill) => (
-                    <span
-                      key={skill}
-                      className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full"
-                    >
-                      {skill}
-                    </span>
-                  ))}
-                </div>
               </motion.div>
 
               {/* Data Analysis Track */}
@@ -250,16 +236,6 @@ export default function ScholarshipPage() {
                   Transform raw data into actionable insights. Learn
                   visualization, statistical analysis, and reporting tools.
                 </p>
-                <div className="flex flex-wrap gap-2">
-                  {["SQL", "Python", "Data Visualization"].map((skill) => (
-                    <span
-                      key={skill}
-                      className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full"
-                    >
-                      {skill}
-                    </span>
-                  ))}
-                </div>
               </motion.div>
             </div>
           </div>
@@ -340,7 +316,7 @@ export default function ScholarshipPage() {
                 </motion.a>
 
                 <p className="text-white/70 text-xs mt-6">
-                  💡 Your support can change lives. Let's talk about how you can
+                  Your support can change lives. Let's talk about how you can
                   help future cohorts.
                 </p>
               </div>
