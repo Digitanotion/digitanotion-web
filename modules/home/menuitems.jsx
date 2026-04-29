@@ -19,7 +19,8 @@ import {
   FiHome,
   FiDollarSign,
   FiVideo,
-  FiCalendar
+  FiCalendar,
+  FiMapPin
 } from "react-icons/fi";
 import { cn } from "@/lib/utils";
 
@@ -231,7 +232,7 @@ const ExploreFlyout = ({ isOpen, scrolled }) => {
                       </div>
                     </motion.div>
 
-                    {/* Column 3: Programs */}
+                    {/* Column 3: Programs & Workspace */}
                     <motion.div 
                       custom={2}
                       variants={columnVariants}
@@ -242,8 +243,8 @@ const ExploreFlyout = ({ isOpen, scrolled }) => {
                           <FiGlobe className="text-green-600" size={28} />
                         </div>
                         <div>
-                          <h4 className="font-bold text-gray-900 text-xl">Programs & Community</h4>
-                          <p className="text-sm text-gray-600">Initiatives, labs & talent development</p>
+                          <h4 className="font-bold text-gray-900 text-xl">Programs & Workspace</h4>
+                          <p className="text-sm text-gray-600">Initiatives, labs & premium workspace</p>
                         </div>
                       </div>
                       
@@ -284,7 +285,38 @@ const ExploreFlyout = ({ isOpen, scrolled }) => {
                         ))}
                       </div>
 
-                      <div className="mt-10 pt-6 border-t border-gray-100">
+                      {/* Workspace Section Added */}
+                      <div className="mt-6 pt-4 border-t border-gray-100">
+                        <Link
+                          href="/workspace"
+                          className="group flex items-center gap-4 p-4 rounded-xl hover:bg-gradient-to-r hover:from-amber-50 hover:to-orange-50 transition-all border border-transparent hover:border-amber-200 bg-gradient-to-r from-amber-50/50 to-orange-50/50"
+                        >
+                          <div className="p-3 bg-gradient-to-br from-amber-500 to-orange-500 rounded-lg shadow-md">
+                            <FiMapPin className="text-white" size={20} />
+                          </div>
+                          <div className="flex-1">
+                            <div className="font-semibold text-gray-900 group-hover:text-amber-600 transition-colors text-lg">
+                              Workspace
+                            </div>
+                            <div className="text-sm text-gray-600 mt-1">
+                              Premium coworking space in Awka
+                            </div>
+                            <div className="flex items-center gap-2 mt-2">
+                              <span className="text-xs px-2 py-1 bg-amber-100 text-amber-700 rounded-full">
+                                Shared Desk
+                              </span>
+                              <span className="text-xs px-2 py-1 bg-orange-100 text-orange-700 rounded-full">
+                                Special Desk
+                              </span>
+                              <span className="text-xs px-2 py-1 bg-red-100 text-red-700 rounded-full">
+                                35-Seater
+                              </span>
+                            </div>
+                          </div>
+                        </Link>
+                      </div>
+
+                      <div className="mt-6 pt-4 border-t border-gray-100">
                         <Link
                           href="/services"
                           className="inline-flex items-center gap-3 text-green-600 font-semibold hover:gap-4 transition-all group"
@@ -377,7 +409,7 @@ const ExploreFlyout = ({ isOpen, scrolled }) => {
                       Need help? <Link href="/contact" className="text-blue-600 hover:underline font-medium">Contact our team</Link>
                     </div>
                     <div className="text-sm text-gray-600">
-                      Call us: <span className="font-semibold">+234 XXX XXX XXXX</span>
+                      Call us: <span className="font-semibold">+234 80 7373 5836</span>
                     </div>
                   </div>
                 </div>
