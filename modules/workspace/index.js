@@ -127,62 +127,19 @@ const amenities = [
     name: "Power Supply",
     color: "from-green-500 to-emerald-500",
   },
-  //   {
-  //     icon: FiPrinter,
-  //     name: "Printing Services",
-  //     color: "from-red-500 to-pink-500",
-  //   },
-  //   { icon: FiLock, name: "24/7 Security", color: "from-gray-500 to-gray-700" },
-  //   {
-  //     icon: FiMonitor,
-  //     name: "Monitor Rentals",
-  //     color: "from-indigo-500 to-purple-500",
-  //   },
-  //   {
-  //     icon: FiVideo,
-  //     name: "Conference Room",
-  //     color: "from-cyan-500 to-blue-500",
-  //   },
-  //   { icon: FiWind, name: "AC Workspace", color: "from-teal-500 to-green-500" },
-];
-
-// Testimonials
-const testimonials = [
-  //   {
-  //     name: "Chinedu Okonkwo",
-  //     role: "Freelance Developer",
-  //     content:
-  //       "The shared desk space has been perfect for my remote work. Fast internet and great community!",
-  //     rating: 5,
-  //     location: "Awka",
-  //   },
-  //   {
-  //     name: "Amara Nwosu",
-  //     role: "Startup Founder",
-  //     content:
-  //       "Our team loves the special desks. Professional environment, affordable, and right here in Awka.",
-  //     rating: 5,
-  //     location: "Aroma, Awka",
-  //   },
 ];
 
 // Stats
 const stats = [
   {
-    icon: FiUsers,
-    value: "150+",
-    label: "Members",
-    description: "Active workspace users",
-  },
-  {
     icon: FiCalendar,
-    value: "24/7",
+    value: "Daily or Monthly",
     label: "Access",
     description: "For dedicated members",
   },
   {
     icon: FiTrendingUp,
-    value: "1Gbps",
+    value: "Unlimited",
     label: "Internet",
     description: "Ultra-fast fiber",
   },
@@ -239,8 +196,8 @@ export default function WorkspacePage() {
 
             <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
               Find your perfect workspace at Digitanotion. High-speed internet,
-              24/7 power backup, and a thriving community of innovators. Located
-              in the heart of Awka, Anambra State.
+              Power supply, and a thriving community of innovators. Located in
+              the heart of Awka, Anambra State.
             </p>
 
             <div className="flex flex-wrap gap-4 justify-center">
@@ -398,7 +355,7 @@ export default function WorkspacePage() {
 
                   {/* Features */}
                   <div className="space-y-2 mb-6">
-                    {plan.features.slice(0, 5).map((feature, idx) => (
+                    {plan.features.map((feature, idx) => (
                       <div
                         key={idx}
                         className="flex items-center gap-2 text-sm text-gray-600"
@@ -410,11 +367,6 @@ export default function WorkspacePage() {
                         <span>{feature}</span>
                       </div>
                     ))}
-                    {plan.features.length > 5 && (
-                      <div className="text-xs text-gray-400 mt-1">
-                        +{plan.features.length - 5} more features
-                      </div>
-                    )}
                   </div>
 
                   {/* CTA Button */}
@@ -434,75 +386,10 @@ export default function WorkspacePage() {
         </div>
       </section>
 
-      {/* Special Desk Booking Status - Ultra Modern Display */}
+      {/* Classroom Booking Status */}
       <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-8">
-            {/* Special Desk Availability */}
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-6 sm:p-8 border border-orange-200"
-            >
-              <div className="flex items-center gap-3 mb-6">
-                <div className="p-3 rounded-xl bg-gradient-to-r from-orange-500 to-red-500">
-                  <FaDeskpro className="text-white" size={24} />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900">
-                    Special Desk Availability
-                  </h3>
-                  <p className="text-sm text-gray-600">
-                    Dedicated desks • Your personal workspace
-                  </p>
-                </div>
-              </div>
-
-              <div className="bg-white rounded-xl p-6 mb-4">
-                <div className="flex justify-between items-center mb-4">
-                  <span className="text-gray-600">Total Desks</span>
-                  <span className="font-bold text-gray-900">10 desks</span>
-                </div>
-                <div className="flex justify-between items-center mb-4">
-                  <span className="text-gray-600">Booked</span>
-                  <span className="font-bold text-orange-600">4 desks</span>
-                </div>
-                <div className="w-full bg-gray-200 rounded-full h-3 mb-4">
-                  <div
-                    className="bg-gradient-to-r from-orange-500 to-red-500 h-3 rounded-full"
-                    style={{ width: "40%" }}
-                  ></div>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-gray-600">Available</span>
-                  <span className="font-bold text-green-600 text-lg">
-                    6 desks
-                  </span>
-                </div>
-              </div>
-
-              <div className="grid grid-cols-5 gap-2">
-                {Array.from({ length: 10 }).map((_, i) => (
-                  <div
-                    key={i}
-                    className={`aspect-square rounded-lg flex items-center justify-center text-xs font-bold ${
-                      i < 4
-                        ? "bg-gradient-to-r from-orange-500 to-red-500 text-white"
-                        : "bg-green-100 text-green-700 border-2 border-green-300"
-                    }`}
-                  >
-                    {i + 1}
-                  </div>
-                ))}
-              </div>
-              <p className="text-xs text-center text-gray-500 mt-4">
-                Desks 1-4 Booked • 5-10 Available
-              </p>
-            </motion.div>
-
-            {/* Classroom Booking Status */}
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -516,7 +403,7 @@ export default function WorkspacePage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900">
-                    35-Seater Classroom
+                    12-Seater Classroom
                   </h3>
                   <p className="text-sm text-gray-600">
                     Training room • Workshop space
@@ -528,7 +415,7 @@ export default function WorkspacePage() {
                 <div className="flex items-center justify-between mb-4 pb-4 border-b border-gray-100">
                   <span className="text-gray-600">Current Status</span>
                   <span className="font-bold text-red-600 bg-red-50 px-3 py-1 rounded-full">
-                    Fully Booked
+                    Available
                   </span>
                 </div>
                 <div className="space-y-3">
@@ -601,58 +488,6 @@ export default function WorkspacePage() {
                 <p className="font-medium text-gray-900 text-sm">
                   {amenity.name}
                 </p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-              What Our Members Say
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Join a community of happy and productive members
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {testimonials.map((testimonial, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-white rounded-xl border border-gray-100 p-6 shadow-sm hover:shadow-md transition-all"
-              >
-                <div className="flex gap-1 mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <FiStar
-                      key={i}
-                      className="text-amber-500 fill-amber-500"
-                      size={16}
-                    />
-                  ))}
-                </div>
-                <p className="text-gray-600 mb-4 italic">
-                  "{testimonial.content}"
-                </p>
-                <div>
-                  <p className="font-bold text-gray-900">{testimonial.name}</p>
-                  <p className="text-sm text-gray-500">
-                    {testimonial.role} • {testimonial.location}
-                  </p>
-                </div>
               </motion.div>
             ))}
           </div>
@@ -743,7 +578,7 @@ export default function WorkspacePage() {
           Looking for a workspace in Awka? Digitanotion offers premium coworking
           spaces including shared desks, dedicated special desks, and a
           35-seater classroom. Located in Aroma, Awka, Anambra State. High-speed
-          internet, 24/7 power backup, air conditioning, and security.
+          internet, Power Supply.
         </p>
         <ul>
           <li>Coworking space Awka</li>
