@@ -87,9 +87,31 @@ const workspacePlans = [
     bookedStatus: "Currently Unavailable",
   },
   {
+    id: "classroom-11",
+    name: "11-Seater Classroom",
+    icon: FaChalkboardTeacher,
+    iconBg: "from-green-500 to-emerald-500",
+    price: "₦8,500",
+    priceUnit: "per hour",
+    description:
+      "Intimate classroom space with LED TV and whiteboard. Perfect for small classes and workshops.",
+    features: [
+      "LED Television",
+      "Whiteboard & Markers",
+      "High-speed WiFi (Unlimited)",
+      "11 Comfortable seats",
+      "Power supply",
+      "Trainer's desk",
+      "Trainer's water and snacks",
+    ],
+    capacity: "11 persons",
+    availability: "Available",
+    popular: false,
+  },
+  {
     id: "meeting-space",
     name: "35-Seater Meeting Space",
-    icon: FaChalkboardTeacher,
+    icon: FaBuilding,
     iconBg: "from-purple-500 to-pink-500",
     price: "₦15,000",
     priceUnit: "per hour",
@@ -272,7 +294,7 @@ export default function WorkspacePage() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             {workspacePlans.map((plan, index) => (
               <motion.div
                 key={plan.id}
@@ -515,9 +537,9 @@ export default function WorkspacePage() {
         <h2>Best Workspace in Awka for Freelancers and Teams</h2>
         <p>
           Looking for a workspace in Awka? Digitanotion offers premium coworking
-          spaces including shared desks, dedicated special desks, and a
-          35-seater meeting space. Located in Awka, Anambra State. High-speed
-          internet, power supply, air conditioning.
+          spaces including shared desks, dedicated special desks, an 11-seater
+          classroom, and a 35-seater meeting space. Located in Awka, Anambra
+          State. High-speed internet, power supply, air conditioning.
         </p>
         <ul>
           <li>Coworking space Awka</li>
@@ -530,12 +552,15 @@ export default function WorkspacePage() {
           <li>Hot desk Awka</li>
           <li>Private workspace Anambra</li>
           <li>Affordable workspace Nigeria</li>
+          <li>11-seater classroom Awka</li>
+          <li>35-seater meeting space Awka</li>
         </ul>
         <h3>Location Keywords</h3>
         <p>
           Workspace Awka, Awka workspace, coworking space near me Anambra,
           office space for rent Awka, meeting room Awka, training hall Awka,
-          Digitanotion workspace, best coworking space Awka
+          Digitanotion workspace, best coworking space Awka, classroom for rent
+          Awka
         </p>
       </div>
     </div>
