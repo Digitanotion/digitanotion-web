@@ -113,7 +113,7 @@ const workspacePlans = [
     name: "35-Seater Meeting Space",
     icon: FaBuilding,
     iconBg: "from-purple-500 to-pink-500",
-    price: "₦15,000",
+    price: "₦18,000",
     priceUnit: "per hour",
     description:
       "Spacious meeting space with AC, LED TV, and high-speed internet. Ideal for workshops, meetings, and events.",
@@ -123,8 +123,6 @@ const workspacePlans = [
       "Air Conditioning",
       "35 Comfortable seats",
       "Power supply",
-      "Whiteboard & Markers",
-      "Trainer's desk",
     ],
     capacity: "35 persons",
     availability: "Available",
