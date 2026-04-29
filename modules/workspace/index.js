@@ -60,7 +60,7 @@ const workspacePlans = [
       "Power supply",
       "Community events access",
     ],
-    capacity: "10 person",
+    capacity: "10 persons",
     availability: "Available",
     popular: false,
   },
@@ -81,32 +81,32 @@ const workspacePlans = [
       "Priority event access",
     ],
     capacity: "1 person",
-    availability: "Limited",
+    availability: "Unavailable",
     popular: true,
-    bookedStatus: "3 desks booked",
+    isBooked: true,
+    bookedStatus: "Currently Unavailable",
   },
   {
-    id: "classroom-35",
-    name: "35-Seater Classroom",
+    id: "meeting-space",
+    name: "35-Seater Meeting Space",
     icon: FaChalkboardTeacher,
     iconBg: "from-purple-500 to-pink-500",
-    price: "₦8,500",
+    price: "₦15,000",
     priceUnit: "per hour",
     description:
-      "Spacious training room with Television and whiteboard. Ideal for workshops and classes.",
+      "Spacious meeting space with AC, LED TV, and high-speed internet. Ideal for workshops, meetings, and events.",
     features: [
-      "Led Television",
-      "Whiteboard & Markers",
+      "LED Television",
       "High-speed WiFi (Unlimited)",
-      "11 Comfortable seats",
+      "Air Conditioning",
+      "35 Comfortable seats",
       "Power supply",
+      "Whiteboard & Markers",
       "Trainer's desk",
-      "Trainer's water and snacks",
     ],
-    capacity: "11 persons",
-    availability: "Limited",
-    bookedStatus: "Booked: Mar 15-25, 2026",
-    isBooked: true,
+    capacity: "35 persons",
+    availability: "Available",
+    popular: false,
   },
 ];
 
@@ -127,6 +127,11 @@ const amenities = [
     name: "Power Supply",
     color: "from-green-500 to-emerald-500",
   },
+  {
+    icon: FiWind,
+    name: "Air Conditioning",
+    color: "from-teal-500 to-green-500",
+  },
 ];
 
 // Stats
@@ -135,7 +140,7 @@ const stats = [
     icon: FiCalendar,
     value: "Daily or Monthly",
     label: "Access",
-    description: "For dedicated members",
+    description: "Flexible plans",
   },
   {
     icon: FiTrendingUp,
@@ -196,7 +201,7 @@ export default function WorkspacePage() {
 
             <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
               Find your perfect workspace at Digitanotion. High-speed internet,
-              Power supply, and a thriving community of innovators. Located in
+              power supply, and a thriving community of innovators. Located in
               the heart of Awka, Anambra State.
             </p>
 
@@ -290,12 +295,12 @@ export default function WorkspacePage() {
                   </div>
                 )}
 
-                {/* Booked Overlay for Classroom */}
+                {/* Unavailable Overlay for Special Desk */}
                 {plan.isBooked && (
                   <div className="absolute inset-0 bg-black/60 rounded-2xl z-20 flex items-center justify-center">
                     <div className="text-center p-6">
                       <div className="bg-red-500 text-white text-sm font-bold px-4 py-2 rounded-full mb-3">
-                        Currently Booked
+                        Currently Unavailable
                       </div>
                       <p className="text-white text-sm">{plan.bookedStatus}</p>
                       <button
@@ -382,72 +387,6 @@ export default function WorkspacePage() {
                 </div>
               </motion.div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Classroom Booking Status */}
-      <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-8">
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-6 sm:p-8 border border-purple-200"
-            >
-              <div className="flex items-center gap-3 mb-6">
-                <div className="p-3 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500">
-                  <FaChalkboardTeacher className="text-white" size={24} />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900">
-                    12-Seater Classroom
-                  </h3>
-                  <p className="text-sm text-gray-600">
-                    Training room • Workshop space
-                  </p>
-                </div>
-              </div>
-
-              <div className="bg-white rounded-xl p-6 mb-4">
-                <div className="flex items-center justify-between mb-4 pb-4 border-b border-gray-100">
-                  <span className="text-gray-600">Current Status</span>
-                  <span className="font-bold text-red-600 bg-red-50 px-3 py-1 rounded-full">
-                    Available
-                  </span>
-                </div>
-                <div className="space-y-3">
-                  <div className="flex justify-between items-center">
-                    <span className="text-gray-600">Next Available</span>
-                    <span className="font-bold text-gray-900">
-                      March 26, 2026
-                    </span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-gray-600">Current Booking</span>
-                    <span className="font-bold text-orange-600">
-                      Mar 15-25, 2026
-                    </span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-gray-600">Booked By</span>
-                    <span className="font-bold text-gray-900">
-                      Corporate Training
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <button
-                onClick={handleWhatsApp}
-                className="w-full py-3 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold hover:shadow-lg transition-all flex items-center justify-center gap-2"
-              >
-                <FaWhatsapp size={18} />
-                Check Future Availability
-              </button>
-            </motion.div>
           </div>
         </div>
       </section>
@@ -577,8 +516,8 @@ export default function WorkspacePage() {
         <p>
           Looking for a workspace in Awka? Digitanotion offers premium coworking
           spaces including shared desks, dedicated special desks, and a
-          35-seater classroom. Located in Aroma, Awka, Anambra State. High-speed
-          internet, Power Supply.
+          35-seater meeting space. Located in Awka, Anambra State. High-speed
+          internet, power supply, air conditioning.
         </p>
         <ul>
           <li>Coworking space Awka</li>
@@ -586,15 +525,15 @@ export default function WorkspacePage() {
           <li>Dedicated desk Anambra</li>
           <li>Workspace for rent Awka</li>
           <li>Office space Anambra State</li>
-          <li>Training room rental Awka</li>
-          <li>Conference room Awka</li>
+          <li>Meeting room rental Awka</li>
+          <li>Conference hall Awka</li>
           <li>Hot desk Awka</li>
           <li>Private workspace Anambra</li>
           <li>Affordable workspace Nigeria</li>
         </ul>
         <h3>Location Keywords</h3>
         <p>
-          Workspace Awka, Aroma Awka workspace, coworking space near me Anambra,
+          Workspace Awka, Awka workspace, coworking space near me Anambra,
           office space for rent Awka, meeting room Awka, training hall Awka,
           Digitanotion workspace, best coworking space Awka
         </p>
