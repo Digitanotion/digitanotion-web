@@ -2,11 +2,12 @@
 
 import { useState } from "react";
 import { FiChevronDown, FiChevronUp, FiShield, FiCpu } from "react-icons/fi";
-import courseData from "./data.json";
 
-export default function FAQ() {
+/**
+ * Shared FAQ accordion. Takes any course's `faqs` array: [{ question, answer }].
+ */
+export default function CourseFAQ({ faqs }) {
   const [openIndex, setOpenIndex] = useState(null);
-  const faqs = courseData.faqs;
 
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -21,9 +22,7 @@ export default function FAQ() {
             <h2 className="text-4xl font-bold text-gray-900">Questions People Ask</h2>
             <FiCpu className="text-purple-600" size={24} />
           </div>
-          <p className="text-lg text-gray-600">
-            Everything you need to know before you start your cybersecurity journey
-          </p>
+          <p className="text-lg text-gray-600">Everything you need to know before you start</p>
         </div>
 
         <div className="space-y-4">
@@ -62,7 +61,7 @@ export default function FAQ() {
 
         <div className="mt-12 p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl border border-blue-200">
           <div className="text-center">
-            <h3 className="text-xl font-bold text-gray-900 mb-2">Ready to start your cybersecurity journey?</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">Ready to start your journey?</h3>
             <p className="text-gray-700 mb-4">Choose your path above and message us — we'll take it from there.</p>
             <a
               href="#choose-how-you-start"
