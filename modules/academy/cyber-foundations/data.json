@@ -32,11 +32,8 @@
     "scheduleLabel": "Monday & Wednesday, 6–9PM · Saturday, 10AM–2PM"
   },
   "cohorts": {
-    "nextStartLabel": "August 3, 2026",
+    "nextStartLabel": "August/September, 2026",
     "upcoming": [
-      { "label": "August 2026" },
-      { "label": "September 2026" },
-      { "label": "October 2026" }
     ]
   },
   "pricing": {
@@ -199,7 +196,7 @@
     },
     {
       "question": "What equipment or software do I need?",
-      "answer": "A computer with at least 8GB RAM (16GB is even better), 50GB of free storage, and a stable internet connection. We provide access to our virtual lab with all the security tools already set up — you don't need to install anything yourself beforehand."
+      "answer": "A computer with at least 8GB RAM (16GB is even better), 50GB of free storage. We provide access to our virtual lab with all the security tools already set up — you don't need to install anything yourself beforehand and stable internet access, though if you are joining onsite we provide you with an unlimited fast-speed internet connection."
     },
     {
       "question": "Will this course help me choose a cybersecurity specialisation?",
@@ -223,7 +220,7 @@
     },
     {
       "question": "What support do I get during the course?",
-      "answer": "A dedicated mentor, round-the-clock access to your practice labs, a student community, weekly office hours, and career guidance once you're done."
+      "answer": "Unlimited fast-speed internet access, A growth mentor, round-the-clock access to your practice labs, a student community, weekly office hours, and career guidance once you're done."
     }
   ]
 }

@@ -14,8 +14,8 @@ export default function PathBuilder() {
   const { modules, pricing, whatsapp } = courseData;
   const allIds = modules.map((m) => m.id);
 
-  const [mode, setMode] = useState("full"); // 'full' | 'custom'
-  const [selectedIds, setSelectedIds] = useState(allIds);
+  const [mode, setMode] = useState(null); // null | 'full' | 'custom'
+  const [selectedIds, setSelectedIds] = useState([]);
   const [acknowledgedIds, setAcknowledgedIds] = useState([]);
   const [expandedId, setExpandedId] = useState(null);
   const [pendingWarningId, setPendingWarningId] = useState(null);
@@ -31,8 +31,8 @@ export default function PathBuilder() {
           return sum + (m ? m.price : 0);
         }, 0);
 
-  const isFullyComplete = mode === "full" || selectedIds.length === modules.length;
-  const hasSelection = mode === "full" || selectedIds.length > 0;
+  const isFullyComplete = mode === "full" || (mode === "custom" && selectedIds.length === modules.length);
+  const hasSelection = mode === "full" || (mode === "custom" && selectedIds.length > 0);
 
   function switchToFull() {
     setMode("full");
@@ -160,8 +160,16 @@ export default function PathBuilder() {
           </button>
         </div>
 
-        {/* Step list */}
-        <div className="space-y-4 mb-32">
+        {/* Step list - only shown once the student has made a choice above */}
+        {mode === null ? (
+          <div className="text-center py-10 px-6 rounded-2xl border border-dashed border-gray-200 bg-gray-50 mb-10">
+            <p className="text-gray-500">
+              Pick an option above — we'll show you each step, what you'll learn, and your total.
+              Nothing is charged yet.
+            </p>
+          </div>
+        ) : (
+        <div className={`space-y-4 ${hasSelection ? "mb-32" : "mb-10"}`}>
           {modules.map((mod) => {
             const isSelected = mode === "full" ? true : selectedIds.includes(mod.id);
             const isExpanded = expandedId === mod.id;
@@ -293,43 +301,48 @@ export default function PathBuilder() {
             );
           })}
         </div>
+        )}
       </div>
 
-      {/* Sticky summary bar */}
-      <div className="fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-gray-200 shadow-2xl">
-        <div className="max-w-5xl mx-auto px-6 py-4 flex flex-wrap items-center justify-between gap-4">
-          <div>
-            <div className="text-sm text-gray-500">
-              {mode === "full" ? "Full Course selected" : `${selectedIds.length} of ${modules.length} steps selected`}
-            </div>
-            <div className="text-2xl font-bold text-gray-900">{formatMoney(total, pricing.currencySymbol)}</div>
-            {mode === "custom" && !isFullyComplete && selectedIds.length > 0 && (
-              <div className="text-xs text-teal-700 font-medium mt-0.5">
-                Take all 6 steps and save {formatMoney(savings, pricing.currencySymbol)}
-              </div>
-            )}
-            {isFullyComplete && (
-              <div className="text-xs text-teal-700 font-medium mt-0.5">Full Course Certificate unlocked</div>
-            )}
-          </div>
-
-          <a
-            href={hasSelection ? buildWhatsappLink() : undefined}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-disabled={!hasSelection}
-            onClick={(e) => {
-              if (!hasSelection) e.preventDefault();
-            }}
-            className={`inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-white transition-all ${
-              hasSelection ? "bg-green-600 hover:bg-green-700 shadow-lg" : "bg-gray-300 cursor-not-allowed"
-            }`}
+      {/* Sticky summary bar - only appears once a real choice has been made */}
+      <AnimatePresence>
+        {hasSelection && (
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: 100, opacity: 0 }}
+            transition={{ duration: 0.25 }}
+            className="fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-gray-200 shadow-2xl"
           >
-            <FaWhatsapp size={20} />
-            Continue on WhatsApp
-          </a>
-        </div>
-      </div>
+            <div className="max-w-5xl mx-auto px-6 py-4 flex flex-wrap items-center justify-between gap-4">
+              <div>
+                <div className="text-sm text-gray-500">
+                  {mode === "full" ? "Full Course selected" : `${selectedIds.length} of ${modules.length} steps selected`}
+                </div>
+                <div className="text-2xl font-bold text-gray-900">{formatMoney(total, pricing.currencySymbol)}</div>
+                {mode === "custom" && !isFullyComplete && (
+                  <div className="text-xs text-teal-700 font-medium mt-0.5">
+                    Take all 6 steps and save {formatMoney(savings, pricing.currencySymbol)}
+                  </div>
+                )}
+                {isFullyComplete && (
+                  <div className="text-xs text-teal-700 font-medium mt-0.5">Full Course Certificate unlocked</div>
+                )}
+              </div>
+
+              <a
+                href={buildWhatsappLink()}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-white bg-green-600 hover:bg-green-700 shadow-lg transition-all"
+              >
+                <FaWhatsapp size={20} />
+                Continue on WhatsApp
+              </a>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 }
