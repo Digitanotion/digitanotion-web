@@ -1,0 +1,230 @@
+{
+  "courseId": "soc-analyst-1",
+  "seo": {
+    "title": "SOC Analyst Training Course in Awka, Nigeria | Digitanotion Academy",
+    "description": "Become a Tier 1 SOC Analyst step by step, from ₦20,000. Learn real SIEM tools, alert triage, and incident response. Onsite in Awka or online from anywhere in Africa.",
+    "keywords": [
+      "SOC analyst training Nigeria",
+      "security operations center course Awka",
+      "SIEM training Africa",
+      "learn threat detection Nigeria",
+      "incident response course Anambra",
+      "Tier 1 SOC analyst certification",
+      "cybersecurity monitoring course",
+      "pay as you learn SOC analyst"
+    ]
+  },
+  "hero": {
+    "eyebrow": "Digitanotion Academy",
+    "title": "SOC Analyst 1",
+    "tagline": "Learn to watch, detect, and respond the way real Security Operations Center teams do. Real SIEM tools, real alerts, real incident response — step by step, at a price that fits you.",
+    "level": "Intermediate",
+    "durationLabel": "10 weeks",
+    "labCountLabel": "6+ hands-on labs",
+    "ctaLabel": "See How You Can Start",
+    "ctaTarget": "#choose-how-you-start",
+    "startingFromLabel": "Start from just ₦20,000"
+  },
+  "location": {
+    "typeLabel": "Onsite or Online",
+    "onsiteDetails": "Suite 6, Mgbajiaka Area, Along Onisha–Enugu Expressway, Awka",
+    "onlineDetails": "Join live from anywhere — all you need is a phone or computer and internet",
+    "scheduleLabel": "Students agree on a schedule that works for them"
+  },
+  "cohorts": {
+    "nextStartLabel": "September 2026",
+    "upcoming": []
+  },
+  "pricing": {
+    "currencySymbol": "₦",
+    "fullCoursePrice": 180000,
+    "fullCourseOriginalPrice": 280000
+  },
+  "beforeYouStart": "This course builds directly on cybersecurity fundamentals. We recommend completing Cybersecurity Foundations first (or having equivalent experience) — you'll want a basic understanding of networks, threats, and security concepts before starting here.",
+  "learningOutcomes": [
+    "Understand what a Security Operations Center (SOC) does and where a Tier 1 Analyst fits in",
+    "Use real SIEM tools to monitor and investigate security alerts",
+    "Tell the difference between a false alarm and a real threat",
+    "Respond to a confirmed security incident the right way, step by step",
+    "Monitor networks and endpoints for signs of compromise",
+    "Know exactly what's next for your SOC career, including certifications worth pursuing"
+  ],
+  "certificates": {
+    "stepCertificateLabel": "Digitanotion Step Certificate",
+    "stepCertificateNote": "You earn one every time you finish a step — even if it's just one.",
+    "fullCourseCertificateLabel": "Digitanotion SOC Analyst Certificate (Tier 1)",
+    "fullCourseCertificateNote": "Awarded once you complete all 6 steps. Recognised by our industry partners as full Tier 1 SOC Analyst readiness."
+  },
+  "modules": [
+    {
+      "id": "step-1",
+      "order": 1,
+      "title": "Introduction to the SOC",
+      "tag": "Foundation",
+      "price": 20000,
+      "prerequisiteIds": [],
+      "summary": "Your first step into the world of the Security Operations Center — what a SOC actually does, day to day, and where you'd fit in as a Tier 1 Analyst.",
+      "whatYouWillLearn": [
+        "What a Security Operations Center (SOC) is and why every serious organisation has one",
+        "The different tiers inside a SOC (Tier 1, 2, 3) and what each one actually does",
+        "A realistic look at a day in the life of a SOC Analyst",
+        "The core skills and mindset that make a great SOC Analyst"
+      ],
+      "labs": [
+        { "title": "Explore a real SOC dashboard", "description": "Get hands-on with a live-style SOC dashboard to see what analysts look at every day.", "durationLabel": "2 hours" }
+      ],
+      "skills": ["SOC Fundamentals", "Security Operations Awareness"]
+    },
+    {
+      "id": "step-2",
+      "order": 2,
+      "title": "Security Monitoring & SIEM Tools",
+      "tag": null,
+      "price": 45000,
+      "prerequisiteIds": ["step-1"],
+      "summary": "Get hands-on with the software every SOC Analyst uses to watch over an organisation's systems in real time.",
+      "whatYouWillLearn": [
+        "What a SIEM (Security Information and Event Management) tool actually does, in plain language",
+        "How to read and search through security logs to find what matters",
+        "Setting up and understanding basic detection rules and alerts",
+        "Hands-on practice with a real SIEM platform"
+      ],
+      "labs": [
+        { "title": "SIEM log search practice", "description": "Search and filter real security logs inside a SIEM platform to find specific events.", "durationLabel": "3 hours" }
+      ],
+      "skills": ["SIEM Tools", "Log Analysis"]
+    },
+    {
+      "id": "step-3",
+      "order": 3,
+      "title": "Threat Detection & Alert Triage",
+      "tag": null,
+      "price": 45000,
+      "prerequisiteIds": ["step-1", "step-2"],
+      "summary": "Learn the exact process real analysts use to look at an alert and decide: is this nothing, or is this a real problem?",
+      "whatYouWillLearn": [
+        "How to triage a security alert step by step, the way working analysts do",
+        "Telling apart false positives from genuine threats",
+        "Prioritising alerts when there are dozens waiting for attention",
+        "Documenting your findings clearly for the next person in the chain"
+      ],
+      "labs": [
+        { "title": "Alert triage simulation", "description": "Work through a queue of real-style alerts and decide which ones need escalation.", "durationLabel": "3 hours" }
+      ],
+      "skills": ["Alert Triage", "Threat Detection"]
+    },
+    {
+      "id": "step-4",
+      "order": 4,
+      "title": "Incident Response Basics",
+      "tag": null,
+      "price": 40000,
+      "prerequisiteIds": ["step-1", "step-3"],
+      "summary": "Once a threat is confirmed real, what happens next? Learn the calm, structured process professionals follow to contain and resolve it.",
+      "whatYouWillLearn": [
+        "The standard incident response process: identify, contain, eradicate, recover",
+        "How and when to escalate an incident to Tier 2 or above",
+        "Basic containment actions you can take as a first responder",
+        "Writing a clear incident report after the dust settles"
+      ],
+      "labs": [
+        { "title": "Incident response walkthrough", "description": "Work through a guided, real-style security incident from detection to resolution.", "durationLabel": "4 hours" }
+      ],
+      "skills": ["Incident Response", "Security Documentation"]
+    },
+    {
+      "id": "step-5",
+      "order": 5,
+      "title": "Network & Endpoint Security Monitoring",
+      "tag": null,
+      "price": 40000,
+      "prerequisiteIds": ["step-1", "step-2"],
+      "summary": "Extend your monitoring skills beyond alerts and logs — learn to watch network traffic and individual devices for the subtle signs of compromise.",
+      "whatYouWillLearn": [
+        "How to read network traffic for signs of something suspicious",
+        "What an EDR (Endpoint Detection and Response) tool does and how analysts use one",
+        "Recognising common signs that a device has been compromised",
+        "Correlating network and endpoint clues into one clear picture"
+      ],
+      "labs": [
+        { "title": "Network traffic inspection", "description": "Use Wireshark to spot suspicious traffic patterns in a captured network session.", "durationLabel": "3 hours" }
+      ],
+      "skills": ["Network Monitoring", "Endpoint Security Awareness"]
+    },
+    {
+      "id": "step-6",
+      "order": 6,
+      "title": "SOC Career Path & Certification Prep",
+      "tag": "Career Focus",
+      "price": 20000,
+      "prerequisiteIds": ["step-1"],
+      "summary": "Turn everything you've learned into a real career plan — including which certifications are actually worth your time and money.",
+      "whatYouWillLearn": [
+        "Which industry certifications matter for a SOC career (and which don't, yet)",
+        "How to write a SOC Analyst resume that actually gets noticed",
+        "What to expect in a SOC Analyst interview, and how to prepare",
+        "Your own personal roadmap for your first 6–12 months in the field"
+      ],
+      "labs": [],
+      "skills": ["Career Path Mapping", "Certification Planning"]
+    }
+  ],
+  "whatsapp": {
+    "phone": "2348073735836",
+    "messageTemplate": "Hi! I'm interested in the {courseTitle} course.\n\nMy plan:\n{moduleList}\n\nTotal: {currency}{total}\n\nI'd like to get started."
+  },
+  "faqs": [
+    {
+      "question": "Who should take this SOC Analyst course?",
+      "answer": "This is for anyone who wants a real, hands-on entry into the world of security monitoring — including graduates of our Cybersecurity Foundations course, IT professionals looking to move into a SOC role, and anyone who enjoys the idea of watching over systems and catching threats before they become incidents."
+    },
+    {
+      "question": "Can I pay for just one step instead of the whole course?",
+      "answer": "Yes! You can start with just one step for as little as ₦20,000. Each step has its own price, and you can add more whenever you're ready. If you're able to take the full course at once, it works out cheaper (₦180,000 instead of ₦210,000 if bought step by step) — but starting small is always an option."
+    },
+    {
+      "question": "Do I need to complete Cybersecurity Foundations first?",
+      "answer": "It's not a hard requirement, but we strongly recommend it — or equivalent experience with basic networking and security concepts. This course moves quickly into real monitoring tools and assumes that foundation is already in place."
+    },
+    {
+      "question": "Can I pick any step, or do I have to go in order?",
+      "answer": "We recommend going in order, since several steps build directly on the SIEM and triage skills from earlier ones. You're still free to start wherever you like — if you skip ahead, we'll let you know clearly what you might want to brush up on first."
+    },
+    {
+      "question": "What's the difference between a Step Certificate and the Full Course Certificate?",
+      "answer": "Every step you complete earns its own Digitanotion Step Certificate. Once you've completed all 6 steps, you also receive the Digitanotion SOC Analyst Certificate (Tier 1), recognised by our industry partners as full Tier 1 SOC readiness."
+    },
+    {
+      "question": "What if I only finish a few steps? Do I lose anything?",
+      "answer": "Not at all. You keep every Step Certificate you've earned, and you can come back and continue at any time — there's no deadline or expiry on picking up where you left off."
+    },
+    {
+      "question": "What tools will I learn to use?",
+      "answer": "You'll get hands-on with a real SIEM platform for log search and alert monitoring, Wireshark for network traffic inspection, and the same dashboards and workflows used in real Security Operations Centers."
+    },
+    {
+      "question": "Are the labs real, or just simulations?",
+      "answer": "A mix of both — you'll work with real tools like SIEM platforms and Wireshark, but on safe, controlled data and scenarios built specifically for learning. You get real hands-on practice without any risk to a live system."
+    },
+    {
+      "question": "What career opportunities does this lead to?",
+      "answer": "Graduates are ready for entry-level roles like Tier 1 SOC Analyst, Security Monitoring Analyst, or Junior Threat Detection Analyst — and many go on to our Ethical Hacking specialization to build toward more advanced security roles."
+    },
+    {
+      "question": "How much time should I set aside each week?",
+      "answer": "About 8–10 hours a week works well: a few hours for live sessions, a few for lab work, and some time for practice on your own. It's designed to fit around work, school, or family life."
+    },
+    {
+      "question": "What kind of projects will I work on?",
+      "answer": "You'll work through a real-style alert triage queue, a full guided incident response walkthrough, and network traffic analysis — building the exact muscle memory a working Tier 1 Analyst uses every shift."
+    },
+    {
+      "question": "What support do I get during the course?",
+      "answer": "A dedicated mentor, round-the-clock access to your practice labs, a student community, weekly office hours, and career guidance once you're done."
+    },
+    {
+      "question": "Is this course suitable for someone with zero cybersecurity background?",
+      "answer": "It's best if you've covered the basics first — we recommend our Cybersecurity Foundations course if you're starting completely from zero. From there, this course takes you straight into real, practical SOC work."
+    }
+  ]
+}
