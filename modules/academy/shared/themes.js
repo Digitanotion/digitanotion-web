@@ -115,5 +115,5 @@ export const THEMES = {
 };
 
 export function getTheme(themeKey) {
-  return THEMES[themeKey] || THEMES.midnight;
+  return THEMES[themeKey] || THEMES.ember;
 }
