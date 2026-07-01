@@ -1,0 +1,279 @@
+{
+  "courseId": "full-stack-web-development",
+  "theme": "midnight",
+  "seo": {
+    "title": "Full Stack Web Development Course in Awka | HTML, CSS, JS, React, Next.js, MERN | Digitanotion Academy",
+    "description": "Become a full stack web developer step by step, from ₦30,000. HTML, CSS, JavaScript, React, Next.js, and the full MERN stack. Onsite in Awka or online across Africa.",
+    "keywords": [
+      "full stack web development course Awka",
+      "learn React Nigeria",
+      "Next.js training Anambra",
+      "MERN stack course Nigeria",
+      "learn HTML CSS JavaScript Awka",
+      "web developer bootcamp Nigeria",
+      "JavaScript training Southeast Nigeria",
+      "Node.js Express course Awka",
+      "MongoDB training Nigeria",
+      "become a web developer Awka",
+      "pay as you learn web development",
+      "Digitanotion Academy web development"
+    ]
+  },
+  "hero": {
+    "eyebrow": "Digitanotion Academy",
+    "title": "Full Stack Web Development",
+    "tagline": "Go from zero to building real, live websites and apps — HTML and CSS all the way to React, Next.js, and the full MERN stack. Learn step by step, at a price that fits you.",
+    "level": "All Levels",
+    "durationLabel": "18 weeks",
+    "labCountLabel": "8+ hands-on labs",
+    "ctaLabel": "See How You Can Start",
+    "ctaTarget": "#choose-how-you-start",
+    "startingFromLabel": "Start from just ₦30,000"
+  },
+  "location": {
+    "typeLabel": "Onsite or Online",
+    "onsiteDetails": "Suite 6, Mgbajiaka Area, Along Onisha–Enugu Expressway, Awka",
+    "onlineDetails": "Join live from anywhere — all you need is a laptop and internet",
+    "scheduleLabel": "Students agree on a schedule that works for them"
+  },
+  "cohorts": {
+    "nextStartLabel": "November 2026",
+    "upcoming": []
+  },
+  "pricing": {
+    "currencySymbol": "₦",
+    "fullCoursePrice": 395000,
+    "fullCourseOriginalPrice": 550000
+  },
+  "beforeYouStart": "No experience needed — we start from an absolute beginner level with HTML and CSS. If you've never used a computer for anything technical before, we recommend our Computing Essentials class first, but it isn't required.",
+  "learningOutcomes": [
+    "Build real, complete websites using HTML, CSS, and modern JavaScript",
+    "Build interactive, professional user interfaces with React",
+    "Build fast, SEO-friendly websites and apps using Next.js",
+    "Build and secure your own backend APIs with Node.js and Express",
+    "Work confidently with MongoDB, the database behind the MERN stack",
+    "Build, connect, and deploy a complete full-stack application from scratch"
+  ],
+  "certificates": {
+    "stepCertificateLabel": "Digitanotion Step Certificate",
+    "stepCertificateNote": "You earn one every time you finish a step — even if it's just one.",
+    "fullCourseCertificateLabel": "Digitanotion Full Stack Web Developer Certificate",
+    "fullCourseCertificateNote": "Awarded once you complete all 8 steps. Recognised by our industry partners as full-stack, MERN-ready developer readiness."
+  },
+  "modules": [
+    {
+      "id": "step-1",
+      "order": 1,
+      "title": "HTML & CSS Foundations",
+      "tag": "Foundation",
+      "price": 30000,
+      "prerequisiteIds": [],
+      "summary": "Your very first step into web development — learn to build real web pages from scratch, no experience needed.",
+      "whatYouWillLearn": [
+        "How web pages are actually built, using HTML to structure content",
+        "Styling pages with CSS — colors, layout, spacing, and responsive design",
+        "Flexbox and Grid, the two layout systems every modern website uses",
+        "Building a complete, real webpage from a blank page to a finished design"
+      ],
+      "labs": [
+        { "title": "Build your first webpage", "description": "Structure and style a complete webpage from scratch using HTML and CSS.", "durationLabel": "3 hours" }
+      ],
+      "skills": ["HTML", "CSS", "Responsive Design"]
+    },
+    {
+      "id": "step-2",
+      "order": 2,
+      "title": "JavaScript Fundamentals",
+      "tag": null,
+      "price": 45000,
+      "prerequisiteIds": ["step-1"],
+      "summary": "Bring your web pages to life — learn the programming language that runs in every browser on earth.",
+      "whatYouWillLearn": [
+        "Variables, functions, and the core building blocks of JavaScript",
+        "How to make a web page respond to clicks, typing, and other user actions",
+        "Working with arrays and objects to organize real data",
+        "Debugging your code like a real developer, not just guessing"
+      ],
+      "labs": [
+        { "title": "Interactive page challenge", "description": "Add real interactivity — buttons, forms, and dynamic content — to a webpage.", "durationLabel": "4 hours" }
+      ],
+      "skills": ["JavaScript Fundamentals", "DOM Manipulation"]
+    },
+    {
+      "id": "step-3",
+      "order": 3,
+      "title": "Advanced JavaScript (ES6+ & Async)",
+      "tag": null,
+      "price": 45000,
+      "prerequisiteIds": ["step-2"],
+      "summary": "Level up to modern JavaScript — the exact syntax and patterns used in every professional codebase today.",
+      "whatYouWillLearn": [
+        "Modern ES6+ features: arrow functions, destructuring, spread/rest, modules",
+        "Promises and async/await — how JavaScript handles things that take time",
+        "Fetching real data from the internet using APIs",
+        "Working with JSON, the format almost all web data is sent in"
+      ],
+      "labs": [
+        { "title": "Fetch real-world data", "description": "Pull live data from a public API and display it dynamically on a page.", "durationLabel": "4 hours" }
+      ],
+      "skills": ["Modern JavaScript (ES6+)", "Async/Await", "Working with APIs"]
+    },
+    {
+      "id": "step-4",
+      "order": 4,
+      "title": "React Fundamentals",
+      "tag": null,
+      "price": 55000,
+      "prerequisiteIds": ["step-3"],
+      "summary": "Learn React — the library powering a huge share of the world's websites and apps, from Facebook to Netflix.",
+      "whatYouWillLearn": [
+        "How React thinks: components, props, and building blocks you reuse everywhere",
+        "Managing state — how your app remembers and reacts to change",
+        "Handling forms, lists, and user input the React way",
+        "Structuring a real React project from scratch"
+      ],
+      "labs": [
+        { "title": "Build a React app", "description": "Build a small, real multi-component React application from the ground up.", "durationLabel": "5 hours" }
+      ],
+      "skills": ["React Fundamentals", "Component Design"]
+    },
+    {
+      "id": "step-5",
+      "order": 5,
+      "title": "Advanced React & State Management",
+      "tag": null,
+      "price": 60000,
+      "prerequisiteIds": ["step-4"],
+      "summary": "Go beyond the basics — learn how professional teams manage complex state and structure large React apps.",
+      "whatYouWillLearn": [
+        "React Hooks in depth: useEffect, useContext, and writing your own hooks",
+        "Managing state across a large app without it becoming a mess",
+        "Performance patterns: when and why your app re-renders",
+        "Structuring a codebase the way a real engineering team would"
+      ],
+      "labs": [
+        { "title": "State management challenge", "description": "Refactor a growing React app to manage shared state cleanly.", "durationLabel": "5 hours" }
+      ],
+      "skills": ["React Hooks", "State Management"]
+    },
+    {
+      "id": "step-6",
+      "order": 6,
+      "title": "Next.js & Server-Side Rendering",
+      "tag": null,
+      "price": 60000,
+      "prerequisiteIds": ["step-4"],
+      "summary": "Learn Next.js — the framework built on top of React that powers fast, SEO-friendly, production-grade websites.",
+      "whatYouWillLearn": [
+        "File-based routing and how Next.js structures a real project",
+        "Server-side rendering and static generation — and when to use each",
+        "Building API routes directly inside your Next.js app",
+        "Deploying a real, live Next.js website to the internet"
+      ],
+      "labs": [
+        { "title": "Deploy a live site", "description": "Build and deploy a real Next.js website that's live on the internet.", "durationLabel": "4 hours" }
+      ],
+      "skills": ["Next.js", "Server-Side Rendering", "Deployment"]
+    },
+    {
+      "id": "step-7",
+      "order": 7,
+      "title": "Backend with Node.js & Express",
+      "tag": null,
+      "price": 65000,
+      "prerequisiteIds": ["step-3"],
+      "summary": "Move to the other side of the stack — learn to build the servers and APIs that power real applications.",
+      "whatYouWillLearn": [
+        "Building a real backend server using Node.js and Express",
+        "Designing REST APIs the way professional backend developers do",
+        "Handling authentication, so users can safely log in to your app",
+        "Connecting your backend to a real database"
+      ],
+      "labs": [
+        { "title": "Build a REST API", "description": "Build and test a complete REST API with real authentication.", "durationLabel": "6 hours" }
+      ],
+      "skills": ["Node.js", "Express", "REST APIs", "Authentication"]
+    },
+    {
+      "id": "step-8",
+      "order": 8,
+      "title": "MongoDB & Full Stack Capstone",
+      "tag": "Capstone",
+      "price": 70000,
+      "prerequisiteIds": ["step-5", "step-6", "step-7"],
+      "summary": "Bring everything together — frontend, backend, and database — into one real, complete MERN stack application.",
+      "whatYouWillLearn": [
+        "Designing and working with MongoDB, the database behind the MERN stack",
+        "Connecting React, Node.js, Express, and MongoDB into one working app",
+        "Planning and building a real, full-stack project from scratch",
+        "Deploying your finished full-stack application live on the internet"
+      ],
+      "labs": [
+        { "title": "Capstone: full MERN application", "description": "Build and deploy a complete full-stack application using MongoDB, Express, React, and Node.js.", "durationLabel": "10 hours" }
+      ],
+      "skills": ["MongoDB", "Full Stack Integration", "MERN Stack"]
+    }
+  ],
+  "whatsapp": {
+    "phone": "2348073735836",
+    "messageTemplate": "Hi! I'm interested in the {courseTitle} course.\n\nMy plan:\n{moduleList}\n\nTotal: {currency}{total}\n\nI'd like to get started."
+  },
+  "faqs": [
+    {
+      "question": "Who should take this Full Stack Web Development course?",
+      "answer": "This is for complete beginners who've never written a line of code, as well as anyone with some HTML/CSS experience who wants to go all the way to building real, deployed full-stack applications with React, Next.js, and MERN."
+    },
+    {
+      "question": "Can I pay for just one step instead of the whole course?",
+      "answer": "Yes! You can start with just one step for as little as ₦30,000. Each step has its own price, and you can add more whenever you're ready. If you're able to take the full course at once, it works out cheaper (₦395,000 instead of ₦430,000 if bought step by step) — but starting small is always an option."
+    },
+    {
+      "question": "Do I need any prior coding experience?",
+      "answer": "No. We start from Step 1 with HTML and CSS, assuming zero coding background. If you already know HTML/CSS or JavaScript, you're welcome to start further along the path."
+    },
+    {
+      "question": "Can I pick any step, or do I have to go in order?",
+      "answer": "We strongly recommend going in order, since almost every later step directly builds on the JavaScript and React skills from earlier ones. You're still free to start wherever you like — if you skip ahead, we'll let you know clearly what you might want to brush up on first."
+    },
+    {
+      "question": "What's the difference between a Step Certificate and the Full Course Certificate?",
+      "answer": "Every step you complete earns its own Digitanotion Step Certificate. Once you've completed all 8 steps, you also receive the Digitanotion Full Stack Web Developer Certificate, recognised by our industry partners as full-stack, MERN-ready developer readiness."
+    },
+    {
+      "question": "What if I only finish a few steps? Do I lose anything?",
+      "answer": "Not at all. You keep every Step Certificate you've earned, and you can come back and continue at any time — there's no deadline or expiry on picking up where you left off."
+    },
+    {
+      "question": "What is the MERN stack, and why do you teach it?",
+      "answer": "MERN stands for MongoDB, Express, React, and Node.js — four technologies that work together to build a complete web application, frontend to backend. It's one of the most in-demand skill combinations for web developer roles today, in Nigeria and globally."
+    },
+    {
+      "question": "What tools and software do I need?",
+      "answer": "A laptop with at least 8GB RAM and a stable internet connection. All the software you need — a code editor, Node.js, MongoDB — is free, and we walk you through installing everything during orientation."
+    },
+    {
+      "question": "Will I build real projects I can show employers?",
+      "answer": "Yes. Every step includes a hands-on lab, and the final step is a full capstone project — a complete, deployed MERN application connecting everything you've learned, ready to add to your portfolio."
+    },
+    {
+      "question": "What career opportunities does this lead to?",
+      "answer": "Graduates are ready for roles like Junior Frontend Developer, Junior Full Stack Developer, React Developer, or Junior Backend Developer — and many go on to freelance or join Digitanotion's own project teams."
+    },
+    {
+      "question": "How much time should I set aside each week?",
+      "answer": "About 8–12 hours a week works well: a few hours for live sessions, a few for hands-on labs, and some time for practice on your own. It's designed to fit around work, school, or family life."
+    },
+    {
+      "question": "Are the labs real projects, or just exercises?",
+      "answer": "Both — early labs are focused exercises to build specific skills, while later labs (and the final capstone) are real, complete projects: a working REST API, a deployed Next.js site, and a full MERN application."
+    },
+    {
+      "question": "What support do I get during the course?",
+      "answer": "A dedicated mentor, round-the-clock access to your practice labs, a student community, weekly office hours, and career guidance once you're done."
+    },
+    {
+      "question": "Is this course only for people who want to become developers?",
+      "answer": "Not at all. Business owners who want to build their own websites, designers who want to code their own work, and career changers exploring tech are all welcome — the step-by-step format means you can stop wherever your goal is met."
+    }
+  ]
+}

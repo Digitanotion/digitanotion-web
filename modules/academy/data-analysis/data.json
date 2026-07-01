@@ -72,7 +72,7 @@
       "order": 1,
       "title": "Excel for Data Analysis",
       "tag": "Foundation",
-      "price": 10000,
+      "price": 20000,
       "prerequisiteIds": [],
       "summary": "Your starting point as a data analyst — get comfortable pulling apart real data inside the tool you probably already have on your computer.",
       "whatYouWillLearn": [
@@ -129,7 +129,7 @@
       "order": 4,
       "title": "Advanced Power BI Dashboards",
       "tag": null,
-      "price": 25000,
+      "price": 30000,
       "prerequisiteIds": ["step-3"],
       "summary": "Go from basic charts to the kind of interactive, polished dashboards that get shared with executives.",
       "whatYouWillLearn": [
