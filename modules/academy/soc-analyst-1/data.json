@@ -62,7 +62,7 @@
       "order": 1,
       "title": "Introduction to the SOC",
       "tag": "Foundation",
-      "price": 20000,
+      "price": 40000,
       "prerequisiteIds": [],
       "summary": "Your first step into the world of the Security Operations Center — what a SOC actually does, day to day, and where you'd fit in as a Tier 1 Analyst.",
       "whatYouWillLearn": [
@@ -100,7 +100,7 @@
       "order": 3,
       "title": "Threat Detection & Alert Triage",
       "tag": null,
-      "price": 50000,
+      "price": 60000,
       "prerequisiteIds": ["step-1", "step-2"],
       "summary": "Learn the exact process real analysts use to look at an alert and decide: is this nothing, or is this a real problem?",
       "whatYouWillLearn": [
@@ -119,7 +119,7 @@
       "order": 4,
       "title": "Incident Response Basics",
       "tag": null,
-      "price": 50000,
+      "price": 60000,
       "prerequisiteIds": ["step-1", "step-3"],
       "summary": "Once a threat is confirmed real, what happens next? Learn the calm, structured process professionals follow to contain and resolve it.",
       "whatYouWillLearn": [
@@ -138,7 +138,7 @@
       "order": 5,
       "title": "Network & Endpoint Security Monitoring",
       "tag": null,
-      "price": 50000,
+      "price": 60000,
       "prerequisiteIds": ["step-1", "step-2"],
       "summary": "Extend your monitoring skills beyond alerts and logs — learn to watch network traffic and individual devices for the subtle signs of compromise.",
       "whatYouWillLearn": [
@@ -157,7 +157,7 @@
       "order": 6,
       "title": "SOC Career Path & Certification Prep",
       "tag": "Career Focus",
-      "price": 25000,
+      "price": 30000,
       "prerequisiteIds": ["step-1"],
       "summary": "Turn everything you've learned into a real career plan — including which certifications are actually worth your time and money.",
       "whatYouWillLearn": [
