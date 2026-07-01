@@ -1,6 +1,6 @@
 {
   "courseId": "full-stack-web-development",
-  "theme": "midnight",
+  "theme": "ember",
   "seo": {
     "title": "Full Stack Web Development Course in Awka | HTML, CSS, JS, React, Next.js, MERN | Digitanotion Academy",
     "description": "Become a full stack web developer step by step, from ₦30,000. HTML, CSS, JavaScript, React, Next.js, and the full MERN stack. Onsite in Awka or online across Africa.",
@@ -24,7 +24,7 @@
     "title": "Full Stack Web Development",
     "tagline": "Go from zero to building real, live websites and apps — HTML and CSS all the way to React, Next.js, and the full MERN stack. Learn step by step, at a price that fits you.",
     "level": "All Levels",
-    "durationLabel": "18 weeks",
+    "durationLabel": "4-6 months",
     "labCountLabel": "8+ hands-on labs",
     "ctaLabel": "See How You Can Start",
     "ctaTarget": "#choose-how-you-start",
@@ -37,7 +37,7 @@
     "scheduleLabel": "Students agree on a schedule that works for them"
   },
   "cohorts": {
-    "nextStartLabel": "November 2026",
+    "nextStartLabel": "August/September 2026 Cohort",
     "upcoming": []
   },
   "pricing": {

@@ -1,3 +1,4 @@
+// modules/academy/index.js
 "use client";
 
 import { useState, useEffect } from "react";
@@ -118,6 +119,28 @@ const learningPaths = [
         color: "from-orange-500 to-red-500",
       },
       {
+        id: "full-stack-web-development",
+        name: "Full Stack Web Development (Specialization)",
+        description:
+          "Go from HTML, CSS, and JavaScript foundations all the way to React, Next.js, and the full MERN stack",
+        duration: "18 weeks",
+        level: "All Levels",
+        format: "Onsite/Online",
+        price: "₦395,000",
+        originalPrice: "₦550,000",
+        status: "Available",
+        isNew: true,
+        link: "/academy/full-stack-web-development",
+        icon: FaLaptopCode,
+        highlights: [
+          "HTML, CSS & JavaScript",
+          "React & Next.js",
+          "Node.js, Express & MongoDB",
+          "Full MERN Capstone",
+        ],
+        color: "from-orange-800 to-red-800",
+      },
+      {
         id: "web-frontend-development",
         name: "Web Front-End Engineer (Specialization)",
         description:
@@ -192,7 +215,7 @@ const learningPaths = [
         name: "Cybersecurity Foundations",
         description:
           "Start your security career with fundamental concepts and practices",
-        duration: "5 weeks",
+        duration: "8 weeks",
         level: "Beginner",
         format: "Onsite/Online",
         price: "₦100,000",
@@ -211,23 +234,23 @@ const learningPaths = [
       },
       {
         id: "soc-analyst",
-        name: "SOC Analyst (Specialization)",
+        name: "SOC Analyst 1 (Specialization)",
         description:
           "Become a Security Operations Center analyst with hands-on threat detection",
-        duration: "14 weeks",
+        duration: "10 weeks",
         level: "Intermediate",
-        format: "Onsite",
-        price: "₦370,000",
-        originalPrice: "₦500,000",
-        status: "Not Available",
-        isNew: false,
-        link: "#",
+        format: "Onsite/Online",
+        price: "₦180,000",
+        originalPrice: "₦280,000",
+        status: "Available",
+        isNew: true,
+        link: "/academy/soc-analyst-1",
         icon: FiShield,
         highlights: [
           "SIEM Tools",
+          "Alert Triage",
           "Incident Response",
-          "Threat Hunting",
-          "Log Analysis",
+          "Network Monitoring",
         ],
         color: "from-purple-600 to-indigo-600",
       },
@@ -390,19 +413,19 @@ const learningPaths = [
         name: "Data Analysis",
         description:
           "Transform data into insights with statistical analysis and visualization",
-        duration: "12 weeks",
+        duration: "14 weeks",
         level: "Intermediate",
         format: "Onsite/Online",
-        price: "₦130,000",
-        originalPrice: "₦170,000",
+        price: "₦140,000",
+        originalPrice: "₦180,000",
         status: "Available",
         isNew: true,
         link: "/academy/data-analysis",
         icon: FaChartBar,
         highlights: [
-          "SQL/Python",
+          "Power BI",
+          "Excel & SQL",
           "Data Visualization",
-          "Statistical Analysis",
           "Business Insights",
         ],
         color: "from-amber-500 to-yellow-500",
@@ -463,8 +486,8 @@ const featuredCourses = [
     description:
       "Start your security career with fundamental concepts and practices",
     level: "Beginner",
-    duration: "5 weeks",
-    format: "Onsite",
+    duration: "8 weeks",
+    format: "Onsite/Online",
     price: "₦100,000",
     originalPrice: "₦150,000",
     image: "/images/cyber-security.png",
@@ -476,9 +499,32 @@ const featuredCourses = [
       "Labs",
     ],
     color: "from-purple-500 to-indigo-500",
-    link: "/academy/cybersecurity",
+    link: "/academy/cyber-foundations",
     status: "Available",
     icon: FiShield,
+  },
+  {
+    id: "full-stack-web-development",
+    title: "Full Stack Web Development (Specialization)",
+    description:
+      "HTML, CSS, and JavaScript foundations all the way to React, Next.js, and the full MERN stack",
+    level: "All Levels",
+    duration: "18 weeks",
+    format: "Onsite/Online",
+    price: "₦395,000",
+    originalPrice: "₦550,000",
+    image: "/images/web-development.png",
+    highlights: [
+      "HTML, CSS & JavaScript",
+      "React & Next.js",
+      "Node.js & MongoDB",
+      "Full Capstone Project",
+      "+ More",
+    ],
+    color: "from-orange-500 to-red-500",
+    link: "/academy/full-stack-web-development",
+    status: "Available",
+    icon: FiCode,
   },
   {
     id: "fullstack-development",
@@ -993,7 +1039,7 @@ export default function AcademyPage() {
                               </div>
 
                               {/* CTA */}
-                              {course.link ? (
+                              {course.link && course.link !== "#" ? (
                                 <Link
                                   href={course.link}
                                   className="block w-full py-3 rounded-xl bg-gradient-to-r from-gray-100 to-gray-200 hover:from-gray-200 hover:to-gray-300 border border-gray-300 text-center font-semibold text-gray-900 transition-all group-hover:border-orange-500 flex items-center justify-center gap-2"
