@@ -62,7 +62,7 @@
       "order": 1,
       "title": "Introduction to Cybersecurity",
       "tag": "Foundation",
-      "price": 15000,
+      "price": 10000,
       "prerequisiteIds": [],
       "summary": "Your very first step into cybersecurity — no jargon, no confusion. You'll learn what the whole field is actually about and why it matters to everyone, not just tech people.",
       "whatYouWillLearn": [
@@ -81,7 +81,7 @@
       "order": 2,
       "title": "Finding Information Safely (OSINT)",
       "tag": null,
-      "price": 25000,
+      "price": 10000,
       "prerequisiteIds": ["step-1"],
       "summary": "Learn how professionals gather public information the legal, ethical way — and how to recognise when someone is trying to trick you online.",
       "whatYouWillLearn": [
@@ -99,9 +99,9 @@
     {
       "id": "step-3",
       "order": 3,
-      "title": "How the Internet Actually Works",
+      "title": "Networking Basics & Security",
       "tag": null,
-      "price": 22000,
+      "price": 20000,
       "prerequisiteIds": ["step-1"],
       "summary": "Ever wondered how your phone talks to a website on the other side of the world? This step breaks it down simply — and shows you how to keep that connection safe.",
       "whatYouWillLearn": [
@@ -116,9 +116,9 @@
     {
       "id": "step-4",
       "order": 4,
-      "title": "Security Tools & Artificial Intelligence",
+      "title": "Linux OS Basics & Artificial Intelligence",
       "tag": null,
-      "price": 28000,
+      "price": 30000,
       "prerequisiteIds": ["step-1", "step-3"],
       "summary": "Get your hands on the real software professionals use every day, and see how Artificial Intelligence is changing the fight against cybercrime.",
       "whatYouWillLearn": [
