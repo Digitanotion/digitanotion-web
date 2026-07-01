@@ -416,7 +416,7 @@ const learningPaths = [
         duration: "14 weeks",
         level: "Intermediate",
         format: "Onsite/Online",
-        price: "₦140,000",
+        price: "₦130,000",
         originalPrice: "₦180,000",
         status: "Available",
         isNew: true,
