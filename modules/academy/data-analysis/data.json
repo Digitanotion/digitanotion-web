@@ -1,0 +1,283 @@
+{
+  "courseId": "data-analysis",
+  "seo": {
+    "title": "Data Analysis Course in Awka | Power BI, Excel & SQL Training | Digitanotion Academy",
+    "description": "Master Data Analysis step by step, from ₦12,000. Learn Power BI, Excel, and SQL Server through 8 hands-on steps and 5 real-world projects. Onsite in Awka or online across Africa.",
+    "keywords": [
+      "data analysis course Awka",
+      "Power BI training Anambra",
+      "Excel classes Awka",
+      "SQL training Southeast Nigeria",
+      "data analytics bootcamp Nigeria",
+      "business intelligence course Awka",
+      "data analyst certification Anambra",
+      "Power BI dashboard training Awka",
+      "SQL Server training Awka",
+      "data visualization certification",
+      "DAX formulas training",
+      "Power Query Excel",
+      "become a data analyst Awka",
+      "data analytics portfolio",
+      "pay as you learn data analysis",
+      "Digitanotion Academy data analysis"
+    ]
+  },
+  "hero": {
+    "eyebrow": "Digitanotion Academy",
+    "title": "Data Analysis",
+    "tagline": "Turn raw data into real business decisions. Master Power BI, Excel, and SQL through hands-on projects and a real portfolio — learn step by step, at a price that fits you.",
+    "level": "Intermediate",
+    "durationLabel": "14 weeks",
+    "labCountLabel": "25+ hands-on labs",
+    "ctaLabel": "See How You Can Start",
+    "ctaTarget": "#choose-how-you-start",
+    "startingFromLabel": "Start from just ₦12,000"
+  },
+  "location": {
+    "typeLabel": "Onsite or Online",
+    "onsiteDetails": "Suite 6, Mgbajiaka Area, Along Onisha–Enugu Expressway, Awka",
+    "onlineDetails": "Join live from anywhere — all you need is a laptop and internet",
+    "scheduleLabel": "Tuesdays, Thursdays & Saturdays, 6–9PM",
+    "scheduleStructured": {
+      "daysOfWeek": ["Tuesday", "Thursday", "Saturday"],
+      "startTime": "18:00",
+      "endTime": "21:00"
+    }
+  },
+  "cohorts": {
+    "nextStartLabel": "October 2026",
+    "upcoming": []
+  },
+  "pricing": {
+    "currencySymbol": "₦",
+    "fullCoursePrice": 140000,
+    "fullCourseOriginalPrice": 180000
+  },
+  "beforeYouStart": "Basic computer literacy is all you truly need — we recommend our Computing Essentials class first if you're totally new to computers. Beyond that, just bring basic numeracy, some familiarity with Microsoft Office, and a laptop (Windows works best for Power BI and SQL Server, but we'll guide Mac users through their options too).",
+  "learningOutcomes": [
+    "Build interactive Power BI dashboards and reports",
+    "Master Excel for real data analysis — PivotTables, Power Query, and DAX",
+    "Write SQL queries to extract and shape data from a real database",
+    "Turn messy, real-world data into analysis-ready information",
+    "Design visualizations and dashboards that actually tell a story",
+    "Build a professional portfolio of 5 real data analysis projects"
+  ],
+  "certificates": {
+    "stepCertificateLabel": "Digitanotion Step Certificate",
+    "stepCertificateNote": "You earn one every time you finish a step — even if it's just one.",
+    "fullCourseCertificateLabel": "Digitanotion Data Analysis Professional Certificate",
+    "fullCourseCertificateNote": "Awarded once you complete all 8 steps. Recognised by our industry partners as full Data Analysis Professional Certification completion."
+  },
+  "modules": [
+    {
+      "id": "step-1",
+      "order": 1,
+      "title": "Excel for Data Analysis",
+      "tag": "Foundation",
+      "price": 18000,
+      "prerequisiteIds": [],
+      "summary": "Your starting point as a data analyst — get comfortable pulling apart real data inside the tool you probably already have on your computer.",
+      "whatYouWillLearn": [
+        "Power Query to clean and reshape messy data before you ever analyze it",
+        "PivotTables to summarize thousands of rows into clear, useful insights",
+        "Advanced formulas that go far beyond SUM and AVERAGE",
+        "The basics of DAX and data modeling inside Excel"
+      ],
+      "labs": [
+        { "title": "Clean a messy real dataset", "description": "Use Power Query to turn a messy spreadsheet into analysis-ready data.", "durationLabel": "3 hours" }
+      ],
+      "skills": ["Excel Power Query", "PivotTables", "Advanced Excel Formulas"]
+    },
+    {
+      "id": "step-2",
+      "order": 2,
+      "title": "SQL Database Querying",
+      "tag": null,
+      "price": 28000,
+      "prerequisiteIds": ["step-1"],
+      "summary": "Learn to talk directly to a real database — the skill that separates a data analyst from someone who's only ever used spreadsheets.",
+      "whatYouWillLearn": [
+        "Writing SELECT statements to pull exactly the data you need",
+        "Combining data from multiple tables using JOINs",
+        "Aggregating and summarizing data directly inside the database",
+        "Writing subqueries and optimizing slow queries"
+      ],
+      "labs": [
+        { "title": "Query a real database", "description": "Write real SQL queries against a live SQL Server Express database.", "durationLabel": "4 hours" }
+      ],
+      "skills": ["SQL Queries", "Database Design"]
+    },
+    {
+      "id": "step-3",
+      "order": 3,
+      "title": "Power BI Fundamentals",
+      "tag": null,
+      "price": 22000,
+      "prerequisiteIds": ["step-1", "step-2"],
+      "summary": "Bring your Excel and SQL skills into Power BI — the tool most businesses now use to turn data into dashboards leadership actually looks at.",
+      "whatYouWillLearn": [
+        "Importing and transforming data inside Power BI",
+        "The basics of data modeling — how tables relate to each other",
+        "Writing your first DAX formulas",
+        "Building your first real visualizations"
+      ],
+      "labs": [
+        { "title": "Build your first dashboard", "description": "Import a real dataset into Power BI and build your first working visualizations.", "durationLabel": "4 hours" }
+      ],
+      "skills": ["Power BI Desktop", "DAX Formulas"]
+    },
+    {
+      "id": "step-4",
+      "order": 4,
+      "title": "Advanced Power BI Dashboards",
+      "tag": null,
+      "price": 28000,
+      "prerequisiteIds": ["step-3"],
+      "summary": "Go from basic charts to the kind of interactive, polished dashboards that get shared with executives.",
+      "whatYouWillLearn": [
+        "Building interactive dashboards with drill-through and bookmarks",
+        "Using parameters to let users control what they see",
+        "Setting up Row-Level Security so people only see data meant for them",
+        "Publishing and managing dashboards in Power BI Service"
+      ],
+      "labs": [
+        { "title": "Interactive dashboard build", "description": "Add drill-through, bookmarks, and interactivity to a real dashboard.", "durationLabel": "4 hours" }
+      ],
+      "skills": ["Power BI Service", "Dashboard Design"]
+    },
+    {
+      "id": "step-5",
+      "order": 5,
+      "title": "Data Visualization Best Practices",
+      "tag": null,
+      "price": 12000,
+      "prerequisiteIds": ["step-3"],
+      "summary": "Learn why some dashboards are instantly clear and others are confusing — and how to make sure yours are always the first kind.",
+      "whatYouWillLearn": [
+        "How to pick the right chart type for what you're actually trying to say",
+        "The basics of color theory for dashboards",
+        "Designing for accessibility, so everyone can read your work",
+        "Telling a clear story with data, not just displaying numbers"
+      ],
+      "labs": [],
+      "skills": ["Data Visualization", "Storytelling with Data"]
+    },
+    {
+      "id": "step-6",
+      "order": 6,
+      "title": "Business Intelligence & Reporting",
+      "tag": null,
+      "price": 15000,
+      "prerequisiteIds": ["step-4"],
+      "summary": "Learn to think like a business, not just a tool user — building the KPIs and reports leadership actually relies on.",
+      "whatYouWillLearn": [
+        "How to develop meaningful KPIs for a real business",
+        "Building executive-ready dashboards and reports",
+        "Setting up scheduled data refresh so reports stay current automatically",
+        "Working confidently inside Power BI Service day to day"
+      ],
+      "labs": [],
+      "skills": ["KPI Development", "Business Intelligence"]
+    },
+    {
+      "id": "step-7",
+      "order": 7,
+      "title": "Statistical Analysis",
+      "tag": null,
+      "price": 15000,
+      "prerequisiteIds": ["step-1", "step-2"],
+      "summary": "Add a layer of real statistical thinking to your analysis — spotting trends and patterns that basic charts alone can miss.",
+      "whatYouWillLearn": [
+        "Descriptive statistics: what they mean and when to use them",
+        "Understanding correlation, and how it differs from causation",
+        "Basic regression for uncovering relationships in your data",
+        "Simple forecasting and trend analysis techniques"
+      ],
+      "labs": [
+        { "title": "Trend & correlation practice", "description": "Apply basic statistical analysis to a real dataset to uncover hidden patterns.", "durationLabel": "3 hours" }
+      ],
+      "skills": ["Statistical Analysis", "Data Modeling"]
+    },
+    {
+      "id": "step-8",
+      "order": 8,
+      "title": "Capstone Project",
+      "tag": "Capstone",
+      "price": 25000,
+      "prerequisiteIds": ["step-1", "step-2", "step-3", "step-4", "step-5", "step-6", "step-7"],
+      "summary": "Bring everything together into one real, end-to-end data analysis project — the centerpiece of your new portfolio.",
+      "whatYouWillLearn": [
+        "Planning and scoping a full data analysis project from scratch",
+        "Cleaning, modeling, and analyzing a real, messy dataset start to finish",
+        "Building a complete executive dashboard from your findings",
+        "Presenting your results the way a working data analyst would"
+      ],
+      "labs": [
+        { "title": "Capstone: end-to-end analysis", "description": "Complete a full data analysis project from raw data to a finished executive dashboard.", "durationLabel": "6 hours" }
+      ],
+      "skills": ["Data Cleaning", "Storytelling with Data"]
+    }
+  ],
+  "whatsapp": {
+    "phone": "2348073735836",
+    "messageTemplate": "Hi! I'm interested in the {courseTitle} course.\n\nMy plan:\n{moduleList}\n\nTotal: {currency}{total}\n\nI'd like to get started."
+  },
+  "faqs": [
+    {
+      "question": "Who should take this Data Analysis course?",
+      "answer": "This is for anyone who wants to turn raw data into real business decisions — including business professionals, finance officers, administrators, and complete beginners with basic computer skills who are ready to learn Excel, SQL, and Power BI from the ground up."
+    },
+    {
+      "question": "Can I pay for just one step instead of the whole course?",
+      "answer": "Yes! You can start with just one step for as little as ₦12,000. Each step has its own price, and you can add more whenever you're ready. If you're able to take the full course at once, it works out cheaper (₦140,000 instead of ₦163,000 if bought step by step) — but starting small is always an option."
+    },
+    {
+      "question": "Can I pick any step, or do I have to go in order?",
+      "answer": "We recommend going in order, since several steps build directly on the Excel, SQL, and Power BI skills from earlier ones. You're still free to start wherever you like — if you skip ahead, we'll let you know clearly what you might want to brush up on first."
+    },
+    {
+      "question": "What's the difference between a Step Certificate and the Full Course Certificate?",
+      "answer": "Every step you complete earns its own Digitanotion Step Certificate. Once you've completed all 8 steps, you also receive the Digitanotion Data Analysis Professional Certificate, recognised by our industry partners as full course completion."
+    },
+    {
+      "question": "What if I only finish a few steps? Do I lose anything?",
+      "answer": "Not at all. You keep every Step Certificate you've earned, and you can come back and continue at any time — there's no deadline or expiry on picking up where you left off."
+    },
+    {
+      "question": "Do I need prior experience in data analysis?",
+      "answer": "No. This course is designed to start from the fundamentals of Excel and SQL, gradually building up to advanced Power BI dashboards. All you need is analytical thinking and a willingness to learn."
+    },
+    {
+      "question": "Why Power BI over other visualization tools?",
+      "answer": "Power BI is the market leader in business intelligence, used by the majority of Fortune 500 companies. It's free for desktop use, integrates seamlessly with Excel and SQL Server, and has strong, growing job demand across Nigeria's data analytics market."
+    },
+    {
+      "question": "What SQL Server will I learn?",
+      "answer": "You'll learn SQL Server Express — the free, fully-featured database engine from Microsoft. You'll master writing queries, joining tables, aggregating data, and optimizing query performance, skills essential for any data professional."
+    },
+    {
+      "question": "Do I need a powerful computer?",
+      "answer": "A Windows laptop with 8GB RAM is recommended for the best experience with Power BI and SQL Server. Mac users can use Boot Camp or Parallels — we provide guidance on setup during orientation."
+    },
+    {
+      "question": "Will I have a portfolio by the end?",
+      "answer": "Yes! You'll complete 5 real-world projects — sales dashboards, financial analytics, customer insights, HR analytics, and a capstone executive dashboard — that become your professional portfolio to show employers."
+    },
+    {
+      "question": "Is there job placement support for data analysts?",
+      "answer": "Yes. We have partnerships with banks, telecoms, and consulting firms actively hiring data analysts. Our career support includes portfolio reviews, mock interviews, resume optimization, and direct referrals to our hiring network."
+    },
+    {
+      "question": "Is this certification recognized by employers?",
+      "answer": "Yes, our Data Analysis certification is industry-recognized and valued by employers across Nigeria and Africa. Many of our graduates work as data analysts at banks, fintechs, NGOs, and multinational companies."
+    },
+    {
+      "question": "What makes this course different from online tutorials?",
+      "answer": "This is a structured, mentor-led program with personalized feedback, real-world datasets, and career coaching. You don't just learn tools — you learn to think like a data analyst and solve real business problems with data."
+    },
+    {
+      "question": "What support do I get during the course?",
+      "answer": "A dedicated mentor, round-the-clock access to your practice labs and datasets, a student community, weekly office hours, and career guidance once you're done."
+    }
+  ]
+}

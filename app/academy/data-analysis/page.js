@@ -1,13 +1,19 @@
 import DataAnalysis from "@/modules/academy/data-analysis/index";
-import { dataAnalysisMetadata, dataAnalysisStructuredData } from "./metadata";
+import courseData from "@/modules/academy/data-analysis/data.json";
+import { buildCourseMetadata } from "@/modules/academy/shared/build-metadata";
+import { buildCourseStructuredData } from "@/modules/academy/shared/build-structured-data";
 import StructuredData from "@/components/StructuredData";
 
-export const metadata = dataAnalysisMetadata;
+const CANONICAL_URL = "https://www.digitanotion.com.ng/academy/data-analysis";
+
+export const metadata = buildCourseMetadata(courseData, CANONICAL_URL);
+
+const structuredData = buildCourseStructuredData(courseData, CANONICAL_URL);
 
 export default function DataAnalysisPage() {
   return (
     <>
-      <StructuredData data={dataAnalysisStructuredData} />
+      <StructuredData data={structuredData} />
       <DataAnalysis />
     </>
   );
