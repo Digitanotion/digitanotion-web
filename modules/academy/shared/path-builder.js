@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { HiCheck, HiChevronDown, HiOutlineExclamation, HiBadgeCheck } from "react-icons/hi";
+import { HiCheck, HiChevronDown, HiOutlineExclamation, HiBadgeCheck, HiX } from "react-icons/hi";
 import { FaWhatsapp } from "react-icons/fa";
 
 function formatMoney(amount, symbol) {
@@ -35,6 +35,7 @@ export default function PathBuilder({ data }) {
   const [acknowledgedIds, setAcknowledgedIds] = useState([]);
   const [expandedId, setExpandedId] = useState(null);
   const [pendingWarningId, setPendingWarningId] = useState(null);
+  const [dismissed, setDismissed] = useState(false);
 
   const individualSum = modules.reduce((sum, m) => sum + m.price, 0);
   const savings = individualSum - pricing.fullCoursePrice;
@@ -54,12 +55,14 @@ export default function PathBuilder({ data }) {
     setMode("full");
     setSelectedIds(allIds);
     setPendingWarningId(null);
+    setDismissed(false);
   }
 
   function switchToCustom() {
     setMode("custom");
     setSelectedIds([]);
     setPendingWarningId(null);
+    setDismissed(false);
   }
 
   function getMissingPrereqs(moduleId) {
@@ -73,6 +76,7 @@ export default function PathBuilder({ data }) {
       setSelectedIds((prev) => prev.filter((id) => id !== moduleId));
       setAcknowledgedIds((prev) => prev.filter((id) => id !== moduleId));
       if (pendingWarningId === moduleId) setPendingWarningId(null);
+      setDismissed(false);
       return;
     }
 
@@ -84,12 +88,14 @@ export default function PathBuilder({ data }) {
 
     setSelectedIds((prev) => [...prev, moduleId]);
     setPendingWarningId(null);
+    setDismissed(false);
   }
 
   function acknowledgeAndAdd(moduleId) {
     setAcknowledgedIds((prev) => [...prev, moduleId]);
     setSelectedIds((prev) => [...prev, moduleId]);
     setPendingWarningId(null);
+    setDismissed(false);
   }
 
   function buildWhatsappLink() {
@@ -320,41 +326,50 @@ export default function PathBuilder({ data }) {
         )}
       </div>
 
-      {/* Sticky summary bar - only appears once a real choice has been made */}
+      {/* Sticky summary bar - closable, reappears automatically on any new selection */}
       <AnimatePresence>
-        {hasSelection && (
+        {hasSelection && !dismissed && (
           <motion.div
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: 100, opacity: 0 }}
             transition={{ duration: 0.25 }}
-            className="fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-gray-200 shadow-2xl"
+            className="fixed bottom-0 left-0 right-0 z-40 px-4 pb-4 pointer-events-none"
           >
-            <div className="max-w-5xl mx-auto px-6 py-4 flex flex-wrap items-center justify-between gap-4">
-              <div>
-                <div className="text-sm text-gray-500">
-                  {mode === "full" ? "Full Course selected" : `${selectedIds.length} of ${modules.length} steps selected`}
-                </div>
-                <div className="text-2xl font-bold text-gray-900">{formatMoney(total, pricing.currencySymbol)}</div>
-                {mode === "custom" && !isFullyComplete && (
-                  <div className="text-xs text-teal-700 font-medium mt-0.5">
-                    Take all {modules.length} steps and save {formatMoney(savings, pricing.currencySymbol)}
-                  </div>
-                )}
-                {isFullyComplete && (
-                  <div className="text-xs text-teal-700 font-medium mt-0.5">Full Course Certificate unlocked</div>
-                )}
-              </div>
-
-              <a
-                href={buildWhatsappLink()}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-white bg-green-600 hover:bg-green-700 shadow-lg transition-all"
+            <div className="max-w-5xl mx-auto relative pointer-events-auto">
+              <button
+                onClick={() => setDismissed(true)}
+                aria-label="Close summary"
+                className="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-gray-900 text-white flex items-center justify-center shadow-md hover:bg-gray-700 transition-colors z-10"
               >
-                <FaWhatsapp size={20} />
-                Continue on WhatsApp
-              </a>
+                <HiX size={16} />
+              </button>
+              <div className="bg-white border border-gray-200 rounded-2xl shadow-2xl px-6 py-4 flex flex-wrap items-center justify-between gap-4">
+                <div>
+                  <div className="text-sm text-gray-500">
+                    {mode === "full" ? "Full Course selected" : `${selectedIds.length} of ${modules.length} steps selected`}
+                  </div>
+                  <div className="text-2xl font-bold text-gray-900">{formatMoney(total, pricing.currencySymbol)}</div>
+                  {mode === "custom" && !isFullyComplete && (
+                    <div className="text-xs text-teal-700 font-medium mt-0.5">
+                      Take all {modules.length} steps and save {formatMoney(savings, pricing.currencySymbol)}
+                    </div>
+                  )}
+                  {isFullyComplete && (
+                    <div className="text-xs text-teal-700 font-medium mt-0.5">Full Course Certificate unlocked</div>
+                  )}
+                </div>
+
+                <a
+                  href={buildWhatsappLink()}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-white bg-green-600 hover:bg-green-700 shadow-lg transition-all"
+                >
+                  <FaWhatsapp size={20} />
+                  Continue on WhatsApp
+                </a>
+              </div>
             </div>
           </motion.div>
         )}
