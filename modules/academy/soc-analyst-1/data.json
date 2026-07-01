@@ -37,8 +37,8 @@
   },
   "pricing": {
     "currencySymbol": "₦",
-    "fullCoursePrice": 180000,
-    "fullCourseOriginalPrice": 280000
+    "fullCoursePrice": 280000,
+    "fullCourseOriginalPrice": 350000
   },
   "beforeYouStart": "This course builds directly on cybersecurity fundamentals. We recommend completing Cybersecurity Foundations first (or having equivalent experience) — you'll want a basic understanding of networks, threats, and security concepts before starting here.",
   "learningOutcomes": [
@@ -80,7 +80,7 @@
       "order": 2,
       "title": "Security Monitoring & SIEM Tools",
       "tag": null,
-      "price": 45000,
+      "price": 60000,
       "prerequisiteIds": ["step-1"],
       "summary": "Get hands-on with the software every SOC Analyst uses to watch over an organisation's systems in real time.",
       "whatYouWillLearn": [
@@ -99,7 +99,7 @@
       "order": 3,
       "title": "Threat Detection & Alert Triage",
       "tag": null,
-      "price": 45000,
+      "price": 50000,
       "prerequisiteIds": ["step-1", "step-2"],
       "summary": "Learn the exact process real analysts use to look at an alert and decide: is this nothing, or is this a real problem?",
       "whatYouWillLearn": [
@@ -118,7 +118,7 @@
       "order": 4,
       "title": "Incident Response Basics",
       "tag": null,
-      "price": 40000,
+      "price": 50000,
       "prerequisiteIds": ["step-1", "step-3"],
       "summary": "Once a threat is confirmed real, what happens next? Learn the calm, structured process professionals follow to contain and resolve it.",
       "whatYouWillLearn": [
@@ -137,7 +137,7 @@
       "order": 5,
       "title": "Network & Endpoint Security Monitoring",
       "tag": null,
-      "price": 40000,
+      "price": 50000,
       "prerequisiteIds": ["step-1", "step-2"],
       "summary": "Extend your monitoring skills beyond alerts and logs — learn to watch network traffic and individual devices for the subtle signs of compromise.",
       "whatYouWillLearn": [
@@ -156,7 +156,7 @@
       "order": 6,
       "title": "SOC Career Path & Certification Prep",
       "tag": "Career Focus",
-      "price": 20000,
+      "price": 25000,
       "prerequisiteIds": ["step-1"],
       "summary": "Turn everything you've learned into a real career plan — including which certifications are actually worth your time and money.",
       "whatYouWillLearn": [

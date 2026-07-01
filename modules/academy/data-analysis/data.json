@@ -37,21 +37,19 @@
     "typeLabel": "Onsite or Online",
     "onsiteDetails": "Suite 6, Mgbajiaka Area, Along Onisha–Enugu Expressway, Awka",
     "onlineDetails": "Join live from anywhere — all you need is a laptop and internet",
-    "scheduleLabel": "Tuesdays, Thursdays & Saturdays, 6–9PM",
+    "scheduleLabel": "Students agree on a schedule that works for them",
     "scheduleStructured": {
-      "daysOfWeek": ["Tuesday", "Thursday", "Saturday"],
-      "startTime": "18:00",
-      "endTime": "21:00"
+    
     }
   },
   "cohorts": {
-    "nextStartLabel": "October 2026",
+    "nextStartLabel": "August/September, 2026",
     "upcoming": []
   },
   "pricing": {
     "currencySymbol": "₦",
-    "fullCoursePrice": 140000,
-    "fullCourseOriginalPrice": 180000
+    "fullCoursePrice": 130000,
+    "fullCourseOriginalPrice": 150000
   },
   "beforeYouStart": "Basic computer literacy is all you truly need — we recommend our Computing Essentials class first if you're totally new to computers. Beyond that, just bring basic numeracy, some familiarity with Microsoft Office, and a laptop (Windows works best for Power BI and SQL Server, but we'll guide Mac users through their options too).",
   "learningOutcomes": [
@@ -74,7 +72,7 @@
       "order": 1,
       "title": "Excel for Data Analysis",
       "tag": "Foundation",
-      "price": 18000,
+      "price": 10000,
       "prerequisiteIds": [],
       "summary": "Your starting point as a data analyst — get comfortable pulling apart real data inside the tool you probably already have on your computer.",
       "whatYouWillLearn": [
@@ -93,7 +91,7 @@
       "order": 2,
       "title": "SQL Database Querying",
       "tag": null,
-      "price": 28000,
+      "price": 20000,
       "prerequisiteIds": ["step-1"],
       "summary": "Learn to talk directly to a real database — the skill that separates a data analyst from someone who's only ever used spreadsheets.",
       "whatYouWillLearn": [
@@ -112,7 +110,7 @@
       "order": 3,
       "title": "Power BI Fundamentals",
       "tag": null,
-      "price": 22000,
+      "price": 20000,
       "prerequisiteIds": ["step-1", "step-2"],
       "summary": "Bring your Excel and SQL skills into Power BI — the tool most businesses now use to turn data into dashboards leadership actually looks at.",
       "whatYouWillLearn": [
@@ -131,7 +129,7 @@
       "order": 4,
       "title": "Advanced Power BI Dashboards",
       "tag": null,
-      "price": 28000,
+      "price": 25000,
       "prerequisiteIds": ["step-3"],
       "summary": "Go from basic charts to the kind of interactive, polished dashboards that get shared with executives.",
       "whatYouWillLearn": [
@@ -150,7 +148,7 @@
       "order": 5,
       "title": "Data Visualization Best Practices",
       "tag": null,
-      "price": 12000,
+      "price": 10000,
       "prerequisiteIds": ["step-3"],
       "summary": "Learn why some dashboards are instantly clear and others are confusing — and how to make sure yours are always the first kind.",
       "whatYouWillLearn": [
@@ -167,7 +165,7 @@
       "order": 6,
       "title": "Business Intelligence & Reporting",
       "tag": null,
-      "price": 15000,
+      "price": 10000,
       "prerequisiteIds": ["step-4"],
       "summary": "Learn to think like a business, not just a tool user — building the KPIs and reports leadership actually relies on.",
       "whatYouWillLearn": [
@@ -184,7 +182,7 @@
       "order": 7,
       "title": "Statistical Analysis",
       "tag": null,
-      "price": 15000,
+      "price": 10000,
       "prerequisiteIds": ["step-1", "step-2"],
       "summary": "Add a layer of real statistical thinking to your analysis — spotting trends and patterns that basic charts alone can miss.",
       "whatYouWillLearn": [
