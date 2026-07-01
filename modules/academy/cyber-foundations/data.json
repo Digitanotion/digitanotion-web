@@ -1,0 +1,229 @@
+{
+  "courseId": "cybersecurity-foundations",
+  "seo": {
+    "title": "Cybersecurity Foundations Course in Awka, Nigeria | Digitanotion Academy",
+    "description": "Start your cybersecurity journey step by step, from ₦15,000. Beginner friendly, hands-on labs, real certificates. Learn onsite in Awka or online from anywhere in Africa.",
+    "keywords": [
+      "cybersecurity course Awka",
+      "cybersecurity training Nigeria",
+      "learn cybersecurity online Africa",
+      "affordable cybersecurity course",
+      "beginner cybersecurity class Anambra",
+      "ethical hacking course for beginners",
+      "cybersecurity certificate Nigeria",
+      "pay as you learn cybersecurity"
+    ]
+  },
+  "hero": {
+    "eyebrow": "Digitanotion Academy",
+    "title": "Cybersecurity Foundations",
+    "tagline": "Start your cybersecurity journey with real skills you can use. No experience needed — just curiosity. Learn step by step, at a price that fits you.",
+    "level": "Beginner",
+    "durationLabel": "8 weeks",
+    "labCountLabel": "5+ hands-on labs",
+    "ctaLabel": "See How You Can Start",
+    "ctaTarget": "#choose-how-you-start",
+    "startingFromLabel": "Start from just ₦15,000"
+  },
+  "location": {
+    "typeLabel": "Onsite or Online",
+    "onsiteDetails": "Suite 6, Mgbajiaka Area, Along Onisha–Enugu Expressway, Awka",
+    "onlineDetails": "Join live from anywhere — all you need is a phone or computer and internet",
+    "scheduleLabel": "Monday & Wednesday, 6–9PM · Saturday, 10AM–2PM"
+  },
+  "cohorts": {
+    "nextStartLabel": "August 3, 2026",
+    "upcoming": [
+      { "label": "August 2026" },
+      { "label": "September 2026" },
+      { "label": "October 2026" }
+    ]
+  },
+  "pricing": {
+    "currencySymbol": "₦",
+    "fullCoursePrice": 100000,
+    "fullCourseOriginalPrice": 150000
+  },
+  "beforeYouStart": "No experience needed. If you've never used a computer for anything technical before, we recommend our Computing Essentials class first — but it's not required to join.",
+  "learningOutcomes": [
+    "Understand what cybersecurity really means, in plain language",
+    "Gather public information safely, the way real investigators do",
+    "Understand how the internet and networks actually work",
+    "Use the same tools real security professionals use every day",
+    "Recognise common online scams and attacks before they happen",
+    "Know exactly which cybersecurity career path fits you best"
+  ],
+  "certificates": {
+    "stepCertificateLabel": "Digitanotion Step Certificate",
+    "stepCertificateNote": "You earn one every time you finish a step — even if it's just one.",
+    "fullCourseCertificateLabel": "Digitanotion Professional Certificate",
+    "fullCourseCertificateNote": "Awarded once you complete all 6 steps. This is the certificate employers recognise as full course completion."
+  },
+  "modules": [
+    {
+      "id": "step-1",
+      "order": 1,
+      "title": "Introduction to Cybersecurity",
+      "tag": "Foundation",
+      "price": 15000,
+      "prerequisiteIds": [],
+      "summary": "Your very first step into cybersecurity — no jargon, no confusion. You'll learn what the whole field is actually about and why it matters to everyone, not just tech people.",
+      "whatYouWillLearn": [
+        "What cybersecurity really means, explained in plain language",
+        "The 3 things every security expert protects: keeping information private, keeping it accurate, and keeping it available (called the CIA Triad — don't worry, we'll explain it simply)",
+        "The different kinds of cyber threats you hear about in the news",
+        "A friendly overview of the exciting careers inside cybersecurity"
+      ],
+      "labs": [
+        { "title": "Set up your learning space", "description": "Get your computer ready and comfortable with the tools you'll use for the rest of the course.", "durationLabel": "2 hours" }
+      ],
+      "skills": ["Cybersecurity Fundamentals", "Cyber Hygiene"]
+    },
+    {
+      "id": "step-2",
+      "order": 2,
+      "title": "Finding Information Safely (OSINT)",
+      "tag": null,
+      "price": 25000,
+      "prerequisiteIds": ["step-1"],
+      "summary": "Learn how professionals gather public information the legal, ethical way — and how to recognise when someone is trying to trick you online.",
+      "whatYouWillLearn": [
+        "What \"OSINT\" means: simply, gathering public information the safe and legal way",
+        "The basic techniques real investigators and ethical hackers use to research safely",
+        "How scammers use social engineering to trick people, so you can spot and avoid it",
+        "A guided, hands-on practice investigating public information the right way"
+      ],
+      "labs": [
+        { "title": "Gather public information ethically", "description": "Practice safe, legal research techniques on real, public information.", "durationLabel": "2 hours" },
+        { "title": "Spot a phishing attempt", "description": "See exactly how attackers use fake links and messages to trick people.", "durationLabel": "2 hours" }
+      ],
+      "skills": ["OSINT Techniques", "Recognising Social Engineering"]
+    },
+    {
+      "id": "step-3",
+      "order": 3,
+      "title": "How the Internet Actually Works",
+      "tag": null,
+      "price": 22000,
+      "prerequisiteIds": ["step-1"],
+      "summary": "Ever wondered how your phone talks to a website on the other side of the world? This step breaks it down simply — and shows you how to keep that connection safe.",
+      "whatYouWillLearn": [
+        "How computers and devices communicate with each other over a network",
+        "Everyday terms like IP address, router, and firewall — explained without the confusion",
+        "How your information travels from your device to a website and back",
+        "Simple steps to keep a home or office network safe"
+      ],
+      "labs": [],
+      "skills": ["Networking Basics", "Basic Network Security"]
+    },
+    {
+      "id": "step-4",
+      "order": 4,
+      "title": "Security Tools & Artificial Intelligence",
+      "tag": null,
+      "price": 28000,
+      "prerequisiteIds": ["step-1", "step-3"],
+      "summary": "Get your hands on the real software professionals use every day, and see how Artificial Intelligence is changing the fight against cybercrime.",
+      "whatYouWillLearn": [
+        "Get comfortable with Kali Linux, the operating system most security professionals use",
+        "See how Artificial Intelligence now helps detect and stop cyber attacks",
+        "Learn to recognise the early warning signs of malware (harmful software)",
+        "Practice reading simple security logs to spot unusual activity"
+      ],
+      "labs": [
+        { "title": "Security tools + AI in action", "description": "Hands-on practice with real security tools and how AI supports them.", "durationLabel": "2 hours" }
+      ],
+      "skills": ["Kali Linux Basics", "Artificial Intelligence in Cybersecurity"]
+    },
+    {
+      "id": "step-5",
+      "order": 5,
+      "title": "Understanding Threats & Weaknesses",
+      "tag": null,
+      "price": 25000,
+      "prerequisiteIds": ["step-1", "step-4"],
+      "summary": "Learn how attacks actually happen — using real, relatable examples — and how experts find and fix the weak spots before criminals do.",
+      "whatYouWillLearn": [
+        "Common attack types like viruses, ransomware, and phishing, explained with real-world examples",
+        "What a \"vulnerability\" is (a weak spot attackers look for) and how experts find them",
+        "A beginner-friendly introduction to how businesses protect themselves",
+        "A guided lab safely analysing a simple piece of harmful software"
+      ],
+      "labs": [
+        { "title": "Analyse harmful software safely", "description": "A guided, safe walkthrough of how basic malware works.", "durationLabel": "2 hours" }
+      ],
+      "skills": ["Threat Identification", "Security Best Practices"]
+    },
+    {
+      "id": "step-6",
+      "order": 6,
+      "title": "Finding Your Career Path",
+      "tag": "Career Focus",
+      "price": 15000,
+      "prerequisiteIds": ["step-1"],
+      "summary": "Now that you've tasted every corner of cybersecurity, this final step helps you turn that into a real, personal career plan.",
+      "whatYouWillLearn": [
+        "The different specialisations inside cybersecurity, explained simply — like Ethical Hacking, SOC Analyst, and Digital Forensics",
+        "Which industry certifications actually matter, and how to plan for them",
+        "How to match your own strengths to the career path that fits you best",
+        "You'll leave with your own personal plan for the next 6–12 months"
+      ],
+      "labs": [],
+      "skills": ["Career Path Mapping", "Security Documentation"]
+    }
+  ],
+  "whatsapp": {
+    "phone": "2348073735836",
+    "messageTemplate": "Hi! I'm interested in the {courseTitle} course.\n\nMy plan:\n{moduleList}\n\nTotal: {currency}{total}\n\nI'd like to get started."
+  },
+  "faqs": [
+    {
+      "question": "Who should take this Cybersecurity Foundations course?",
+      "answer": "This course is for complete beginners curious about cybersecurity, IT professionals wanting to move into security, students exploring career options, and anyone who wants to understand the basics of staying safe online. No experience needed."
+    },
+    {
+      "question": "Can I pay for just one step instead of the whole course?",
+      "answer": "Yes! You can start with just one step for as little as ₦15,000. Each step has its own price, and you can add more whenever you're ready. If you're able to take the full course at once, it works out cheaper (₦100,000 instead of ₦130,000 if bought step by step) — but starting small is always an option."
+    },
+    {
+      "question": "Can I pick any step, or do I have to go in order?",
+      "answer": "We recommend going in order, since some steps build on earlier ones. But you're free to start wherever you like. If you choose a step before finishing the ones it builds on, we'll let you know clearly what you might want to brush up on first — the choice is always yours."
+    },
+    {
+      "question": "What's the difference between a Step Certificate and the Full Course Certificate?",
+      "answer": "Every step you complete earns its own Digitanotion Step Certificate — a real, shareable proof of what you learned. Once you've completed all 6 steps, you also receive the Digitanotion Professional Certificate, our highest credential for this course, recognised by our industry partners."
+    },
+    {
+      "question": "What if I only finish a few steps? Do I lose anything?",
+      "answer": "Not at all. You keep every Step Certificate you've earned, and you can come back and continue at any time — there's no deadline or expiry on picking up where you left off."
+    },
+    {
+      "question": "What equipment or software do I need?",
+      "answer": "A computer with at least 8GB RAM (16GB is even better), 50GB of free storage, and a stable internet connection. We provide access to our virtual lab with all the security tools already set up — you don't need to install anything yourself beforehand."
+    },
+    {
+      "question": "Will this course help me choose a cybersecurity specialisation?",
+      "answer": "Yes — that's exactly what the final step is for. You'll explore paths like Network Security, Ethical Hacking, SOC Analysis, and Digital Forensics, and leave with a clear idea of which one fits you best."
+    },
+    {
+      "question": "What if I have no IT background at all?",
+      "answer": "That's completely fine — this course starts from zero. If you want extra confidence beforehand, we recommend our Computing Essentials class, but it isn't required."
+    },
+    {
+      "question": "How much time should I set aside each week?",
+      "answer": "About 8–10 hours a week works well: a few hours for live classes, a few for hands-on labs, and some time for practice on your own. It's designed to fit around work, school, or family life."
+    },
+    {
+      "question": "What career opportunities can this lead to?",
+      "answer": "Graduates are ready for entry-level roles like Security Analyst Trainee, Junior SOC Analyst, or IT Support with a security focus — and many continue on to our more advanced cybersecurity courses."
+    },
+    {
+      "question": "Are the labs real, or just simulations?",
+      "answer": "A mix of both — you'll use real tools like Nmap, Wireshark, and others, inside safe, controlled practice environments built specifically for learning. Nothing you do can cause real-world harm, but the tools and skills are 100% real."
+    },
+    {
+      "question": "What support do I get during the course?",
+      "answer": "A dedicated mentor, round-the-clock access to your practice labs, a student community, weekly office hours, and career guidance once you're done."
+    }
+  ]
+}
