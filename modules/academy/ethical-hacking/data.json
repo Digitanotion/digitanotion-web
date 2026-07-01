@@ -1,0 +1,233 @@
+{
+  "courseId": "ethical-hacking",
+  "seo": {
+    "title": "Ethical Hacking & Penetration Testing Course in Awka, Nigeria | Digitanotion Academy",
+    "description": "Become a certified ethical hacker step by step, from ₦45,000. Advanced, hands-on penetration testing training with 20+ labs and a real capstone project. Onsite in Awka.",
+    "keywords": [
+      "ethical hacking course Nigeria",
+      "penetration testing training Awka",
+      "learn ethical hacking Africa",
+      "CEH aligned certification Nigeria",
+      "VAPT course Anambra",
+      "penetration tester training",
+      "cybersecurity specialization Nigeria",
+      "pay as you learn ethical hacking"
+    ]
+  },
+  "hero": {
+    "eyebrow": "Digitanotion Academy",
+    "title": "Ethical Hacking",
+    "tagline": "Go from security fundamentals to real, professional-grade penetration testing. Hands-on labs, real tools, a full capstone project — learn step by step, at a price that fits you.",
+    "level": "Advanced",
+    "durationLabel": "14 weeks",
+    "labCountLabel": "20+ hands-on labs",
+    "ctaLabel": "See How You Can Start",
+    "ctaTarget": "#choose-how-you-start",
+    "startingFromLabel": "Start from just ₦45,000"
+  },
+  "location": {
+    "typeLabel": "Onsite Only",
+    "onsiteDetails": "Suite 6, Mgbajiaka Area, Along Onisha–Enugu Expressway, Awka",
+    "onlineDetails": "This specialization runs onsite only, because of the advanced lab equipment involved — reach out if you'd like to discuss remote options.",
+    "scheduleLabel": "Monday, Wednesday & Friday, 6–9PM"
+  },
+  "cohorts": {
+    "nextStartLabel": "October 2026",
+    "upcoming": []
+  },
+  "pricing": {
+    "currencySymbol": "₦",
+    "fullCoursePrice": 370000,
+    "fullCourseOriginalPrice": 650000
+  },
+  "beforeYouStart": "This is an advanced specialization. We strongly recommend completing Cybersecurity Foundations first (or having equivalent experience) — you'll want basic networking, operating systems, and security fundamentals under your belt before starting here.",
+  "learningOutcomes": [
+    "Conduct professional-grade penetration tests and vulnerability assessments",
+    "Get fluent in Kali Linux, Metasploit, and the tools real pentesters use daily",
+    "Exploit real vulnerabilities in networks, systems, and web applications safely",
+    "Test web application security against the OWASP Top 10",
+    "Write penetration testing reports clients can actually act on",
+    "Understand the legal and compliance side of ethical hacking work"
+  ],
+  "certificates": {
+    "stepCertificateLabel": "Digitanotion Step Certificate",
+    "stepCertificateNote": "You earn one every time you finish a step — even if it's just one.",
+    "fullCourseCertificateLabel": "Digitanotion Certified Ethical Hacker (DCEH)",
+    "fullCourseCertificateNote": "Awarded once you complete all 6 steps. Our CEH-aligned credential, recognised by our industry partners as full specialization completion."
+  },
+  "modules": [
+    {
+      "id": "step-1",
+      "order": 1,
+      "title": "Introduction to Ethical Hacking",
+      "tag": "Foundation",
+      "price": 45000,
+      "prerequisiteIds": [],
+      "summary": "Your entry point into professional ethical hacking — the legal frameworks, mindset, and methodology every real specialist starts with.",
+      "whatYouWillLearn": [
+        "The legal and ethical frameworks that separate ethical hacking from real crime",
+        "The standard methodology professional penetration testers follow, start to finish",
+        "How to do reconnaissance and information gathering the right way",
+        "How to scope and plan an engagement before ever touching a system"
+      ],
+      "labs": [
+        { "title": "Reconnaissance & scanning basics", "description": "Practice OS fingerprinting and service detection the way real engagements begin.", "durationLabel": "4 hours" }
+      ],
+      "skills": ["Penetration Testing Methodology", "Ethical Hacking Ethics", "Legal & Compliance Knowledge"]
+    },
+    {
+      "id": "step-2",
+      "order": 2,
+      "title": "Kali Linux & Tools Mastery",
+      "tag": null,
+      "price": 50000,
+      "prerequisiteIds": ["step-1"],
+      "summary": "Get fluent in the operating system and toolkit every professional penetration tester relies on daily.",
+      "whatYouWillLearn": [
+        "Advanced use of Kali Linux beyond the basics",
+        "The Metasploit Framework for real-world exploitation workflows",
+        "Nmap scripting for deeper, automated network scans",
+        "How to use vulnerability scanners and automate repetitive testing tasks"
+      ],
+      "labs": [
+        { "title": "Vulnerability scanning practice", "description": "Run and interpret real vulnerability scans using industry-standard scanners.", "durationLabel": "6 hours" }
+      ],
+      "skills": ["Kali Linux Mastery", "Metasploit Framework"]
+    },
+    {
+      "id": "step-3",
+      "order": 3,
+      "title": "Network Penetration Testing",
+      "tag": null,
+      "price": 95000,
+      "prerequisiteIds": ["step-1", "step-2"],
+      "summary": "Go hands-on with real network attacks — from first scan to full exploitation — inside a safe, isolated lab network.",
+      "whatYouWillLearn": [
+        "Full network reconnaissance and vulnerability scanning workflows",
+        "Exploiting discovered vulnerabilities to gain access",
+        "Post-exploitation techniques: pivoting, privilege escalation, and covering tracks",
+        "How professionals move laterally through a compromised network"
+      ],
+      "labs": [
+        { "title": "Exploitation techniques", "description": "Exploit real systems and applications using Metasploit in a controlled lab.", "durationLabel": "8 hours" },
+        { "title": "Post-exploitation & lateral movement", "description": "Practice privilege escalation and lateral movement using Mimikatz and BloodHound.", "durationLabel": "6 hours" }
+      ],
+      "skills": ["Network Vulnerability Assessment", "Incident Response"]
+    },
+    {
+      "id": "step-4",
+      "order": 4,
+      "title": "Web Application Security",
+      "tag": null,
+      "price": 95000,
+      "prerequisiteIds": ["step-1", "step-2"],
+      "summary": "Learn to break — and fix — web applications the way real bug bounty hunters and pentesters do, following the OWASP Top 10.",
+      "whatYouWillLearn": [
+        "The OWASP Top 10 — the most common and dangerous web application vulnerabilities",
+        "SQL injection, cross-site scripting (XSS), and CSRF attacks, hands-on",
+        "How attackers bypass authentication and evade web application firewalls",
+        "How to responsibly test and report web application vulnerabilities"
+      ],
+      "labs": [
+        { "title": "OWASP Top 10 lab challenge", "description": "Test real vulnerable web applications using Burp Suite, OWASP ZAP, and SQLmap.", "durationLabel": "8 hours" }
+      ],
+      "skills": ["Web Application Security Testing"]
+    },
+    {
+      "id": "step-5",
+      "order": 5,
+      "title": "Mobile Security",
+      "tag": null,
+      "price": 65000,
+      "prerequisiteIds": ["step-1", "step-2"],
+      "summary": "Extend your skills into mobile — learning how attackers find and exploit weaknesses in Android and iOS apps.",
+      "whatYouWillLearn": [
+        "How mobile applications get vulnerability tested, differently from web apps",
+        "Reverse engineering basics for mobile applications",
+        "Common mobile-specific vulnerabilities and how to identify them",
+        "Reporting mobile security findings clearly and professionally"
+      ],
+      "labs": [
+        { "title": "Mobile app vulnerability scan", "description": "Scan and reverse-engineer a sample mobile application in a safe lab environment.", "durationLabel": "4 hours" }
+      ],
+      "skills": ["Wireless Network Security", "Cryptography & Steganography"]
+    },
+    {
+      "id": "step-6",
+      "order": 6,
+      "title": "Contracts, Compliance & Capstone",
+      "tag": "Capstone",
+      "price": 100000,
+      "prerequisiteIds": ["step-1", "step-2", "step-3", "step-4", "step-5"],
+      "summary": "Bring everything together in a full, simulated corporate penetration test — then learn to write the professional report that makes your work actually usable by a client.",
+      "whatYouWillLearn": [
+        "The legal contracts and compliance requirements every real engagement needs",
+        "How to write a professional penetration testing report clients can act on",
+        "A full, guided capstone: penetration testing a simulated corporate network start to finish",
+        "How to present findings and recommendations like a working security consultant"
+      ],
+      "labs": [
+        { "title": "Capstone: full corporate penetration test", "description": "Run a complete, simulated penetration test from reconnaissance to final report.", "durationLabel": "12 hours" }
+      ],
+      "skills": ["Professional Report Writing", "Legal & Compliance Knowledge"]
+    }
+  ],
+  "whatsapp": {
+    "phone": "2348073735836",
+    "messageTemplate": "Hi! I'm interested in the {courseTitle} course.\n\nMy plan:\n{moduleList}\n\nTotal: {currency}{total}\n\nI'd like to get started."
+  },
+  "faqs": [
+    {
+      "question": "Who should take this Ethical Hacking specialization?",
+      "answer": "This is for people who already have some security or IT foundation and want to go deep into hands-on penetration testing — including graduates of our Cybersecurity Foundations course, IT professionals moving into security, and anyone serious about becoming a working ethical hacker."
+    },
+    {
+      "question": "Can I pay for just one step instead of the whole specialization?",
+      "answer": "Yes! You can start with just one step for as little as ₦45,000. Each step has its own price, and you can add more whenever you're ready. If you're able to take the full specialization at once, it works out cheaper (₦370,000 instead of ₦450,000 if bought step by step) — but starting small is always an option."
+    },
+    {
+      "question": "Do I need to complete Cybersecurity Foundations first?",
+      "answer": "It's not a hard requirement, but we strongly recommend it — or equivalent experience with basic networking, operating systems, and security concepts. This specialization moves fast and assumes that foundation is already in place."
+    },
+    {
+      "question": "Can I pick any step, or do I have to go in order?",
+      "answer": "We strongly recommend going in order here, since almost every later step builds directly on the tools and techniques from Steps 1 and 2. You're still free to start wherever you like — if you skip ahead, we'll let you know clearly what you might want to brush up on first."
+    },
+    {
+      "question": "What's the difference between a Step Certificate and the Full Course Certificate?",
+      "answer": "Every step you complete earns its own Digitanotion Step Certificate. Once you've completed all 6 steps, you also receive the Digitanotion Certified Ethical Hacker (DCEH) certificate — our CEH-aligned credential, recognised by our industry partners as full specialization completion."
+    },
+    {
+      "question": "What if I only finish a few steps? Do I lose anything?",
+      "answer": "Not at all. You keep every Step Certificate you've earned, and you can come back and continue at any time — there's no deadline or expiry on picking up where you left off."
+    },
+    {
+      "question": "What tools will I learn to use?",
+      "answer": "Industry-standard tools including Kali Linux, Metasploit Framework, Burp Suite, Nmap, Wireshark, SQLmap, John the Ripper, Hydra, Aircrack-ng, and the Social Engineering Toolkit — the same tools working penetration testers use every day."
+    },
+    {
+      "question": "Are the labs conducted in a safe environment?",
+      "answer": "Yes. Every lab runs in an isolated virtual environment with intentionally vulnerable systems built specifically for training. No real systems are ever touched, so you can practice real attack techniques without real-world consequences."
+    },
+    {
+      "question": "What career opportunities does this open?",
+      "answer": "Graduates are ready for roles like Penetration Tester, Ethical Hacker, Vulnerability Assessment Analyst, Security Consultant, Security Auditor, SOC Analyst (Level 2/3), Incident Responder, and Security Engineer."
+    },
+    {
+      "question": "How much time should I set aside each week?",
+      "answer": "About 12–15 hours a week: roughly 6 hours for live sessions, 6–8 hours for lab work, and a couple of hours for self-study. It's intensive, but structured so you actually master each stage before moving on."
+    },
+    {
+      "question": "What kind of projects will I work on?",
+      "answer": "You'll complete a full network penetration test, a web application security assessment, a mobile security review, and — in the final step — a complete capstone project simulating a real corporate penetration test with a professional report."
+    },
+    {
+      "question": "What support is available during the course?",
+      "answer": "A dedicated mentor with real industry experience, round-the-clock lab access, a technical support community, career counselling, resume and interview preparation, and access to our alumni job board."
+    },
+    {
+      "question": "Is this course suitable for beginners in cybersecurity?",
+      "answer": "This is an advanced specialization, so it isn't the best starting point if you're completely new to cybersecurity. We recommend our Cybersecurity Foundations course first — it sets up everything this course builds on."
+    }
+  ]
+}
