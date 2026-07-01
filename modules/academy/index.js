@@ -24,6 +24,7 @@ import {
   FiClock,
   FiDollarSign,
   FiTag,
+  FiX,
 } from "react-icons/fi";
 import {
   FaLaptopCode,
@@ -612,9 +613,104 @@ const processSteps = [
   },
 ];
 
+/**
+ * Small circular trigger button that opens the pricing-explainer modal.
+ * Placed wherever a price used to be displayed. Deliberately generic —
+ * it doesn't take course-specific data, since the goal is to explain the
+ * pricing MODEL (pay in full vs. pay-as-you-learn), not show a number here.
+ * Exact prices only ever appear on a course's own page, inside its builder.
+ */
+function PricingInfoButton({ onClick, size = "md" }) {
+  const dimension = size === "sm" ? "w-9 h-9" : "w-10 h-10";
+  return (
+    <button
+      type="button"
+      onClick={(e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        onClick();
+      }}
+      aria-label="How our pricing works"
+      title="How our pricing works"
+      className={`flex-shrink-0 ${dimension} rounded-full bg-orange-50 border border-orange-200 text-orange-600 flex items-center justify-center hover:bg-orange-100 hover:border-orange-300 transition-colors`}
+    >
+      <FiTag size={size === "sm" ? 16 : 18} />
+    </button>
+  );
+}
+
+/**
+ * Shared pricing-explainer modal. One instance, opened from any card's
+ * PricingInfoButton. Explains the model in general terms — take the full
+ * course for the best value, or pay step by step — without quoting any
+ * specific course's numbers, since those live on each course's own page.
+ */
+function PricingInfoModal({ open, onClose }) {
+  return (
+    <AnimatePresence>
+      {open && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="fixed inset-0 z-[100] bg-black/50 backdrop-blur-sm flex items-center justify-center p-4"
+          onClick={onClose}
+        >
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95, y: 10 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.95, y: 10 }}
+            transition={{ duration: 0.2 }}
+            onClick={(e) => e.stopPropagation()}
+            className="bg-white rounded-2xl max-w-lg w-full p-8 shadow-2xl relative"
+          >
+            <button
+              onClick={onClose}
+              aria-label="Close"
+              className="absolute top-4 right-4 w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-500 transition-colors"
+            >
+              <FiX size={18} />
+            </button>
+
+            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-orange-100 to-red-100 flex items-center justify-center mb-4">
+              <FiTag className="text-orange-600" size={22} />
+            </div>
+
+            <h3 className="text-2xl font-bold text-gray-900 mb-3">
+              How our pricing works
+            </h3>
+
+            <p className="text-gray-600 mb-4 leading-relaxed">
+              We believe there's always something you can afford. Every
+              course can be taken in full for the best value, or broken down
+              step by step so you can start with whatever fits your budget
+              today — no big upfront fee required.
+            </p>
+
+            <p className="text-gray-600 mb-6 leading-relaxed">
+              Every step you complete earns its own certificate, and
+              finishing every step in a course earns you the full course
+              certificate too. Open any course below to see its exact
+              pricing and build your own plan.
+            </p>
+
+            <button
+              onClick={onClose}
+              className="w-full py-3 rounded-xl bg-gradient-to-r from-orange-600 to-red-600 text-white font-bold hover:shadow-lg transition-all"
+            >
+              Got it
+            </button>
+          </motion.div>
+        </motion.div>
+      )}
+    </AnimatePresence>
+  );
+}
+
 export default function AcademyPage() {
   const [selectedPath, setSelectedPath] = useState("foundations");
   const [isPathSelectorVisible, setIsPathSelectorVisible] = useState(false);
+  const [showPricingModal, setShowPricingModal] = useState(false);
 
   // Get status color
   const getStatusColor = (status) => {
@@ -643,6 +739,9 @@ export default function AcademyPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      {/* Shared pricing-explainer modal, opened from any price icon below */}
+      <PricingInfoModal open={showPricingModal} onClose={() => setShowPricingModal(false)} />
+
       {/* Fixed Learning Path Selector */}
       {/* {isPathSelectorVisible && (
         <motion.div
@@ -833,14 +932,7 @@ export default function AcademyPage() {
                           {course.description}
                         </p>
                       </div>
-                      <div className="text-right">
-                        <div className="text-2xl font-bold text-gray-900">
-                          {course.price}
-                        </div>
-                        <div className="text-sm text-gray-500 line-through">
-                          {course.originalPrice}
-                        </div>
-                      </div>
+                      <PricingInfoButton onClick={() => setShowPricingModal(true)} />
                     </div>
 
                     <div className="flex flex-wrap gap-2 mb-6">
@@ -1026,16 +1118,10 @@ export default function AcademyPage() {
                                     <span>{course.format}</span>
                                   </div>
                                 </div>
-                                <div className="text-right">
-                                  <div className="text-lg font-bold text-gray-900">
-                                    {course.price}
-                                  </div>
-                                  {course.originalPrice && (
-                                    <div className="text-sm text-gray-500 line-through">
-                                      {course.originalPrice}
-                                    </div>
-                                  )}
-                                </div>
+                                <PricingInfoButton
+                                  onClick={() => setShowPricingModal(true)}
+                                  size="sm"
+                                />
                               </div>
 
                               {/* CTA */}
