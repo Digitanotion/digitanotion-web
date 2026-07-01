@@ -1,9 +1,11 @@
+// modules/academy/shared/path-builder.js
 "use client";
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { HiCheck, HiChevronDown, HiOutlineExclamation, HiBadgeCheck, HiX } from "react-icons/hi";
 import { FaWhatsapp } from "react-icons/fa";
+import { getTheme } from "./themes";
 
 function formatMoney(amount, symbol) {
   return `${symbol}${amount.toLocaleString("en-NG")}`;
@@ -14,6 +16,7 @@ function formatMoney(amount, symbol) {
  *
  * Works for any course whose JSON follows this shape:
  * {
+ *   theme: "midnight" | "ember",  // optional, see ./themes.js
  *   hero: { title },
  *   pricing: { currencySymbol, fullCoursePrice, fullCourseOriginalPrice },
  *   whatsapp: { phone, messageTemplate },
@@ -22,12 +25,14 @@ function formatMoney(amount, symbol) {
  * }
  *
  * Nothing in this component is course-specific — all copy that varies by
- * course (title, prices, steps) is read from `data`. Colors are intentionally
- * fixed (teal = commit, purple = pay-as-you-learn, amber = caution) so every
- * Academy course shares the same visual language.
+ * course (title, prices, steps) is read from `data`. Mode-card and accent
+ * colors follow data.theme so the picker matches each course's branding.
+ * The amber "before you skip ahead" warning stays fixed amber in every
+ * theme — that's a semantic caution color, not a brand color.
  */
 export default function PathBuilder({ data }) {
   const { modules, pricing, whatsapp } = data;
+  const t = getTheme(data.theme);
   const allIds = modules.map((m) => m.id);
 
   const [mode, setMode] = useState(null); // null | 'full' | 'custom'
@@ -102,7 +107,7 @@ export default function PathBuilder({ data }) {
     const chosen = mode === "full" ? modules : modules.filter((m) => selectedIds.includes(m.id));
     const moduleList =
       mode === "full"
-        ? "All 6 steps (Full Course)"
+        ? `All ${modules.length} steps (Full Course)`
         : chosen
             .sort((a, b) => a.order - b.order)
             .map((m) => `Step ${m.order}: ${m.title} — ${formatMoney(m.price, pricing.currencySymbol)}`)
@@ -133,14 +138,14 @@ export default function PathBuilder({ data }) {
           <button
             onClick={switchToFull}
             className={`text-left rounded-2xl p-6 border-2 transition-all ${
-              mode === "full" ? "border-teal-500 bg-teal-50 shadow-lg" : "border-gray-200 bg-white hover:border-teal-200"
+              mode === "full" ? t.modeFullActive : t.modeFullIdle
             }`}
           >
             <div className="flex items-center justify-between mb-3">
-              <span className="text-xs font-bold uppercase tracking-wide text-teal-700 bg-teal-100 px-3 py-1 rounded-full">
+              <span className={`text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full ${t.modeFullBadge}`}>
                 Best value
               </span>
-              {mode === "full" && <HiCheck className="text-teal-600 text-2xl" />}
+              {mode === "full" && <HiCheck className={`text-2xl ${t.modeFullCheck}`} />}
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-2">Take the Full Course</h3>
             <p className="text-gray-600 text-sm mb-4">
@@ -160,14 +165,14 @@ export default function PathBuilder({ data }) {
           <button
             onClick={switchToCustom}
             className={`text-left rounded-2xl p-6 border-2 transition-all ${
-              mode === "custom" ? "border-purple-500 bg-purple-50 shadow-lg" : "border-gray-200 bg-white hover:border-purple-200"
+              mode === "custom" ? t.modeCustomActive : t.modeCustomIdle
             }`}
           >
             <div className="flex items-center justify-between mb-3">
-              <span className="text-xs font-bold uppercase tracking-wide text-purple-700 bg-purple-100 px-3 py-1 rounded-full">
+              <span className={`text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full ${t.modeCustomBadge}`}>
                 Pay as you learn
               </span>
-              {mode === "custom" && <HiCheck className="text-purple-600 text-2xl" />}
+              {mode === "custom" && <HiCheck className={`text-2xl ${t.modeCustomCheck}`} />}
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-2">Start With One Step</h3>
             <p className="text-gray-600 text-sm mb-4">
@@ -215,7 +220,7 @@ export default function PathBuilder({ data }) {
                         onClick={() => toggleModule(mod.id)}
                         aria-label={isSelected ? `Remove Step ${mod.order}` : `Add Step ${mod.order}`}
                         className={`flex-shrink-0 mt-1 w-6 h-6 rounded-md border-2 flex items-center justify-center transition-colors ${
-                          isSelected ? "bg-purple-600 border-purple-600" : "border-gray-300 bg-white"
+                          isSelected ? t.checkboxSelected : "border-gray-300 bg-white"
                         }`}
                       >
                         {isSelected && <HiCheck className="text-white text-sm" />}
@@ -238,7 +243,7 @@ export default function PathBuilder({ data }) {
 
                       <button
                         onClick={() => setExpandedId(isExpanded ? null : mod.id)}
-                        className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-blue-700 hover:text-blue-900"
+                        className={`mt-3 inline-flex items-center gap-1 text-sm font-semibold ${t.learnLink}`}
                       >
                         {isExpanded ? "Hide what you'll learn" : "See what you'll learn"}
                         <HiChevronDown className={`transition-transform ${isExpanded ? "rotate-180" : ""}`} />
@@ -255,7 +260,7 @@ export default function PathBuilder({ data }) {
                             <ul className="mt-3 space-y-2 pl-1">
                               {mod.whatYouWillLearn.map((point, i) => (
                                 <li key={i} className="flex items-start gap-2 text-sm text-gray-700">
-                                  <HiBadgeCheck className="text-teal-600 mt-0.5 flex-shrink-0" />
+                                  <HiBadgeCheck className={`mt-0.5 flex-shrink-0 ${t.learnCheck}`} />
                                   <span>{point}</span>
                                 </li>
                               ))}
@@ -351,12 +356,12 @@ export default function PathBuilder({ data }) {
                   </div>
                   <div className="text-2xl font-bold text-gray-900">{formatMoney(total, pricing.currencySymbol)}</div>
                   {mode === "custom" && !isFullyComplete && (
-                    <div className="text-xs text-teal-700 font-medium mt-0.5">
+                    <div className={`text-xs font-medium mt-0.5 ${t.accentText}`}>
                       Take all {modules.length} steps and save {formatMoney(savings, pricing.currencySymbol)}
                     </div>
                   )}
                   {isFullyComplete && (
-                    <div className="text-xs text-teal-700 font-medium mt-0.5">Full Course Certificate unlocked</div>
+                    <div className={`text-xs font-medium mt-0.5 ${t.accentText}`}>Full Course Certificate unlocked</div>
                   )}
                 </div>
 

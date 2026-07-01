@@ -1,14 +1,18 @@
+// modules/academy/shared/skills.js
 "use client";
 
 import { motion } from "framer-motion";
 import { HiBadgeCheck } from "react-icons/hi";
+import { getTheme } from "./themes";
 
 /**
  * Shared skills grid. Takes any course's `modules` array and renders the
- * deduplicated union of every module's `skills` list.
+ * deduplicated union of every module's `skills` list. Icon color and hover
+ * border follow data.theme (see ./themes.js).
  */
-export default function CourseSkills({ modules }) {
+export default function CourseSkills({ modules, theme }) {
   const skills = Array.from(new Set(modules.flatMap((m) => m.skills)));
+  const t = getTheme(theme);
 
   return (
     <section className="py-16 bg-white">
@@ -28,11 +32,11 @@ export default function CourseSkills({ modules }) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.05 }}
-              className="group relative bg-white rounded-xl p-4 border border-gray-200 hover:border-blue-300 transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-1"
+              className={`group relative bg-white rounded-xl p-4 border border-gray-200 transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-1 ${t.skillHoverBorder}`}
             >
               <div className="flex items-center gap-3">
-                <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center group-hover:bg-blue-100 transition-colors">
-                  <HiBadgeCheck className="text-lg text-blue-600" />
+                <div className={`flex-shrink-0 w-10 h-10 rounded-lg flex items-center justify-center transition-colors ${t.skillIcon}`}>
+                  <HiBadgeCheck className="text-lg" />
                 </div>
                 <div className="flex-1">
                   <h3 className="font-semibold text-gray-900 text-sm">{skill}</h3>

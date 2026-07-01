@@ -1,3 +1,4 @@
+// modules/academy/shared/course-page.js
 "use client";
 
 import CourseHero from "./hero";
@@ -19,15 +20,17 @@ import { Details } from "../details";
  *
  * To change pricing, cohort dates, class location, or add/remove a step for
  * ANY course, edit that course's data.json only — no component code changes.
+ * To change a course's color theme, set data.theme to "midnight" or "ember"
+ * (see ./themes.js).
  */
 export default function CoursePage({ data }) {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       <CourseHero data={data} />
       <PathBuilder data={data} />
-      <CourseSkills modules={data.modules} />
+      <CourseSkills modules={data.modules} theme={data.theme} />
       <Details />
-      <CourseFAQ faqs={data.faqs} />
+      <CourseFAQ faqs={data.faqs} theme={data.theme} />
     </div>
   );
 }
