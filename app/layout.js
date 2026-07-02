@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "../modules/home/Navbar";
 import Footer from "../modules/home/Footer";
 import StructuredData from "@/components/StructuredData";
+import ChatWidget from "@/components/chat/ChatWidget";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
@@ -952,6 +953,7 @@ export default function RootLayout({ children }) {
           {children}
         </main>
         <Footer />
+        <ChatWidget />
         <Analytics />
         <SpeedInsights />
       </body>

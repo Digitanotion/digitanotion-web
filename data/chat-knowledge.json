@@ -1,0 +1,149 @@
+{
+  "company": {
+    "name": "Digitanotion Limited",
+    "tagline": "From Africa, For Africa, To the World",
+    "founded": "2019",
+    "incorporated": "2023",
+    "location": "Awka, Anambra State, Nigeria",
+    "address": "Suite 6, Mgbajiaka Area, Along Onitsha-Enugu Expressway, Awka",
+    "mission": "Building Digital and People Infrastructure — reducing Africa's reliance on foreign technology by developing local talent and products.",
+    "values": {
+      "name": "SASI",
+      "meaning": "Simplicity, Affordability, Security, Impact",
+      "description": "We believe there's always something you can afford, and that African talent can build world-class technology."
+    },
+    "vision2035": "Africa's cybersecurity leader, a top 10 global tech talent developer, and an IT innovation powerhouse.",
+    "contact": {
+      "whatsappDisplay": "+234 807 373 5836",
+      "whatsappPhone": "2348073735836",
+      "email": "hello@digitanotion.com.ng",
+      "hours": "9am–4pm WAT, Monday to Friday"
+    }
+  },
+  "services": [
+    {
+      "name": "Cybersecurity",
+      "description": "Managed security (CyBouncer), SOC services, Vulnerability Assessment & Penetration Testing (VAPT), incident response and digital forensics, DevSecOps, and CySAP Africa security awareness training for schools and organisations."
+    },
+    {
+      "name": "Software Development",
+      "description": "Custom software, web and mobile app development, UI/UX design, cloud migration, and API development — using tools like React, Next.js, Node.js, Flutter, and Laravel."
+    },
+    {
+      "name": "Digital Transformation Consulting",
+      "description": "IT strategy, infrastructure assessment, process automation, and data/AI consulting for businesses."
+    },
+    {
+      "name": "Talent Development",
+      "description": "Digitanotion Academy (paid training) plus free community programs: CySAP Africa, Tech6Project internships, and free cybersecurity mentorship."
+    }
+  ],
+  "softwareProjectPricing": "For software and app projects, we quote the full project upfront, then break the cost into phases. Clients pay to start each phase, not the whole project at once — so you only pay for the next phase once you've approved the last one.",
+  "academy": {
+    "model": "Pay As You Learn. Every course is broken into steps you can buy one at a time, starting from as little as a few thousand naira — or you can take the full course at once for a better overall price. Every step you finish earns its own certificate, and finishing every step earns you the full course certificate too.",
+    "courses": [
+      {
+        "name": "Computing Essentials",
+        "level": "Beginner",
+        "duration": "4 weeks",
+        "format": "Onsite",
+        "status": "Available",
+        "link": "/academy/computing-essentials"
+      },
+      {
+        "name": "Cybersecurity Foundations",
+        "level": "Beginner",
+        "duration": "8 weeks",
+        "format": "Onsite or Online",
+        "status": "Available",
+        "link": "/academy/cyber-foundations",
+        "notes": "6 steps, pay-as-you-learn from ₦10,000 per step, or ₦100,000 for the full course."
+      },
+      {
+        "name": "SOC Analyst 1",
+        "level": "Intermediate",
+        "duration": "10 weeks",
+        "format": "Onsite or Online",
+        "status": "Available",
+        "link": "/academy/soc-analyst-1",
+        "notes": "Covers SIEM tools, alert triage, incident response, and network monitoring."
+      },
+      {
+        "name": "Ethical Hacking",
+        "level": "Advanced",
+        "duration": "14 weeks",
+        "format": "Onsite",
+        "status": "Available",
+        "link": "/academy/ethical-hacking",
+        "notes": "Penetration testing specialization. We recommend completing Cybersecurity Foundations first."
+      },
+      {
+        "name": "Data Analysis",
+        "level": "Intermediate",
+        "duration": "14 weeks",
+        "format": "Onsite or Online",
+        "status": "Available",
+        "link": "/academy/data-analysis",
+        "notes": "Power BI, Excel, and SQL — 8 steps, 5 real-world portfolio projects."
+      },
+      {
+        "name": "Full Stack Web Development",
+        "level": "All Levels",
+        "duration": "18 weeks",
+        "format": "Onsite or Online",
+        "status": "Available",
+        "link": "/academy/full-stack-web-development",
+        "notes": "Starts from HTML, CSS, and JavaScript basics, goes all the way to React, Next.js, and the full MERN stack."
+      },
+      {
+        "name": "Web Front-End Engineer",
+        "level": "Intermediate",
+        "duration": "14 weeks",
+        "format": "Onsite or Online",
+        "status": "Available",
+        "link": "/academy/web-frontend-engineering"
+      },
+      {
+        "name": "Mobile App Development",
+        "level": "Intermediate",
+        "duration": "14 weeks",
+        "format": "Onsite",
+        "status": "Available",
+        "link": "/academy/mobile-app",
+        "notes": "Flutter-based cross-platform mobile development."
+      },
+      {
+        "name": "Backend Specialization",
+        "level": "Intermediate",
+        "duration": "14 weeks",
+        "format": "Onsite",
+        "status": "Available",
+        "link": "/academy/backend-engineer",
+        "notes": "PHP/Laravel, building APIs, database design, microservices."
+      },
+      {
+        "name": "Product Design (UI/UX)",
+        "level": "Intermediate",
+        "duration": "9 weeks",
+        "format": "Onsite or Online",
+        "status": "Available",
+        "link": "/academy/product-design"
+      }
+    ],
+    "certificationJourney": "Learn → Do (hands-on labs) → Score 70%+ on a capstone → Certify → Experience (internship placement) → Grow (alumni network)."
+  },
+  "communityPrograms": [
+    {
+      "name": "CySAP Africa",
+      "description": "Free cybersecurity awareness program for schools across Africa."
+    },
+    {
+      "name": "Tech6Project",
+      "description": "Internship program pairing graduates with real projects and mentorship."
+    },
+    {
+      "name": "Free Cybersecurity Mentorship",
+      "description": "A free, open mentorship program for anyone starting out in cybersecurity."
+    }
+  ]
+}
