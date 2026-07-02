@@ -199,7 +199,7 @@ export default function ChatWidget() {
             transition={{ duration: 0.2 }}
             role="dialog"
             aria-label="Digitanotion chat assistant"
-            className="fixed bottom-24 right-6 z-[90] w-[calc(100vw-3rem)] max-w-sm h-[70vh] max-h-[600px] bg-white rounded-2xl shadow-2xl border border-gray-200 flex flex-col overflow-hidden"
+            className="fixed bottom-24 left-4 right-4 sm:left-auto sm:right-6 z-[90] mx-auto max-w-sm sm:mx-0 sm:w-96 h-[min(70dvh,600px)] bg-white rounded-2xl shadow-2xl border border-gray-200 flex flex-col overflow-hidden"
           >
             {/* Header */}
             <div className="px-5 py-4 bg-gradient-to-r from-orange-600 to-red-600 text-white flex items-center justify-between flex-shrink-0">
@@ -213,7 +213,7 @@ export default function ChatWidget() {
             </div>
 
             {/* Messages */}
-            <div ref={scrollRef} aria-live="polite" className="flex-1 overflow-y-auto px-4 py-4 space-y-3 bg-gray-50">
+            <div ref={scrollRef} aria-live="polite" className="flex-1 overflow-y-auto overscroll-contain px-4 py-4 space-y-3 bg-gray-50">
               {messages.map((m, i) => (
                 <div key={i} className={`flex ${m.role === "user" ? "justify-end" : "justify-start"}`}>
                   <div
