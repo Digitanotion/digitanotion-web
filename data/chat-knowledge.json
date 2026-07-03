@@ -38,9 +38,9 @@
       "description": "Digitanotion Academy (paid training) plus free community programs: CySAP Africa, Tech6Project internships, and free cybersecurity mentorship."
     }
   ],
-  "softwareProjectPricing": "For software and app projects, we quote the full project upfront, then break the cost into phases. Clients pay to start each phase, not the whole project at once — so you only pay for the next phase once you've approved the last one.",
+  "softwareProjectPricing": "For software and app projects, we quote the full project upfront, then break the cost into phases. Clients pay to start each phase, not the whole project at once — so you only pay for the next phase once you've approved the last one. Exact quotes depend on project scope, so direct anyone asking for a number to WhatsApp for a proper conversation.",
   "academy": {
-    "model": "Pay As You Learn. Every modular course below is broken into individual steps you can buy one at a time — start with just one step for whatever fits your budget today, then add more whenever you're ready. Or take the full course at once for a better overall price (it's always cheaper than buying every step individually — that's the reward for committing upfront). Every step you complete earns its own Digitanotion Step Certificate. Finishing every step in a course also earns you that course's Full Course Certificate. Steps are recommended in order since later steps often build on earlier ones, but nothing is locked — you're free to start wherever you like.",
+    "model": "Pay As You Learn. Every modular course is broken into individual steps. On that course's own page, visitors can choose to take the full course at once (best overall value) or build their own plan by selecting just the steps they want, starting with whatever fits their budget. Every step earns its own Digitanotion Step Certificate, and finishing every step in a course also earns the Full Course Certificate. Steps are recommended in order since later steps often build on earlier ones, but nothing is locked — visitors are free to start wherever they like.",
     "certificationJourney": "Learn → Do (hands-on labs) → Score 70%+ on a capstone → Certify → Experience (internship placement) → Grow (alumni network).",
     "modularCourses": [
       {
@@ -49,17 +49,46 @@
         "level": "Beginner",
         "duration": "8 weeks",
         "format": "Onsite or Online",
-        "fullCoursePrice": 100000,
-        "fullCourseOriginalPrice": 150000,
-        "sumIfBoughtStepByStep": 110000,
-        "savingsIfFullCourse": 10000,
+        "overview": "A beginner-friendly start into cybersecurity — no prior experience needed. Covers the fundamentals, safe information-gathering, networking, real security tools, common threats, and ends with a personal career roadmap.",
         "steps": [
-          { "order": 1, "title": "Introduction to Cybersecurity", "price": 10000, "tag": "Foundation" },
-          { "order": 2, "title": "Finding Information Safely (OSINT)", "price": 10000 },
-          { "order": 3, "title": "Networking Basics & Security", "price": 20000 },
-          { "order": 4, "title": "Linux OS Basics & Artificial Intelligence", "price": 30000 },
-          { "order": 5, "title": "Understanding Threats & Weaknesses", "price": 25000 },
-          { "order": 6, "title": "Finding Your Career Path", "price": 15000, "tag": "Career Focus" }
+          {
+            "order": 1,
+            "title": "Introduction to Cybersecurity",
+            "tag": "Foundation",
+            "summary": "The very first step — what cybersecurity actually means and why it matters to everyone, not just tech people.",
+            "highlights": ["Core cybersecurity concepts in plain language", "The CIA Triad (confidentiality, integrity, availability)", "Common cyber threats explained simply", "Overview of cybersecurity career paths"]
+          },
+          {
+            "order": 2,
+            "title": "Finding Information Safely (OSINT)",
+            "summary": "How professionals gather public information the legal, ethical way — and how to spot when someone's trying to trick you online.",
+            "highlights": ["What OSINT means and how it's done ethically", "Basic techniques used by investigators and ethical hackers", "Recognising social engineering and scams", "Hands-on guided OSINT practice"]
+          },
+          {
+            "order": 3,
+            "title": "Networking Basics & Security",
+            "summary": "How devices talk to each other over a network, and how to keep that connection safe.",
+            "highlights": ["How networks and the internet work", "Key terms: IP address, router, firewall", "How data travels between devices", "Basic home/office network security"]
+          },
+          {
+            "order": 4,
+            "title": "Linux OS Basics & Artificial Intelligence",
+            "summary": "Hands-on with the tools real security professionals use daily, plus how AI is changing the fight against cybercrime.",
+            "highlights": ["Kali Linux basics", "How AI is used in modern threat detection", "Recognising early signs of malware", "Reading basic security logs"]
+          },
+          {
+            "order": 5,
+            "title": "Understanding Threats & Weaknesses",
+            "summary": "How real attacks happen, using relatable examples — and how experts find and fix weak spots first.",
+            "highlights": ["Common attacks: viruses, ransomware, phishing", "What a 'vulnerability' is and how it's found", "How businesses protect themselves", "Guided lab analysing malware safely"]
+          },
+          {
+            "order": 6,
+            "title": "Finding Your Career Path",
+            "tag": "Career Focus",
+            "summary": "The closing step — turning everything learned into a real, personal cybersecurity career plan.",
+            "highlights": ["Cybersecurity specialisations explained (Ethical Hacking, SOC Analyst, Digital Forensics)", "Which certifications actually matter", "Matching strengths to the right career path", "A personal 6–12 month roadmap"]
+          }
         ]
       },
       {
@@ -68,18 +97,47 @@
         "level": "Advanced",
         "duration": "14 weeks",
         "format": "Onsite only",
-        "note": "We recommend completing Cybersecurity Foundations first, or having equivalent experience.",
-        "fullCoursePrice": 370000,
-        "fullCourseOriginalPrice": 650000,
-        "sumIfBoughtStepByStep": 390000,
-        "savingsIfFullCourse": 20000,
+        "prerequisite": "We recommend completing Cybersecurity Foundations first, or having equivalent experience.",
+        "overview": "An advanced, hands-on penetration testing specialization — legal frameworks and methodology, tool mastery, network and web application attacks, mobile security, and a full capstone penetration test with a professional report.",
         "steps": [
-          { "order": 1, "title": "Introduction to Ethical Hacking", "price": 35000, "tag": "Foundation" },
-          { "order": 2, "title": "Kali Linux & Tools Mastery", "price": 40000 },
-          { "order": 3, "title": "Network Penetration Testing", "price": 80000 },
-          { "order": 4, "title": "Web Application Security", "price": 80000 },
-          { "order": 5, "title": "Mobile Security", "price": 55000 },
-          { "order": 6, "title": "Contracts, Compliance & Capstone", "price": 100000, "tag": "Capstone" }
+          {
+            "order": 1,
+            "title": "Introduction to Ethical Hacking",
+            "tag": "Foundation",
+            "summary": "The legal frameworks, mindset, and methodology every real penetration tester starts with.",
+            "highlights": ["Legal and ethical frameworks of hacking", "Standard professional pentest methodology", "Reconnaissance and information gathering", "Scoping and planning an engagement"]
+          },
+          {
+            "order": 2,
+            "title": "Kali Linux & Tools Mastery",
+            "summary": "Becoming fluent in the operating system and toolkit every professional penetration tester relies on.",
+            "highlights": ["Advanced Kali Linux usage", "The Metasploit Framework", "Nmap scripting for automated scans", "Vulnerability scanners and automation"]
+          },
+          {
+            "order": 3,
+            "title": "Network Penetration Testing",
+            "summary": "Real network attacks in a safe, isolated lab — from first scan to full exploitation.",
+            "highlights": ["Network reconnaissance and scanning", "Exploiting discovered vulnerabilities", "Post-exploitation: pivoting, privilege escalation", "Covering tracks and lateral movement"]
+          },
+          {
+            "order": 4,
+            "title": "Web Application Security",
+            "summary": "Breaking (and fixing) web applications the way bug bounty hunters and pentesters do, following the OWASP Top 10.",
+            "highlights": ["OWASP Top 10 vulnerabilities", "SQL injection, XSS, CSRF hands-on", "Bypassing authentication and WAFs", "Responsible testing and reporting"]
+          },
+          {
+            "order": 5,
+            "title": "Mobile Security",
+            "summary": "Extending skills into mobile — how attackers find and exploit weaknesses in Android and iOS apps.",
+            "highlights": ["Mobile-specific vulnerability testing", "Basic reverse engineering", "Common mobile vulnerabilities", "Professional mobile security reporting"]
+          },
+          {
+            "order": 6,
+            "title": "Contracts, Compliance & Capstone",
+            "tag": "Capstone",
+            "summary": "Bringing everything together in a full, simulated corporate penetration test with a professional client report.",
+            "highlights": ["Legal contracts and compliance requirements", "Writing a professional pentest report", "Full guided capstone penetration test", "Presenting findings like a real consultant"]
+          }
         ]
       },
       {
@@ -88,18 +146,47 @@
         "level": "Intermediate",
         "duration": "10 weeks",
         "format": "Onsite or Online",
-        "note": "We recommend completing Cybersecurity Foundations first, or having equivalent experience.",
-        "fullCoursePrice": 180000,
-        "fullCourseOriginalPrice": 280000,
-        "sumIfBoughtStepByStep": 210000,
-        "savingsIfFullCourse": 30000,
+        "prerequisite": "We recommend completing Cybersecurity Foundations first, or having equivalent experience.",
+        "overview": "A hands-on entry into Security Operations Center work — real SIEM tools, alert triage, incident response, and network/endpoint monitoring, ending with career and certification guidance.",
         "steps": [
-          { "order": 1, "title": "Introduction to the SOC", "price": 20000, "tag": "Foundation" },
-          { "order": 2, "title": "Security Monitoring & SIEM Tools", "price": 45000 },
-          { "order": 3, "title": "Threat Detection & Alert Triage", "price": 45000 },
-          { "order": 4, "title": "Incident Response Basics", "price": 40000 },
-          { "order": 5, "title": "Network & Endpoint Security Monitoring", "price": 40000 },
-          { "order": 6, "title": "SOC Career Path & Certification Prep", "price": 20000, "tag": "Career Focus" }
+          {
+            "order": 1,
+            "title": "Introduction to the SOC",
+            "tag": "Foundation",
+            "summary": "What a Security Operations Center actually does, day to day, and where a Tier 1 Analyst fits in.",
+            "highlights": ["What a SOC is and why it matters", "SOC tiers (Tier 1, 2, 3) explained", "A day in the life of a SOC Analyst", "Core analyst skills and mindset"]
+          },
+          {
+            "order": 2,
+            "title": "Security Monitoring & SIEM Tools",
+            "summary": "Hands-on with the software every SOC Analyst uses to monitor systems in real time.",
+            "highlights": ["What a SIEM tool does, in plain language", "Reading and searching security logs", "Setting up basic detection rules and alerts", "Real SIEM platform practice"]
+          },
+          {
+            "order": 3,
+            "title": "Threat Detection & Alert Triage",
+            "summary": "The exact process real analysts use to decide whether an alert is nothing or a real problem.",
+            "highlights": ["Step-by-step alert triage process", "Telling false positives from real threats", "Prioritising alerts under pressure", "Clear handoff documentation"]
+          },
+          {
+            "order": 4,
+            "title": "Incident Response Basics",
+            "summary": "The calm, structured process professionals follow once a threat is confirmed real.",
+            "highlights": ["Identify, contain, eradicate, recover process", "When and how to escalate", "Basic first-responder containment actions", "Writing a clear incident report"]
+          },
+          {
+            "order": 5,
+            "title": "Network & Endpoint Security Monitoring",
+            "summary": "Watching network traffic and individual devices for the subtle signs of compromise.",
+            "highlights": ["Reading network traffic for suspicious signs", "What an EDR tool does", "Recognising signs of device compromise", "Correlating network and endpoint clues"]
+          },
+          {
+            "order": 6,
+            "title": "SOC Career Path & Certification Prep",
+            "tag": "Career Focus",
+            "summary": "Turning everything learned into a real career plan, including which certifications are actually worth it.",
+            "highlights": ["Certifications that matter for a SOC career", "Writing a resume that gets noticed", "SOC Analyst interview preparation", "A personal 6–12 month roadmap"]
+          }
         ]
       },
       {
@@ -108,20 +195,58 @@
         "level": "Intermediate",
         "duration": "14 weeks",
         "format": "Onsite or Online",
-        "note": "Power BI, Excel, and SQL. Includes 5 real-world portfolio projects.",
-        "fullCoursePrice": 140000,
-        "fullCourseOriginalPrice": 180000,
-        "sumIfBoughtStepByStep": 163000,
-        "savingsIfFullCourse": 23000,
+        "overview": "Power BI, Excel, and SQL, taught through 8 steps and 5 real-world portfolio projects — from spreadsheet basics to a full end-to-end executive dashboard capstone.",
         "steps": [
-          { "order": 1, "title": "Excel for Data Analysis", "price": 18000, "tag": "Foundation" },
-          { "order": 2, "title": "SQL Database Querying", "price": 28000 },
-          { "order": 3, "title": "Power BI Fundamentals", "price": 22000 },
-          { "order": 4, "title": "Advanced Power BI Dashboards", "price": 28000 },
-          { "order": 5, "title": "Data Visualization Best Practices", "price": 12000 },
-          { "order": 6, "title": "Business Intelligence & Reporting", "price": 15000 },
-          { "order": 7, "title": "Statistical Analysis", "price": 15000 },
-          { "order": 8, "title": "Capstone Project", "price": 25000, "tag": "Capstone" }
+          {
+            "order": 1,
+            "title": "Excel for Data Analysis",
+            "tag": "Foundation",
+            "summary": "Getting comfortable pulling apart real data inside the tool most people already have on their computer.",
+            "highlights": ["Power Query for cleaning messy data", "PivotTables for summarizing data", "Advanced formulas beyond SUM/AVERAGE", "DAX and data modeling basics"]
+          },
+          {
+            "order": 2,
+            "title": "SQL Database Querying",
+            "summary": "Learning to talk directly to a real database — the skill that separates an analyst from a spreadsheet user.",
+            "highlights": ["Writing SELECT statements", "Combining tables with JOINs", "Aggregating and summarizing data", "Subqueries and query optimization"]
+          },
+          {
+            "order": 3,
+            "title": "Power BI Fundamentals",
+            "summary": "Bringing Excel and SQL skills into Power BI to build dashboards leadership actually looks at.",
+            "highlights": ["Importing and transforming data", "Basic data modeling", "First DAX formulas", "Building first visualizations"]
+          },
+          {
+            "order": 4,
+            "title": "Advanced Power BI Dashboards",
+            "summary": "Going from basic charts to interactive, polished dashboards shared with executives.",
+            "highlights": ["Drill-through and bookmarks", "Interactive parameters", "Row-Level Security", "Publishing via Power BI Service"]
+          },
+          {
+            "order": 5,
+            "title": "Data Visualization Best Practices",
+            "summary": "Why some dashboards are instantly clear and others confusing — and how to build the clear kind.",
+            "highlights": ["Choosing the right chart type", "Color theory basics for dashboards", "Designing for accessibility", "Telling a clear story with data"]
+          },
+          {
+            "order": 6,
+            "title": "Business Intelligence & Reporting",
+            "summary": "Thinking like a business, not just a tool user — building KPIs and reports leadership relies on.",
+            "highlights": ["Developing meaningful KPIs", "Executive-ready dashboards", "Scheduled data refresh", "Working in Power BI Service"]
+          },
+          {
+            "order": 7,
+            "title": "Statistical Analysis",
+            "summary": "Adding real statistical thinking to spot trends and patterns basic charts miss.",
+            "highlights": ["Descriptive statistics", "Correlation vs. causation", "Basic regression", "Forecasting and trend analysis"]
+          },
+          {
+            "order": 8,
+            "title": "Capstone Project",
+            "tag": "Capstone",
+            "summary": "One real, end-to-end data analysis project — the centerpiece of a new portfolio.",
+            "highlights": ["Planning a full analysis project", "Cleaning and modeling real, messy data", "Building a complete executive dashboard", "Presenting results professionally"]
+          }
         ]
       },
       {
@@ -130,33 +255,69 @@
         "level": "All Levels",
         "duration": "18 weeks",
         "format": "Onsite or Online",
-        "note": "Starts from absolute beginner HTML/CSS — no prior coding experience needed. Goes all the way to React, Next.js, and the full MERN stack (MongoDB, Express, React, Node.js).",
-        "fullCoursePrice": 395000,
-        "fullCourseOriginalPrice": 550000,
-        "sumIfBoughtStepByStep": 430000,
-        "savingsIfFullCourse": 35000,
+        "overview": "Starts from absolute beginner HTML and CSS — no coding experience needed — and goes all the way through JavaScript, React, Next.js, and the full MERN stack (MongoDB, Express, React, Node.js), ending in a deployed capstone application.",
         "steps": [
-          { "order": 1, "title": "HTML & CSS Foundations", "price": 30000, "tag": "Foundation" },
-          { "order": 2, "title": "JavaScript Fundamentals", "price": 45000 },
-          { "order": 3, "title": "Advanced JavaScript (ES6+ & Async)", "price": 45000 },
-          { "order": 4, "title": "React Fundamentals", "price": 55000 },
-          { "order": 5, "title": "Advanced React & State Management", "price": 60000 },
-          { "order": 6, "title": "Next.js & Server-Side Rendering", "price": 60000 },
-          { "order": 7, "title": "Backend with Node.js & Express", "price": 65000 },
-          { "order": 8, "title": "MongoDB & Full Stack Capstone", "price": 70000, "tag": "Capstone" }
+          {
+            "order": 1,
+            "title": "HTML & CSS Foundations",
+            "tag": "Foundation",
+            "summary": "The very first step into web development — building real web pages from scratch.",
+            "highlights": ["How web pages are structured with HTML", "Styling with CSS: colors, layout, responsive design", "Flexbox and Grid layout systems", "Building a complete webpage from scratch"]
+          },
+          {
+            "order": 2,
+            "title": "JavaScript Fundamentals",
+            "summary": "Bringing web pages to life with the programming language every browser runs.",
+            "highlights": ["Variables, functions, and core building blocks", "Making pages respond to user actions", "Working with arrays and objects", "Real debugging practice"]
+          },
+          {
+            "order": 3,
+            "title": "Advanced JavaScript (ES6+ & Async)",
+            "summary": "Modern JavaScript — the syntax and patterns used in every professional codebase today.",
+            "highlights": ["ES6+ features: arrow functions, destructuring, modules", "Promises and async/await", "Fetching real data from APIs", "Working with JSON"]
+          },
+          {
+            "order": 4,
+            "title": "React Fundamentals",
+            "summary": "React — the library behind a huge share of the world's websites and apps.",
+            "highlights": ["Components, props, and reusable building blocks", "Managing state", "Forms, lists, and user input in React", "Structuring a real React project"]
+          },
+          {
+            "order": 5,
+            "title": "Advanced React & State Management",
+            "summary": "How professional teams manage complex state and structure large React apps.",
+            "highlights": ["React Hooks in depth (useEffect, useContext, custom hooks)", "Managing state across a large app", "Performance and re-render patterns", "Real-world codebase structure"]
+          },
+          {
+            "order": 6,
+            "title": "Next.js & Server-Side Rendering",
+            "summary": "Next.js — the framework powering fast, SEO-friendly, production-grade websites.",
+            "highlights": ["File-based routing", "Server-side rendering vs. static generation", "Building API routes in Next.js", "Deploying a live Next.js site"]
+          },
+          {
+            "order": 7,
+            "title": "Backend with Node.js & Express",
+            "summary": "Moving to the other side of the stack — building the servers and APIs behind real applications.",
+            "highlights": ["Building a backend with Node.js and Express", "Designing REST APIs professionally", "Authentication basics", "Connecting to a real database"]
+          },
+          {
+            "order": 8,
+            "title": "MongoDB & Full Stack Capstone",
+            "tag": "Capstone",
+            "summary": "Bringing frontend, backend, and database together into one complete MERN stack application.",
+            "highlights": ["Designing and working with MongoDB", "Connecting React, Node.js, Express, and MongoDB", "Planning a full-stack project from scratch", "Deploying the finished application live"]
+          }
         ]
       }
     ],
-    "flatFeeCourses": [
+    "otherCourses": [
       {
         "name": "Computing Essentials",
         "link": "/academy/computing-essentials",
         "level": "Beginner",
         "duration": "4 weeks",
         "format": "Onsite",
-        "price": 65000,
-        "originalPrice": 100000,
-        "note": "Not on the step-by-step system — one flat course fee."
+        "overview": "Essential computer skills and digital literacy for absolute beginners. A single flat course, not step-by-step."
       },
       {
         "name": "Web Front-End Engineer",
@@ -164,9 +325,7 @@
         "level": "Intermediate",
         "duration": "14 weeks",
         "format": "Onsite or Online",
-        "price": 170000,
-        "originalPrice": 250000,
-        "note": "Not on the step-by-step system — one flat course fee. React/Next.js focused."
+        "overview": "React/Next.js focused front-end specialization with real projects and portfolio building. A single flat course, not step-by-step."
       },
       {
         "name": "Mobile App Development",
@@ -174,9 +333,7 @@
         "level": "Intermediate",
         "duration": "14 weeks",
         "format": "Onsite",
-        "price": 300000,
-        "originalPrice": 450000,
-        "note": "Not on the step-by-step system — one flat course fee. Flutter-based cross-platform development."
+        "overview": "Flutter-based cross-platform mobile app development. A single flat course, not step-by-step."
       },
       {
         "name": "Backend Specialization",
@@ -184,9 +341,7 @@
         "level": "Intermediate",
         "duration": "14 weeks",
         "format": "Onsite",
-        "price": 270000,
-        "originalPrice": 350000,
-        "note": "Not on the step-by-step system — one flat course fee. PHP/Laravel, APIs, database design, microservices."
+        "overview": "PHP/Laravel backend development — APIs, database design, and microservices. A single flat course, not step-by-step."
       },
       {
         "name": "Product Design (UI/UX)",
@@ -194,9 +349,7 @@
         "level": "Intermediate",
         "duration": "9 weeks",
         "format": "Onsite or Online",
-        "price": 120000,
-        "originalPrice": 150000,
-        "note": "Not on the step-by-step system — one flat course fee."
+        "overview": "UI/UX design fundamentals and practice. A single flat course, not step-by-step."
       }
     ]
   },
