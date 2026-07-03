@@ -39,6 +39,15 @@ function getClientIp(req) {
   return req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "unknown";
 }
 
+// Gemini's free tier has been cut sharply (as low as 20 requests/day on
+// some projects as of mid-2026) — a 429 RESOURCE_EXHAUSTED here is a real,
+// common outcome on the free tier, not an edge case. Detect it specifically
+// so visitors get an honest message instead of a generic "something broke."
+function isQuotaError(err) {
+  const message = err?.message || err?.error?.message || "";
+  return err?.status === 429 || /RESOURCE_EXHAUSTED|quota/i.test(message);
+}
+
 export async function POST(req) {
   const ip = getClientIp(req);
   if (isRateLimited(ip)) {
@@ -90,7 +99,15 @@ export async function POST(req) {
           controller.close();
         } catch (err) {
           console.error("Gemini stream error:", err);
-          controller.error(err);
+          try {
+            const fallback = isQuotaError(err)
+              ? "\n\n(Our assistant is getting more questions than usual right now — please try again shortly, or use the WhatsApp button below.)"
+              : "\n\n(Something went wrong finishing that response — please try again, or use the WhatsApp button below.)";
+            controller.enqueue(encoder.encode(fallback));
+            controller.close();
+          } catch {
+            controller.error(err);
+          }
         }
       },
     });
@@ -103,6 +120,12 @@ export async function POST(req) {
     });
   } catch (err) {
     console.error("Chat API error:", err);
+    if (isQuotaError(err)) {
+      return jsonError(
+        "Our assistant is getting more questions than usual right now and needs a short break. Please try again shortly, or use the WhatsApp button below to reach us directly.",
+        429
+      );
+    }
     return jsonError(
       "Something went wrong on our end. Please try again, or message us directly on WhatsApp.",
       500
