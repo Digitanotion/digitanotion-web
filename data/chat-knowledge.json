@@ -40,97 +40,165 @@
   ],
   "softwareProjectPricing": "For software and app projects, we quote the full project upfront, then break the cost into phases. Clients pay to start each phase, not the whole project at once — so you only pay for the next phase once you've approved the last one.",
   "academy": {
-    "model": "Pay As You Learn. Every course is broken into steps you can buy one at a time, starting from as little as a few thousand naira — or you can take the full course at once for a better overall price. Every step you finish earns its own certificate, and finishing every step earns you the full course certificate too.",
-    "courses": [
-      {
-        "name": "Computing Essentials",
-        "level": "Beginner",
-        "duration": "4 weeks",
-        "format": "Onsite",
-        "status": "Available",
-        "link": "/academy/computing-essentials"
-      },
+    "model": "Pay As You Learn. Every modular course below is broken into individual steps you can buy one at a time — start with just one step for whatever fits your budget today, then add more whenever you're ready. Or take the full course at once for a better overall price (it's always cheaper than buying every step individually — that's the reward for committing upfront). Every step you complete earns its own Digitanotion Step Certificate. Finishing every step in a course also earns you that course's Full Course Certificate. Steps are recommended in order since later steps often build on earlier ones, but nothing is locked — you're free to start wherever you like.",
+    "certificationJourney": "Learn → Do (hands-on labs) → Score 70%+ on a capstone → Certify → Experience (internship placement) → Grow (alumni network).",
+    "modularCourses": [
       {
         "name": "Cybersecurity Foundations",
+        "link": "/academy/cyber-foundations",
         "level": "Beginner",
         "duration": "8 weeks",
         "format": "Onsite or Online",
-        "status": "Available",
-        "link": "/academy/cyber-foundations",
-        "notes": "6 steps, pay-as-you-learn from ₦10,000 per step, or ₦100,000 for the full course."
-      },
-      {
-        "name": "SOC Analyst 1",
-        "level": "Intermediate",
-        "duration": "10 weeks",
-        "format": "Onsite or Online",
-        "status": "Available",
-        "link": "/academy/soc-analyst-1",
-        "notes": "Covers SIEM tools, alert triage, incident response, and network monitoring."
+        "fullCoursePrice": 100000,
+        "fullCourseOriginalPrice": 150000,
+        "sumIfBoughtStepByStep": 110000,
+        "savingsIfFullCourse": 10000,
+        "steps": [
+          { "order": 1, "title": "Introduction to Cybersecurity", "price": 10000, "tag": "Foundation" },
+          { "order": 2, "title": "Finding Information Safely (OSINT)", "price": 10000 },
+          { "order": 3, "title": "Networking Basics & Security", "price": 20000 },
+          { "order": 4, "title": "Linux OS Basics & Artificial Intelligence", "price": 30000 },
+          { "order": 5, "title": "Understanding Threats & Weaknesses", "price": 25000 },
+          { "order": 6, "title": "Finding Your Career Path", "price": 15000, "tag": "Career Focus" }
+        ]
       },
       {
         "name": "Ethical Hacking",
+        "link": "/academy/ethical-hacking",
         "level": "Advanced",
         "duration": "14 weeks",
-        "format": "Onsite",
-        "status": "Available",
-        "link": "/academy/ethical-hacking",
-        "notes": "Penetration testing specialization. We recommend completing Cybersecurity Foundations first."
+        "format": "Onsite only",
+        "note": "We recommend completing Cybersecurity Foundations first, or having equivalent experience.",
+        "fullCoursePrice": 370000,
+        "fullCourseOriginalPrice": 650000,
+        "sumIfBoughtStepByStep": 390000,
+        "savingsIfFullCourse": 20000,
+        "steps": [
+          { "order": 1, "title": "Introduction to Ethical Hacking", "price": 35000, "tag": "Foundation" },
+          { "order": 2, "title": "Kali Linux & Tools Mastery", "price": 40000 },
+          { "order": 3, "title": "Network Penetration Testing", "price": 80000 },
+          { "order": 4, "title": "Web Application Security", "price": 80000 },
+          { "order": 5, "title": "Mobile Security", "price": 55000 },
+          { "order": 6, "title": "Contracts, Compliance & Capstone", "price": 100000, "tag": "Capstone" }
+        ]
+      },
+      {
+        "name": "SOC Analyst 1",
+        "link": "/academy/soc-analyst-1",
+        "level": "Intermediate",
+        "duration": "10 weeks",
+        "format": "Onsite or Online",
+        "note": "We recommend completing Cybersecurity Foundations first, or having equivalent experience.",
+        "fullCoursePrice": 180000,
+        "fullCourseOriginalPrice": 280000,
+        "sumIfBoughtStepByStep": 210000,
+        "savingsIfFullCourse": 30000,
+        "steps": [
+          { "order": 1, "title": "Introduction to the SOC", "price": 20000, "tag": "Foundation" },
+          { "order": 2, "title": "Security Monitoring & SIEM Tools", "price": 45000 },
+          { "order": 3, "title": "Threat Detection & Alert Triage", "price": 45000 },
+          { "order": 4, "title": "Incident Response Basics", "price": 40000 },
+          { "order": 5, "title": "Network & Endpoint Security Monitoring", "price": 40000 },
+          { "order": 6, "title": "SOC Career Path & Certification Prep", "price": 20000, "tag": "Career Focus" }
+        ]
       },
       {
         "name": "Data Analysis",
+        "link": "/academy/data-analysis",
         "level": "Intermediate",
         "duration": "14 weeks",
         "format": "Onsite or Online",
-        "status": "Available",
-        "link": "/academy/data-analysis",
-        "notes": "Power BI, Excel, and SQL — 8 steps, 5 real-world portfolio projects."
+        "note": "Power BI, Excel, and SQL. Includes 5 real-world portfolio projects.",
+        "fullCoursePrice": 140000,
+        "fullCourseOriginalPrice": 180000,
+        "sumIfBoughtStepByStep": 163000,
+        "savingsIfFullCourse": 23000,
+        "steps": [
+          { "order": 1, "title": "Excel for Data Analysis", "price": 18000, "tag": "Foundation" },
+          { "order": 2, "title": "SQL Database Querying", "price": 28000 },
+          { "order": 3, "title": "Power BI Fundamentals", "price": 22000 },
+          { "order": 4, "title": "Advanced Power BI Dashboards", "price": 28000 },
+          { "order": 5, "title": "Data Visualization Best Practices", "price": 12000 },
+          { "order": 6, "title": "Business Intelligence & Reporting", "price": 15000 },
+          { "order": 7, "title": "Statistical Analysis", "price": 15000 },
+          { "order": 8, "title": "Capstone Project", "price": 25000, "tag": "Capstone" }
+        ]
       },
       {
         "name": "Full Stack Web Development",
+        "link": "/academy/full-stack-web-development",
         "level": "All Levels",
         "duration": "18 weeks",
         "format": "Onsite or Online",
-        "status": "Available",
-        "link": "/academy/full-stack-web-development",
-        "notes": "Starts from HTML, CSS, and JavaScript basics, goes all the way to React, Next.js, and the full MERN stack."
+        "note": "Starts from absolute beginner HTML/CSS — no prior coding experience needed. Goes all the way to React, Next.js, and the full MERN stack (MongoDB, Express, React, Node.js).",
+        "fullCoursePrice": 395000,
+        "fullCourseOriginalPrice": 550000,
+        "sumIfBoughtStepByStep": 430000,
+        "savingsIfFullCourse": 35000,
+        "steps": [
+          { "order": 1, "title": "HTML & CSS Foundations", "price": 30000, "tag": "Foundation" },
+          { "order": 2, "title": "JavaScript Fundamentals", "price": 45000 },
+          { "order": 3, "title": "Advanced JavaScript (ES6+ & Async)", "price": 45000 },
+          { "order": 4, "title": "React Fundamentals", "price": 55000 },
+          { "order": 5, "title": "Advanced React & State Management", "price": 60000 },
+          { "order": 6, "title": "Next.js & Server-Side Rendering", "price": 60000 },
+          { "order": 7, "title": "Backend with Node.js & Express", "price": 65000 },
+          { "order": 8, "title": "MongoDB & Full Stack Capstone", "price": 70000, "tag": "Capstone" }
+        ]
+      }
+    ],
+    "flatFeeCourses": [
+      {
+        "name": "Computing Essentials",
+        "link": "/academy/computing-essentials",
+        "level": "Beginner",
+        "duration": "4 weeks",
+        "format": "Onsite",
+        "price": 65000,
+        "originalPrice": 100000,
+        "note": "Not on the step-by-step system — one flat course fee."
       },
       {
         "name": "Web Front-End Engineer",
+        "link": "/academy/web-frontend-engineering",
         "level": "Intermediate",
         "duration": "14 weeks",
         "format": "Onsite or Online",
-        "status": "Available",
-        "link": "/academy/web-frontend-engineering"
+        "price": 170000,
+        "originalPrice": 250000,
+        "note": "Not on the step-by-step system — one flat course fee. React/Next.js focused."
       },
       {
         "name": "Mobile App Development",
+        "link": "/academy/mobile-app",
         "level": "Intermediate",
         "duration": "14 weeks",
         "format": "Onsite",
-        "status": "Available",
-        "link": "/academy/mobile-app",
-        "notes": "Flutter-based cross-platform mobile development."
+        "price": 300000,
+        "originalPrice": 450000,
+        "note": "Not on the step-by-step system — one flat course fee. Flutter-based cross-platform development."
       },
       {
         "name": "Backend Specialization",
+        "link": "/academy/backend-engineer",
         "level": "Intermediate",
         "duration": "14 weeks",
         "format": "Onsite",
-        "status": "Available",
-        "link": "/academy/backend-engineer",
-        "notes": "PHP/Laravel, building APIs, database design, microservices."
+        "price": 270000,
+        "originalPrice": 350000,
+        "note": "Not on the step-by-step system — one flat course fee. PHP/Laravel, APIs, database design, microservices."
       },
       {
         "name": "Product Design (UI/UX)",
+        "link": "/academy/product-design",
         "level": "Intermediate",
         "duration": "9 weeks",
         "format": "Onsite or Online",
-        "status": "Available",
-        "link": "/academy/product-design"
+        "price": 120000,
+        "originalPrice": 150000,
+        "note": "Not on the step-by-step system — one flat course fee."
       }
-    ],
-    "certificationJourney": "Learn → Do (hands-on labs) → Score 70%+ on a capstone → Certify → Experience (internship placement) → Grow (alumni network)."
+    ]
   },
   "communityPrograms": [
     {
