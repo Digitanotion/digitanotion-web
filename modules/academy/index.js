@@ -26,7 +26,6 @@ import {
   FiDollarSign,
   FiTag,
   FiX,
-  FiLogIn,
   FiUserPlus,
 } from "react-icons/fi";
 import {
@@ -829,13 +828,6 @@ export default function AcademyPage() {
                 >
                   <FiUserPlus size={18} />
                   Enroll Now
-                </Link>
-                <Link
-                  href={`${PORTAL_URL}/login`}
-                  className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl border-2 border-gray-300 text-gray-700 font-bold hover:border-gray-900 hover:text-gray-900 transition-all"
-                >
-                  <FiLogIn size={18} />
-                  Current Student? Log In
                 </Link>
               </div>
             </motion.div>
