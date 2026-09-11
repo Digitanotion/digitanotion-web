@@ -4,9 +4,13 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoMdClose } from "react-icons/io";
+import { FiLogIn } from "react-icons/fi";
 import Sidebar from "./Sidebar";
 import { MenuItems } from "./menuitems";
 import Image from "next/image";
+
+// The student/instructor portal — a separate Laravel app at this subdomain.
+const PORTAL_URL = "https://academy.digitanotion.com.ng";
 
 function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -59,8 +63,15 @@ function Navbar() {
         {/* Vertical slash separator. .*/}
         <div className="h-8 w-1 ml-6 bg-white hidden md:flex " />
 
-        <div className="hidden md:flex flex-1 ">
+        <div className="hidden md:flex flex-1 items-center">
           <MenuItems />
+          <Link
+            href={`${PORTAL_URL}/login`}
+            className="ml-auto inline-flex items-center gap-2 rounded-full border border-white/30 px-5 py-2 text-sm font-semibold text-white transition-colors hover:border-white/60 hover:bg-white/10"
+          >
+            <FiLogIn size={16} />
+            Student Login
+          </Link>
         </div>
 
         <div className="md:hidden">

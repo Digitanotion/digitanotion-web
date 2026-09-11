@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import TestimonialsSection from "./testimonial";
+import { CertificateValidationSection } from "./validate-certificate";
 import {
   FiShield,
   FiCode,
@@ -25,6 +26,8 @@ import {
   FiDollarSign,
   FiTag,
   FiX,
+  FiLogIn,
+  FiUserPlus,
 } from "react-icons/fi";
 import {
   FaLaptopCode,
@@ -39,6 +42,9 @@ import {
   FaBrush,
   FaCloud,
 } from "react-icons/fa";
+
+// The student/instructor portal — a separate Laravel app at this subdomain.
+const PORTAL_URL = "https://academy.digitanotion.com.ng";
 
 // Learning Paths Data with complete course details
 const learningPaths = [
@@ -810,12 +816,26 @@ export default function AcademyPage() {
                 programs.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row flex-wrap gap-4">
                 <Link
                   href="#learning-paths-section"
                   className="px-8 py-4 rounded-xl bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold hover:shadow-xl hover:shadow-orange-200 transition-all hover:-translate-y-1"
                 >
                   Explore Courses
+                </Link>
+                <Link
+                  href={`${PORTAL_URL}/register`}
+                  className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-gray-900 text-white font-bold hover:bg-gray-800 transition-all hover:-translate-y-1"
+                >
+                  <FiUserPlus size={18} />
+                  Enroll Now
+                </Link>
+                <Link
+                  href={`${PORTAL_URL}/login`}
+                  className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl border-2 border-gray-300 text-gray-700 font-bold hover:border-gray-900 hover:text-gray-900 transition-all"
+                >
+                  <FiLogIn size={18} />
+                  Current Student? Log In
                 </Link>
               </div>
             </motion.div>
@@ -1218,6 +1238,9 @@ export default function AcademyPage() {
 
       {/* Testimonials */}
       <TestimonialsSection />
+
+      {/* Certificate verification */}
+      <CertificateValidationSection />
 
       {/* Final CTA */}
       {/* <section className="py-20 bg-gradient-to-r from-orange-50 to-red-50">

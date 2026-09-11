@@ -26,6 +26,9 @@ import {
 } from "react-icons/fi";
 import { FaGraduationCap, FaUsers, FaTools } from "react-icons/fa";
 
+// The student/instructor portal — a separate Laravel app at this subdomain.
+const PORTAL_URL = "https://academy.digitanotion.com.ng";
+
 // Your primary color variables (orange-red theme)
 const PRIMARY_COLOR = "#e11802"; // Your brand red
 const PRIMARY_LIGHT = "#ff6b35"; // Orange-red
@@ -275,6 +278,21 @@ export default function Sidebar({ isOpen, setIsOpen }) {
                       <p className="text-xs text-gray-600">Return to homepage</p>
                     </div>
                     <FiChevronRight className="text-orange-500 group-hover:text-red-500 transition-colors" size={18} />
+                  </Link>
+
+                  {/* Student Portal */}
+                  <Link
+                    href={`${PORTAL_URL}/login`}
+                    className="flex items-center gap-3 p-4 mt-3 rounded-xl bg-gray-900 hover:bg-gray-800 transition-all group"
+                  >
+                    <div className="p-2 rounded-lg bg-white/10">
+                      <FaGraduationCap className="text-white" size={20} />
+                    </div>
+                    <div className="flex-1">
+                      <span className="text-white font-semibold">Student Login</span>
+                      <p className="text-xs text-gray-300">Current or returning students</p>
+                    </div>
+                    <FiChevronRight className="text-gray-300 group-hover:text-white transition-colors" size={18} />
                   </Link>
 
                   {/* Explore Section */}
