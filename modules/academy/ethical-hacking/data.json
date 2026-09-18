@@ -19,7 +19,7 @@
     "title": "Ethical Hacking",
     "tagline": "Go from security fundamentals to real, professional-grade penetration testing. Hands-on labs, real tools, a full capstone project — learn step by step, at a price that fits you.",
     "level": "Advanced",
-    "durationLabel": "4-5 Months",
+    "durationLabel": "16 weeks",
     "labCountLabel": "20+ hands-on labs",
     "ctaLabel": "See How You Can Start",
     "ctaTarget": "#choose-how-you-start",
@@ -37,7 +37,7 @@
   },
   "pricing": {
     "currencySymbol": "₦",
-    "fullCoursePrice": 370000,
+    "fullCoursePrice": 300000,
     "fullCourseOriginalPrice": 650000
   },
   "beforeYouStart": "This is an advanced specialization. We strongly recommend completing Cybersecurity Foundations first (or having equivalent experience) — you'll want basic networking, operating systems, and security fundamentals under your belt before starting here.",
@@ -246,7 +246,7 @@
     },
     {
       "question": "Can I pay for just one step instead of the whole specialization?",
-      "answer": "Yes! You can start with just one step for as little as ₦35,000. Each step has its own price, and you can add more whenever you're ready. If you're able to take the full specialization at once, it works out cheaper (₦370,000 instead of ₦390,000 if bought step by step) — but starting small is always an option."
+      "answer": "Yes! You can start with just one step for as little as ₦35,000. Each step has its own price, and you can add more whenever you're ready. If you're able to take the full specialization at once, it works out cheaper (₦300,000 instead of ₦390,000 if bought step by step) — but starting small is always an option."
     },
     {
       "question": "Do I need to complete Cybersecurity Foundations first?",

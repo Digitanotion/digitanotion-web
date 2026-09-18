@@ -2,7 +2,7 @@ export const productDesignMetadata = {
   title:
     "Product Design (UI/UX) Course in Awka | Figma Training Anambra | Digitanotion Academy",
   description:
-    "Master Product Design & UI/UX in 9 weeks. Learn Figma, design thinking, wireframing & prototyping. ₦120,000 (was ₦150,000). Onsite in Awka & Online. Build your portfolio with 15+ hands-on projects. Industry-recognized certification. Start March 2026.",
+    "Master Product Design & UI/UX in 10 weeks. Learn Figma, design thinking, wireframing & prototyping. ₦120,000 (was ₦150,000). Onsite in Awka & Online. Build your portfolio with 15+ hands-on projects. Industry-recognized certification. Start March 2026.",
 
   keywords: [
     // PRIMARY LOCATION KEYWORDS - Awka, Anambra Focus
@@ -73,7 +73,7 @@ export const productDesignMetadata = {
     title:
       "Product Design (UI/UX) Course in Awka | Figma Training | Digitanotion Academy",
     description:
-      "🚀 Become a UI/UX designer in 9 weeks. Master Figma, design thinking & prototyping. ₦120,000 (was ₦150,000). 15+ portfolio projects. Onsite in Awka & Online. Start March 2026.",
+      "🚀 Become a UI/UX designer in 10 weeks. Master Figma, design thinking & prototyping. ₦120,000 (was ₦150,000). 15+ portfolio projects. Onsite in Awka & Online. Start March 2026.",
     url: "https://digitanotion.com.ng/academy/product-design",
     siteName: "Digitanotion Academy",
     images: [
@@ -104,7 +104,7 @@ export const productDesignMetadata = {
     card: "summary_large_image",
     title: "Product Design (UI/UX) Course in Awka | Figma Training | ₦120k",
     description:
-      "Master UI/UX design in 9 weeks. Figma, design thinking, prototyping. 15+ portfolio projects. Onsite in Awka & Online. Certification included.",
+      "Master UI/UX design in 10 weeks. Figma, design thinking, prototyping. 15+ portfolio projects. Onsite in Awka & Online. Certification included.",
     images: [
       "https://digitanotion.com.ng/academy/product-design/twitter-image",
     ],
@@ -141,7 +141,7 @@ export const productDesignMetadata = {
     "geo.placename": "Awka",
     "geo.position": "6.210838;7.071666",
     ICBM: "6.210838, 7.071666",
-    "course:duration": "P9W",
+    "course:duration": "P10W",
     "course:price": "₦120,000",
     "course:originalPrice": "₦150,000",
     "course:discount": "20%",
@@ -159,7 +159,7 @@ export const productDesignStructuredData = {
       "@id": "https://digitanotion.com.ng/academy/product-design#course",
       name: "Product Design (UI/UX) Specialization",
       description:
-        "Comprehensive 9-week product design course covering Figma mastery, design thinking, wireframing, prototyping, user research, visual design, and portfolio development. Perfect for aspiring UI/UX designers.",
+        "Comprehensive 10-week product design course covering Figma mastery, design thinking, wireframing, prototyping, user research, visual design, and portfolio development. Perfect for aspiring UI/UX designers.",
       provider: {
         "@type": "Organization",
         name: "Digitanotion Academy",
@@ -184,7 +184,7 @@ export const productDesignStructuredData = {
           postalCode: "420211",
         },
       },
-      duration: "P9W",
+      duration: "P10W",
       totalHistoricalEnrollment: 120,
       coursePrerequisites: "Computing Essentials or equivalent computer skills",
       courseMode: ["onsite", "online", "blended"],
@@ -254,7 +254,7 @@ export const productDesignStructuredData = {
         "Portfolio Development",
       ],
       educationalLevel: "Intermediate",
-      timeRequired: "P9W",
+      timeRequired: "P10W",
       numberOfCredits: "12 CPD Credits",
       audience: {
         "@type": "Audience",
@@ -300,7 +300,7 @@ export const productDesignStructuredData = {
     {
       "@type": "ItemList",
       name: "Product Design Curriculum Modules",
-      description: "9-week comprehensive product design curriculum",
+      description: "10-week comprehensive product design curriculum",
       itemListElement: [
         {
           "@type": "ListItem",

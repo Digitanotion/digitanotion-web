@@ -60,9 +60,9 @@ export default function MobileAppDevelopment() {
     description:
       "Master cross-platform mobile app development with Flutter & Dart. Build beautiful, high-performance iOS and Android applications from a single codebase.",
     level: "Advanced",
-    duration: "14 weeks",
+    duration: "15 weeks",
     format: "Onsite",
-    price: "₦300,000",
+    price: "₦270,000",
     originalPrice: "₦450,000",
     status: "Available",
     isNew: true,
@@ -450,7 +450,7 @@ function Learn() {
             Curriculum Breakdown
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            14-week intensive program covering Flutter mobile app development
+            15-week intensive program covering Flutter mobile app development
             from fundamentals to deployment
           </p>
         </div>

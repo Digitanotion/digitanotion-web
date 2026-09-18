@@ -112,7 +112,7 @@ export default async function Image() {
             border: "1.5px solid rgba(249, 115, 22, 0.5)",
           }}
         >
-          ⏱️ 14 Weeks
+          ⏱️ 12 Weeks
         </span>
         <span
           style={{
@@ -152,7 +152,7 @@ export default async function Image() {
         }}
       >
         <span style={{ fontSize: "48px", fontWeight: "bold", color: "white" }}>
-          ₦270,000
+          ₦160,000
         </span>
         <span
           style={{

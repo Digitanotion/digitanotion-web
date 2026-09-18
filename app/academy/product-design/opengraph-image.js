@@ -112,7 +112,7 @@ export default async function Image() {
             border: "1.5px solid rgba(236, 72, 153, 0.5)",
           }}
         >
-          ⏱️ 9 Weeks
+          ⏱️ 10 Weeks
         </span>
         <span
           style={{

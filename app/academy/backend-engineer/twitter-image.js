@@ -53,9 +53,9 @@ export default async function Image() {
           </span>
           <div style={{ display: "flex", gap: "24px", marginTop: "24px" }}>
             <span style={{ fontSize: "24px", color: "#f97316" }}>
-              ⏱️ 14 Weeks
+              ⏱️ 12 Weeks
             </span>
-            <span style={{ fontSize: "24px", color: "#ef4444" }}>🎯 ₦270k</span>
+            <span style={{ fontSize: "24px", color: "#ef4444" }}>🎯 ₦160k</span>
             <span
               style={{
                 fontSize: "24px",

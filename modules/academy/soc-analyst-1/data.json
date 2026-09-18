@@ -20,7 +20,7 @@
     "title": "SOC Analyst 1",
     "tagline": "Learn to watch, detect, and respond the way real Security Operations Center teams do. Real SIEM tools, real alerts, real incident response — step by step, at a price that fits you.",
     "level": "Intermediate",
-    "durationLabel": "3-4 months",
+    "durationLabel": "15 weeks",
     "labCountLabel": "6+ hands-on labs",
     "ctaLabel": "See How You Can Start",
     "ctaTarget": "#choose-how-you-start",
@@ -38,7 +38,7 @@
   },
   "pricing": {
     "currencySymbol": "₦",
-    "fullCoursePrice": 280000,
+    "fullCoursePrice": 270000,
     "fullCourseOriginalPrice": 350000
   },
   "beforeYouStart": "This course builds directly on cybersecurity fundamentals. We recommend completing Cybersecurity Foundations first (or having equivalent experience) — you'll want a basic understanding of networks, threats, and security concepts before starting here.",
@@ -181,7 +181,7 @@
     },
     {
       "question": "Can I pay for just one step instead of the whole course?",
-      "answer": "Yes! You can start with just one step for as little as ₦20,000. Each step has its own price, and you can add more whenever you're ready. If you're able to take the full course at once, it works out cheaper (₦180,000 instead of ₦210,000 if bought step by step) — but starting small is always an option."
+      "answer": "Yes! You can start with just one step for as little as ₦20,000. Each step has its own price, and you can add more whenever you're ready. If you're able to take the full course at once, it works out cheaper (₦270,000 instead of ₦310,000 if bought step by step) — but starting small is always an option."
     },
     {
       "question": "Do I need to complete Cybersecurity Foundations first?",

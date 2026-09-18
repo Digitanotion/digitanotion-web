@@ -75,9 +75,9 @@ export default function ProductDesign() {
     description:
       "Master user-centered design principles, create stunning interfaces, and build a professional portfolio using Figma and industry-standard design tools.",
     level: "Intermediate",
-    duration: "9 weeks",
+    duration: "10 weeks",
     format: "Onsite/Online",
-    price: "₦80,000",
+    price: "₦120,000",
     originalPrice: "₦150,000",
     status: "Available",
     isNew: true,
@@ -514,7 +514,7 @@ function Learn() {
             Curriculum Breakdown
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            9-week intensive program covering everything from design thinking to
+            10-week intensive program covering everything from design thinking to
             professional portfolio development
           </p>
         </div>

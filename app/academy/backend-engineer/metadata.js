@@ -2,7 +2,7 @@ export const backendEngineerMetadata = {
   title:
     "Backend Engineer (Laravel/PHP) Course in Awka | PHP Training Anambra | Digitanotion Academy",
   description:
-    "Master Backend Engineering with Laravel/PHP in 14 weeks. Learn PHP, Laravel, MySQL, API development & AWS cloud deployment. ₦270,000 (was ₦350,000). Onsite in Awka. Build 5 production-ready projects. Industry-recognized certification. Start March 2026.",
+    "Master Backend Engineering with Laravel/PHP in 12 weeks. Learn PHP, Laravel, MySQL, API development & AWS cloud deployment. ₦160,000 (was ₦350,000). Onsite in Awka. Build 5 production-ready projects. Industry-recognized certification. Start March 2026.",
 
   keywords: [
     // PRIMARY LOCATION KEYWORDS - Awka, Anambra Focus
@@ -75,7 +75,7 @@ export const backendEngineerMetadata = {
     title:
       "Backend Engineer (Laravel/PHP) Course in Awka | PHP Training | Digitanotion Academy",
     description:
-      "🚀 Become a backend engineer in 14 weeks. Master Laravel, PHP, MySQL, API development & AWS cloud. ₦270,000 (was ₦350,000). 5 production-ready projects. Onsite in Awka. Start March 2026.",
+      "🚀 Become a backend engineer in 12 weeks. Master Laravel, PHP, MySQL, API development & AWS cloud. ₦160,000 (was ₦350,000). 5 production-ready projects. Onsite in Awka. Start March 2026.",
     url: "https://digitanotion.com.ng/academy/backend-engineer",
     siteName: "Digitanotion Academy",
     images: [
@@ -106,9 +106,9 @@ export const backendEngineerMetadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Backend Engineer (Laravel/PHP) Course in Awka | ₦270k | Digitanotion Academy",
+      "Backend Engineer (Laravel/PHP) Course in Awka | ₦160k | Digitanotion Academy",
     description:
-      "Master Laravel, PHP, MySQL & AWS cloud in 14 weeks. 5 production-ready projects. Onsite in Awka. Certification included.",
+      "Master Laravel, PHP, MySQL & AWS cloud in 12 weeks. 5 production-ready projects. Onsite in Awka. Certification included.",
     images: [
       "https://digitanotion.com.ng/academy/backend-engineer/twitter-image",
     ],
@@ -145,8 +145,8 @@ export const backendEngineerMetadata = {
     "geo.placename": "Awka",
     "geo.position": "6.210838;7.071666",
     ICBM: "6.210838, 7.071666",
-    "course:duration": "P14W",
-    "course:price": "₦270,000",
+    "course:duration": "P12W",
+    "course:price": "₦160,000",
     "course:originalPrice": "₦350,000",
     "course:discount": "23%",
     "course:level": "Intermediate",
@@ -163,7 +163,7 @@ export const backendEngineerStructuredData = {
       "@id": "https://digitanotion.com.ng/academy/backend-engineer#course",
       name: "Backend Engineer (Laravel/PHP) Specialization",
       description:
-        "Comprehensive 14-week backend engineering course covering PHP, Laravel framework, MySQL/PostgreSQL databases, RESTful API development, authentication, and AWS cloud deployment. Build 5 production-ready projects.",
+        "Comprehensive 12-week backend engineering course covering PHP, Laravel framework, MySQL/PostgreSQL databases, RESTful API development, authentication, and AWS cloud deployment. Build 5 production-ready projects.",
       provider: {
         "@type": "Organization",
         name: "Digitanotion Academy",
@@ -188,7 +188,7 @@ export const backendEngineerStructuredData = {
           postalCode: "420211",
         },
       },
-      duration: "P14W",
+      duration: "P12W",
       totalHistoricalEnrollment: 85,
       coursePrerequisites:
         "Web Development Fundamentals or equivalent experience",
@@ -201,7 +201,7 @@ export const backendEngineerStructuredData = {
       },
       offers: {
         "@type": "Offer",
-        price: 270000,
+        price: 160000,
         priceCurrency: "NGN",
         availability: "https://schema.org/InStock",
         url: "https://digitanotion.com.ng/academy/backend-engineer",
@@ -263,7 +263,7 @@ export const backendEngineerStructuredData = {
         "Performance Optimization",
       ],
       educationalLevel: "Intermediate",
-      timeRequired: "P14W",
+      timeRequired: "P12W",
       numberOfCredits: "18 CPD Credits",
       audience: {
         "@type": "Audience",
@@ -309,7 +309,7 @@ export const backendEngineerStructuredData = {
     {
       "@type": "ItemList",
       name: "Backend Engineering Curriculum Modules",
-      description: "14-week comprehensive backend engineering curriculum",
+      description: "12-week comprehensive backend engineering curriculum",
       itemListElement: [
         {
           "@type": "ListItem",

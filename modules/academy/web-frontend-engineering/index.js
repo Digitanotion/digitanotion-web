@@ -57,7 +57,7 @@ export default function WebFrontEndEngineer() {
     level: "Advanced",
     duration: "12 weeks",
     format: "Onsite",
-    price: "₦170,000",
+    price: "₦160,000",
     originalPrice: "₦250,000",
     status: "Available",
     isNew: true,

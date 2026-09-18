@@ -77,9 +77,9 @@ export default function BackendEngineer() {
     description:
       "Master server-side development, database architecture, and cloud deployment. Build robust, scalable APIs and web services using industry-standard tools and practices.",
     level: "Intermediate",
-    duration: "14 weeks",
+    duration: "12 weeks",
     format: "Onsite",
-    price: "₦270,000",
+    price: "₦160,000",
     originalPrice: "₦350,000",
     status: "Available",
     isNew: false,
@@ -123,7 +123,7 @@ export default function BackendEngineer() {
   const handleWhatsAppRegistration = () => {
     const phoneNumber = "+2348073735836";
     const message = encodeURIComponent(
-      `Hello Digitanotion Academy! I am interested in your Backend Engineer Laravel/PHP Specialization Course (₦270,000) starting March 2026. How do I enroll?`,
+      `Hello Digitanotion Academy! I am interested in your Backend Engineer Laravel/PHP Specialization Course (₦160,000) starting March 2026. How do I enroll?`,
     );
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
   };
@@ -511,7 +511,7 @@ function Learn() {
             Curriculum Breakdown
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            14-week intensive program covering everything from PHP fundamentals
+            12-week intensive program covering everything from PHP fundamentals
             to cloud deployment
           </p>
         </div>
