@@ -578,6 +578,52 @@ const featuredCourses = [
   },
 ];
 
+// Life at the Academy — real photos from onsite cohorts and sessions
+const lifeGallery = [
+  {
+    src: "/images/academy/life/gallery-6.webp",
+    alt: "The Digitanotion Academy team together outside the classroom",
+    caption: "Beyond the classroom — the team that builds with you",
+    span: "lg:col-span-2 lg:row-span-2",
+  },
+  {
+    src: "/images/academy/life/gallery-5.webp",
+    alt: "An instructor teaching a live Cybersecurity Zone class",
+    caption: "Live class inside the Cybersecurity Zone",
+  },
+  {
+    src: "/images/academy/life/gallery-3.webp",
+    alt: "A team member presenting a strategy session on a wall-mounted screen",
+    caption: "Strategy sessions, not just lectures",
+  },
+  {
+    src: "/images/academy/life/gallery-4.webp",
+    alt: "A cohort lined up together after a training session, wearing lanyards",
+    caption: "Cohort day — a full house, ready to learn",
+    span: "lg:col-span-2",
+  },
+  {
+    src: "/images/academy/life/gallery-2.webp",
+    alt: "Students working together around laptops during a cohort session",
+    caption: "Hands-on, side by side",
+  },
+  {
+    src: "/images/academy/life/gallery-7.webp",
+    alt: "Students gathered around a laptop during peer learning",
+    caption: "Peer learning, one laptop at a time",
+  },
+  {
+    src: "/images/academy/life/gallery-8.webp",
+    alt: "A cohort standing together in the training room after class",
+    caption: "Catching up after class",
+  },
+  {
+    src: "/images/academy/life/gallery-1.webp",
+    alt: "The Digitanotion onsite training room in Awka",
+    caption: "Our onsite training room, Awka",
+  },
+];
+
 // Academy Process
 const processSteps = [
   {
@@ -1222,6 +1268,57 @@ export default function AcademyPage() {
                   </h3>
                   <p className="text-gray-600">{step.description}</p>
                 </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Life at the Academy — real cohort & classroom photos */}
+      <section className="py-20 bg-gray-900">
+        <div className="max-w-7xl mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 mb-6">
+              <FaGraduationCap className="text-orange-400" size={18} />
+              <span className="text-sm font-semibold text-orange-300">
+                Life at the Academy
+              </span>
+            </div>
+            <h2 className="text-4xl font-bold text-white mb-4">
+              Inside our classrooms, in Awka
+            </h2>
+            <p className="text-lg text-gray-400 max-w-3xl mx-auto">
+              Real cohorts, real instructors, real sessions — a look at what
+              training with Digitanotion Academy actually looks like.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-2 lg:grid-cols-4 lg:auto-rows-[220px] gap-4">
+            {lifeGallery.map((photo, index) => (
+              <motion.div
+                key={photo.src}
+                initial={{ opacity: 0, scale: 0.96 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true, margin: "-60px" }}
+                transition={{ duration: 0.5, delay: (index % 4) * 0.08 }}
+                className={`group relative overflow-hidden rounded-2xl bg-gray-800 aspect-square lg:aspect-auto ${photo.span ?? ""}`}
+              >
+                <Image
+                  src={photo.src}
+                  alt={photo.alt}
+                  fill
+                  sizes="(max-width: 1024px) 50vw, 25vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <p className="absolute bottom-0 left-0 right-0 p-4 text-sm font-medium text-white opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-500">
+                  {photo.caption}
+                </p>
               </motion.div>
             ))}
           </div>

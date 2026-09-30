@@ -309,7 +309,7 @@ const homepageSchema = {
       slogan:
         "Building digital resilience through Security, Innovation, and Skills Development",
       award:
-        "Award of Recognition — Nigerian Festival of Awards, 6th Eastern Edition (6th Eastern Nigeria Merit Awards), Awka, Anambra State, 2026",
+        "Special Recognition Award — 6th Eastern Nigeria Merit Awards, presented by Nigeria Festival of Awards Magazine, Awka, Anambra State, 10th May 2026",
       knowsAbout: [
         "Cyber Security",
         "Penetration Testing",
@@ -518,7 +518,7 @@ const homepageSchema = {
           name: "Has Digitanotion won any awards?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. Digitanotion Limited received an Award of Recognition from the Nigerian Festival of Awards during the 6th Eastern Edition, also known as the 6th Eastern Nigeria Merit Awards, held in Awka, Anambra State — recognizing organisations that have distinguished themselves and contributed to their fields across the Eastern Region.",
+            text: "Yes. On 10th May 2026, Digitanotion Limited was presented with a Special Recognition Award at the 6th Eastern Nigeria Merit Awards in Awka, courtesy of the Nigeria Festival of Awards Magazine — recognizing organisations that have distinguished themselves and contributed to excellence across the Eastern Region.",
           },
         },
         {

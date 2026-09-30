@@ -1,8 +1,8 @@
 "use client";
-import { FiPlayCircle, FiShoppingBag, FiClock, FiStar, FiExternalLink } from "react-icons/fi";
-import { PiQrCodeDuotone } from "react-icons/pi";
+import { FiClock, FiStar, FiExternalLink, FiPlus } from "react-icons/fi";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 const products = [
   {
@@ -10,7 +10,7 @@ const products = [
     tagline: "Livestream App",
     description:
       "A livestream and social entertainment app — watch shows, chat, join global clubs, and earn from gifts. Live on the Google Play Store with over 100,000 downloads and a 5.0-star rating.",
-    icon: <FiPlayCircle className="text-4xl" />,
+    logo: "/images/products/moonlight-logo.webp",
     color: "from-fuchsia-600 to-pink-500",
     badge: "100K+ Downloads",
     rating: "5.0",
@@ -25,7 +25,7 @@ const products = [
     tagline: "Marketplace",
     description:
       "A classifieds and marketplace platform serving the community in Japan — buy or sell goods and services with ease, from vehicles and property to jobs and services.",
-    icon: <FiShoppingBag className="text-4xl" />,
+    logo: "/images/products/gaijinmall-logo.webp",
     color: "from-blue-600 to-red-500",
     badge: "Live in Japan",
     cta: "Visit gaijinmall.com",
@@ -38,7 +38,7 @@ const products = [
     tagline: "Intelligent QR Platform",
     description:
       "A programmable QR code platform for businesses, developers, and financial institutions — dynamic QR codes, anti-counterfeit product verification, event and file QR codes, and analytics.",
-    icon: <PiQrCodeDuotone className="text-4xl" />,
+    logo: "/images/products/qrkloud-logo.webp",
     color: "from-cyan-600 to-blue-500",
     badge: "Alpha · Coming Soon",
     cta: null,
@@ -154,7 +154,7 @@ export default function ProductsSection() {
         </motion.div>
 
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -175,11 +175,18 @@ export default function ProductsSection() {
               <div className="relative h-full flex flex-col bg-card border border-border/50 rounded-2xl p-8 backdrop-blur-sm hover:border-primary/30 transition-all duration-500">
                 <div className="flex items-start justify-between mb-6">
                   <motion.div
-                    className={`w-16 h-16 rounded-xl bg-gradient-to-br ${product.color} flex items-center justify-center text-white shadow-lg glow-effect`}
+                    className="w-16 h-16 rounded-xl overflow-hidden shadow-lg glow-effect bg-white"
                     whileHover={{ scale: 1.1, rotate: 5 }}
                     transition={{ duration: 0.3 }}
                   >
-                    {product.icon}
+                    <Image
+                      src={product.logo}
+                      alt={`${product.name} logo`}
+                      width={64}
+                      height={64}
+                      sizes="64px"
+                      className="w-full h-full object-cover"
+                    />
                   </motion.div>
 
                   <span
@@ -254,6 +261,26 @@ export default function ProductsSection() {
               </div>
             </motion.div>
           ))}
+
+          <motion.div
+            variants={itemVariants}
+            className="group relative"
+            whileHover={{ y: -8 }}
+            transition={{ duration: 0.3 }}
+          >
+            <div className="relative h-full flex flex-col items-center justify-center text-center bg-card/40 border border-dashed border-border rounded-2xl p-8 hover:border-primary/40 transition-all duration-500 min-h-[280px]">
+              <div className="w-16 h-16 rounded-xl bg-muted flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform duration-300">
+                <FiPlus className="text-3xl" aria-hidden="true" />
+              </div>
+              <h3 className="text-xl font-bold text-foreground mb-2">
+                And More
+              </h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                We're always building. More products from Digitanotion are on
+                the way.
+              </p>
+            </div>
+          </motion.div>
         </motion.div>
 
         {/* SEO: Hidden content for search engines */}
@@ -266,7 +293,7 @@ export default function ProductsSection() {
             live classifieds and marketplace platform serving Japan at
             gaijinmall.com; and QrKloud, an intelligent QR code platform for
             businesses and financial institutions, currently in alpha
-            testing.
+            testing. More products are in active development.
           </p>
         </div>
       </div>
