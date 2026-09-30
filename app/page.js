@@ -1,6 +1,8 @@
 import Careers from "@/modules/home/career";
 import HomeHero from "../modules/home/homehero";
 import ServicesSection from "@/modules/home/services";
+import ProductsSection from "@/modules/home/products";
+import AwardsSection from "@/modules/home/awards";
 import Cysap from "@/modules/home/cysap";
 
 export const metadata = {
@@ -90,6 +92,19 @@ export const metadata = {
     "simplicity affordability security impact",
     "digital resilience company Nigeria",
     "tech innovation center Awka",
+
+    // AWARDS
+    "Digitanotion award",
+    "6th Eastern Nigeria Merit Awards",
+    "Nigerian Festival of Awards Awka",
+    "award-winning tech company Anambra",
+
+    // PRODUCTS
+    "Moonlight livestream app",
+    "Moonlight app Nigeria",
+    "Gaijinmall Japan marketplace",
+    "QrKloud QR code platform",
+    "apps built by Digitanotion",
   ],
 
   authors: [{ name: "Digitanotion Limited" }],
@@ -293,6 +308,8 @@ const homepageSchema = {
       ],
       slogan:
         "Building digital resilience through Security, Innovation, and Skills Development",
+      award:
+        "Award of Recognition — Nigerian Festival of Awards, 6th Eastern Edition (6th Eastern Nigeria Merit Awards), Awka, Anambra State, 2026",
       knowsAbout: [
         "Cyber Security",
         "Penetration Testing",
@@ -353,6 +370,50 @@ const homepageSchema = {
           areaServed: ["Awka", "Anambra", "Nigeria", "Africa"],
           description:
             "Industry-recognized certification programs in cybersecurity, web development, app development, and digital skills.",
+        },
+      ],
+    },
+    {
+      "@type": "ItemList",
+      name: "Products by Digitanotion",
+      description:
+        "Software products designed and built in-house by Digitanotion Limited",
+      url: "https://digitanotion.com.ng",
+      itemListElement: [
+        {
+          "@type": "SoftwareApplication",
+          position: 1,
+          name: "Moonlight Livestream App",
+          applicationCategory: "MobileApplication",
+          operatingSystem: "Android",
+          description:
+            "Livestream and social entertainment app with global clubs, gifting, and instant withdrawals. Over 100,000 downloads on Google Play.",
+          url: "https://play.google.com/store/apps/details?id=com.app.moonlightstream",
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "5.0",
+            ratingCount: "154",
+          },
+          creator: { "@id": "https://digitanotion.com.ng#organization" },
+        },
+        {
+          "@type": "SoftwareApplication",
+          position: 2,
+          name: "Gaijinmall",
+          applicationCategory: "WebApplication",
+          description:
+            "Classifieds and marketplace platform for buying and selling goods and services in Japan.",
+          url: "https://gaijinmall.com",
+          creator: { "@id": "https://digitanotion.com.ng#organization" },
+        },
+        {
+          "@type": "SoftwareApplication",
+          position: 3,
+          name: "QrKloud",
+          applicationCategory: "BusinessApplication",
+          description:
+            "Intelligent, programmable QR code platform for businesses, developers, and financial institutions — currently in alpha testing.",
+          creator: { "@id": "https://digitanotion.com.ng#organization" },
         },
       ],
     },
@@ -452,6 +513,22 @@ const homepageSchema = {
             text: "SASI is Digitanotion's core philosophy: Simplicity, Affordability, Security, and Impact. These principles guide everything we do - from software development to cybersecurity and community initiatives.",
           },
         },
+        {
+          "@type": "Question",
+          name: "Has Digitanotion won any awards?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Digitanotion Limited received an Award of Recognition from the Nigerian Festival of Awards during the 6th Eastern Edition, also known as the 6th Eastern Nigeria Merit Awards, held in Awka, Anambra State — recognizing organisations that have distinguished themselves and contributed to their fields across the Eastern Region.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What products has Digitanotion built?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Digitanotion has built and launched Moonlight, a livestream and social entertainment app on the Google Play Store with over 100,000 downloads and a 5-star rating; Gaijinmall, a live classifieds and marketplace platform for Japan at gaijinmall.com; and QrKloud, an intelligent QR code platform for businesses and financial institutions, currently in alpha testing.",
+          },
+        },
       ],
     },
   ],
@@ -466,6 +543,8 @@ export default function Home() {
       />
       <HomeHero />
       <ServicesSection />
+      <ProductsSection />
+      <AwardsSection />
       <Careers />
       <Cysap />
     </>
